@@ -7,12 +7,11 @@ import { usePathname } from "next/navigation";
 const navItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Program", href: "/program" },
-    { name: "Speakers", href: "/speakers" },
-    { name: "Call for Proposals", href: "/call-for-proposals" },
-    { name: "Sponsors", href: "/sponsors" },
-    { name: "News", href: "/news" },
-    { name: "Contact", href: "/contact" },
+    { name: "Programme", href: "/program" },
+    { name: "Partners", href: "/partners" },
+    { name: "Exhibition", href: "/exhibition" },
+    { name: "Media", href: "/media" },
+    { name: "News Portal", href: "/news" },
 ];
 
 export default function Navigation() {
@@ -24,7 +23,7 @@ export default function Navigation() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex h-20 items-center justify-between">
                     <Link href="/" className="text-2xl font-bold text-primary">
-                        eLearning Africa
+                        Atlas Conference
                     </Link>
 
                     {/* Desktop Navigation */}

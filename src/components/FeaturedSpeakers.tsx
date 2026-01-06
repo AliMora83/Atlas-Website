@@ -47,8 +47,14 @@ export default function FeaturedSpeakers() {
                         <div key={idx} className="group">
                             <div className="relative h-[300px] w-full mb-4 overflow-hidden rounded-lg bg-gray-200">
                                 {/* Placeholder for Image */}
-                                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                                    [Speaker Photo]
+                                <div className="absolute inset-0 text-gray-400">
+                                    <Image
+                                        src="/images/speaker-placeholder.png"
+                                        alt={speaker.name}
+                                        fill
+                                        style={{ objectFit: 'cover', objectPosition: 'top' }}
+                                        className="grayscale group-hover:grayscale-0 transition-all duration-500"
+                                    />
                                 </div>
                             </div>
                             <h3 className="text-xl font-bold font-heading text-gray-900 group-hover:text-primary transition-colors">

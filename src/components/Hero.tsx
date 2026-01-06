@@ -15,7 +15,7 @@ export default function Hero() {
 
             <div className="relative z-10 container mx-auto px-4 text-center">
                 <h1 className="text-4xl md:text-6xl font-bold font-heading mb-4 leading-tight">
-                    19th eLearning Africa<br />Conference 2026
+                    19th Atlas Conference<br />2026
                 </h1>
                 <p className="text-xl md:text-2xl font-light mb-8 max-w-3xl mx-auto text-gray-200">
                     Shaping the Future of Digital Education Across Africa

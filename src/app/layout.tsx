@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "eLearning Africa Conference 2026",
+  title: "Atlas Conference 2026",
   description: "Shaping the Future of Digital Education Across Africa",
 };
 

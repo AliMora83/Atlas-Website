@@ -7,9 +7,9 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Column 1: About */}
                     <div>
-                        <h3 className="text-lg font-bold font-heading mb-4 text-primary">eLearning Africa</h3>
+                        <h3 className="text-lg font-bold font-heading mb-4 text-primary">Atlas Conference</h3>
                         <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-                            The 19th International Conference & Exhibition on ICT for Education, Training & Skills Development.
+                            The 10th International Conference & Exhibition on ICT for Education, Training & Skills Development.
                         </p>
                         <div className="flex space-x-4">
                             {/* Social Icons Placeholder */}
@@ -38,7 +38,7 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm text-gray-600">
                             <li className="flex items-start">
                                 <span className="font-semibold mr-2">Email:</span>
-                                info@elearning-africa.com
+                                info@atlasconference.com
                             </li>
                             <li className="flex items-start">
                                 <span className="font-semibold mr-2">Phone:</span>
@@ -46,8 +46,8 @@ export default function Footer() {
                             </li>
                             <li className="flex items-start">
                                 <span className="font-semibold mr-2">Address:</span>
-                                Leibnizstrasse 32<br />
-                                10625 Berlin, Germany
+                                Long Street 32<br />
+                                10625 Accra, Ghana
                             </li>
                         </ul>
                     </div>
@@ -65,7 +65,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} ICWE GmbH. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Atlas Conference. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <Link href="/privacy" className="hover:text-primary">Privacy</Link>
                         <Link href="/terms" className="hover:text-primary">Terms</Link>
