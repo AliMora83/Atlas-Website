@@ -1,6 +1,7 @@
 import PageHero from "@/components/PageHero";
 import Link from "next/link";
 
+
 export default function VenuePage() {
     return (
         <>
@@ -10,6 +11,7 @@ export default function VenuePage() {
                 breadcrumb="Venue"
                 bgClass="bg-slate-900 text-white"
             />
+
 
             {/* Venue Details */}
             <section className="py-20 bg-white">

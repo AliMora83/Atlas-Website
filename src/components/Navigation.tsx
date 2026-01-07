@@ -36,17 +36,10 @@ const navItems: NavItem[] = [
             { name: "Themes 2026", href: "/program/themes" },
             { name: "Session Formats", href: "/program/session-formats" },
             { name: "Ministerial Round Table", href: "/program/ministerial-round-table" },
-            { name: "The eLearning Africa Debate", href: "/program/debate" },
+            { name: "The Atlas Conference Debate", href: "/program/debate" },
         ],
     },
-    {
-        name: "Registration",
-        href: "/register",
-        subItems: [
-            { name: "Registration & Fees", href: "/register" },
-            { name: "Terms & Conditions", href: "/register/terms" },
-        ],
-    },
+
     { name: "Partners", href: "/partners" },
     { name: "Exhibition", href: "/exhibition" },
     {

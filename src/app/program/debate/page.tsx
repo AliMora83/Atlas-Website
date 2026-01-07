@@ -4,7 +4,7 @@ export default function DebatePage() {
     return (
         <div className="flex flex-col min-h-screen">
             <PageHero
-                title="The eLearning Africa Debate"
+                title="The Atlas Conference Debate"
                 description="Our signature plenary session: a lively, parliamentary-style debate on a controversial motion."
                 breadcrumb="The Debate"
                 bgClass="bg-red-900 text-white"

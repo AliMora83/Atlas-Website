@@ -14,9 +14,10 @@ export default function Hero() {
             </div>
 
             <div className="relative z-10 container mx-auto px-4 text-center">
-                <h1 className="mb-4 leading-tight">
-                    19th Atlas Conference<br />2026
-                </h1>
+                <h2 className="text-3xl md:text-5xl font-extrabold mb-8 leading-tight">
+                    Africa’s leading space for fresh ideas, educational innovation,
+                    <br />and sustainable approaches to training and skills development.
+                </h2>
                 <p className="text-xl md:text-2xl font-light mb-8 max-w-3xl mx-auto text-gray-200">
                     Shaping the Future of Digital Education Across Africa
                 </p>

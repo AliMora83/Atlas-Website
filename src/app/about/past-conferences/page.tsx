@@ -1,6 +1,7 @@
 import PageHero from "@/components/PageHero";
 import Link from "next/link";
 
+
 export default function PastConferencesPage() {
     const history = [
         { year: 2025, location: "Dar es Salaam, Tanzania", theme: "Education fueling growth" },
