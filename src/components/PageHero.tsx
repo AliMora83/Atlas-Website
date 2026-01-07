@@ -18,20 +18,14 @@ export default function PageHero({
     textClass = "text-blue-100",
     children
 }: PageHeroProps) {
-    // Determine text color based on background (heuristic or explicit prop)
-    const isLightBg = bgClass.includes("bg-white") || bgClass.includes("bg-gray-50");
+    const isLightBg = bgClass.includes("bg-white") || bgClass.includes("bg-gray-50") || bgClass.includes("bg-gray-100");
     const breadcrumbTextClass = isLightBg ? "text-gray-900" : "text-white";
     const slashClass = isLightBg ? "text-gray-400" : "opacity-50";
     const descClass = isLightBg ? "text-gray-600" : textClass;
     const titleClass = isLightBg ? "text-primary" : "text-white";
 
     return (
-        <section className={`${bgClass} py-20 relative overflow-hidden border-b`}>
-            <div className="absolute inset-0 pointer-events-none z-0">
-                {/* Optional pattern or gradient overlay could go here */}
-                {!isLightBg && <div className="absolute inset-0 bg-black/10"></div>}
-            </div>
-
+        <section className={`${bgClass} section-padding relative overflow-hidden border-b`}>
             <div className="container mx-auto px-4 relative z-10 text-center">
                 {/* Breadcrumb */}
                 <div className="flex items-center justify-center space-x-2 text-sm mb-6 font-medium">
@@ -43,7 +37,7 @@ export default function PageHero({
                 </div>
 
                 {/* Content */}
-                <h1 className={`text-4xl md:text-5xl font-bold font-heading mb-6 ${titleClass}`}>
+                <h1 className={`mb-6 ${titleClass}`}>
                     {title}
                 </h1>
                 <p className={`text-xl max-w-3xl mx-auto leading-relaxed ${descClass}`}>

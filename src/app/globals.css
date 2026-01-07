@@ -5,6 +5,79 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Reference Site Colors */
+  --primary: #6A4C93;
+  /* Amethyst Purple */
+  --secondary: #FFCA3A;
+  /* Golden Yellow */
+  --accent: #21897E;
+  /* Forest Green/Teal */
+  --primary-dark: #4A306D;
+
+  --font-inter: var(--font-inter);
+  --font-poppins: var(--font-poppins);
+  --font-pt-sans: var(--font-pt-sans);
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+    color: var(--foreground);
+    background: var(--background);
+  }
+
+  h1 {
+    @apply font-pt-sans font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight;
+  }
+
+  h2 {
+    @apply font-pt-sans font-bold text-3xl md:text-4xl tracking-tight;
+  }
+
+  h3 {
+    @apply font-pt-sans font-bold text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply font-pt-sans font-bold text-xl md:text-2xl;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-8 py-3 font-bold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-dark focus:ring-primary shadow-lg hover:shadow-xl active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary text-gray-900 hover:bg-yellow-400 focus:ring-secondary shadow-md hover:shadow-lg active:scale-95;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary active:scale-95;
+  }
+
+  .btn-white {
+    @apply btn bg-white text-gray-900 hover:bg-gray-100 focus:ring-white shadow-md active:scale-95;
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,9 +85,4 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
 }

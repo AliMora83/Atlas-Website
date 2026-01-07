@@ -18,11 +18,11 @@ export default function PartnerInquiry() {
     };
 
     return (
-        <section id="inquiry" className="py-20 bg-white">
+        <section id="inquiry" className="section-padding bg-white">
             <div className="container mx-auto px-4">
                 <div className="max-w-2xl mx-auto">
                     <div className="text-center mb-10">
-                        <h2 className="text-3xl font-bold font-heading text-primary mb-4">Request Sponsorship Prospectus</h2>
+                        <h2 className="text-primary mb-4">Request Sponsorship Prospectus</h2>
                         <p className="text-gray-600">
                             Fill out the form below to receive the detailed 2026 Sponsorship Brochure and discuss custom opportunities.
                         </p>
@@ -89,7 +89,7 @@ export default function PartnerInquiry() {
 
                         <button
                             type="submit"
-                            className="w-full py-3 bg-secondary text-white font-bold rounded hover:bg-opacity-90 transition-colors shadow-sm"
+                            className="w-full btn-primary"
                         >
                             Request Prospectus
                         </button>

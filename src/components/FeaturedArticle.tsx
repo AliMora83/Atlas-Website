@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function FeaturedArticle() {
     return (
-        <section className="py-12 bg-gray-50">
+        <section className="section-padding bg-gray-50">
             <div className="container mx-auto px-4">
                 <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col lg:flex-row">
                     <div className="lg:w-1/2 relative h-64 lg:h-auto">
@@ -16,7 +16,7 @@ export default function FeaturedArticle() {
                     </div>
                     <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
                         <div className="text-sm font-bold text-secondary uppercase tracking-wider mb-2">Editor's Pick</div>
-                        <h2 className="text-3xl font-bold font-heading mb-4 text-gray-900">
+                        <h2 className="mb-4 text-gray-900">
                             <Link href="#" className="hover:text-primary transition-colors">
                                 Bridging the Digital Divide: A Case Study from Rural Ghana
                             </Link>

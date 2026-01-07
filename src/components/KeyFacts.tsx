@@ -16,7 +16,7 @@ export default function KeyFacts() {
                             className={`flex flex-col items-center text-center p-4 ${index !== facts.length - 1 ? 'lg:border-r border-gray-200' : ''}`}
                         >
                             <span className="text-4xl mb-3">{fact.icon}</span>
-                            <span className="text-lg font-bold text-gray-900 font-heading">{fact.label}</span>
+                            <span className="text-lg font-bold text-gray-900">{fact.label}</span>
                             <span className="text-sm text-gray-500">{fact.sub}</span>
                         </div>
                     ))}

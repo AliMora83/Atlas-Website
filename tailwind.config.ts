@@ -9,14 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#2170A5",
-        secondary: "#FFB400",
+        primary: "var(--primary)",
+        "primary-dark": "var(--primary-dark)",
+        secondary: "var(--secondary)",
+        accent: "var(--accent)",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        heading: ["var(--font-poppins)", "sans-serif"],
+        heading: ["var(--font-pt-sans)", "sans-serif"],
         body: ["var(--font-inter)", "sans-serif"],
+        "pt-sans": ["var(--font-pt-sans)", "sans-serif"],
       },
     },
   },

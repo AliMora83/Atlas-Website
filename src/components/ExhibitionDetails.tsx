@@ -1,12 +1,12 @@
 export default function ExhibitionDetails() {
     return (
-        <section id="book" className="py-20 bg-gray-50 border-t">
+        <section id="book" className="section-padding bg-gray-50 border-t">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col lg:flex-row gap-12">
                     <div className="lg:w-2/3">
-                        <h2 className="text-3xl font-bold font-heading text-primary mb-6">Stand Packages</h2>
+                        <h2 className="text-primary mb-6">Stand Packages</h2>
                         <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-8">
-                            <h3 className="text-xl font-bold mb-4">Shell Scheme (min 9sqm)</h3>
+                            <h3 className="mb-4">Shell Scheme (min 9sqm)</h3>
                             <p className="text-gray-600 mb-4">
                                 Includes: Walls, carpeting, name board, lighting, and power socket. Ideal for a hassle-free setup.
                             </p>
@@ -18,7 +18,7 @@ export default function ExhibitionDetails() {
                         </div>
 
                         <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="text-xl font-bold mb-4">Space Only (min 18sqm)</h3>
+                            <h3 className="mb-4">Space Only (min 18sqm)</h3>
                             <p className="text-gray-600 mb-4">
                                 Design your own custom stand. Floor space only provided.
                             </p>
@@ -32,7 +32,7 @@ export default function ExhibitionDetails() {
 
                     <div className="lg:w-1/3">
                         <div className="bg-primary text-white p-8 rounded-lg shadow-lg sticky top-24">
-                            <h3 className="text-2xl font-bold font-heading mb-6">Book Your Stand</h3>
+                            <h3 className="mb-6">Book Your Stand</h3>
                             <p className="mb-6 opacity-90">
                                 Space is selling fast! Contact our sales team to secure your preferred location.
                             </p>
@@ -46,7 +46,7 @@ export default function ExhibitionDetails() {
                                     <span className="font-medium">+49 30 12345678</span>
                                 </div>
                             </div>
-                            <button className="w-full py-3 bg-secondary text-white font-bold rounded hover:bg-opacity-90 transition-colors">
+                            <button className="w-full btn-secondary">
                                 Download Floorplan
                             </button>
                         </div>

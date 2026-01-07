@@ -14,7 +14,7 @@ export default function Hero() {
             </div>
 
             <div className="relative z-10 container mx-auto px-4 text-center">
-                <h1 className="text-4xl md:text-6xl font-bold font-heading mb-4 leading-tight">
+                <h1 className="mb-4 leading-tight">
                     19th Atlas Conference<br />2026
                 </h1>
                 <p className="text-xl md:text-2xl font-light mb-8 max-w-3xl mx-auto text-gray-200">
@@ -34,13 +34,13 @@ export default function Hero() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Link
                         href="/register"
-                        className="inline-flex items-center justify-center px-8 py-3 rounded text-base font-semibold bg-primary hover:bg-opacity-90 transition-colors text-white min-w-[180px]"
+                        className="btn-primary min-w-[180px]"
                     >
                         Register Now
                     </Link>
                     <Link
                         href="/program"
-                        className="inline-flex items-center justify-center px-8 py-3 rounded text-base font-medium border-2 border-white hover:bg-white hover:text-gray-900 transition-colors text-white min-w-[180px]"
+                        className="btn-white min-w-[180px]"
                     >
                         View Agenda
                     </Link>

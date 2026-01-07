@@ -28,10 +28,10 @@ const tickets = [
 
 export default function RegistrationPricing() {
     return (
-        <section className="py-20 bg-white" id="registration">
+        <section className="section-padding bg-white" id="registration">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold font-heading text-primary mb-4">Registration</h2>
+                    <h2 className="text-primary mb-4">Registration</h2>
                     <p className="text-gray-600">Secure your spot at Africa's premier ed-tech event.</p>
                 </div>
 
@@ -46,7 +46,7 @@ export default function RegistrationPricing() {
                                     {ticket.badge}
                                 </span>
                             )}
-                            <h3 className="text-xl font-bold font-heading text-gray-900 mb-2">{ticket.name}</h3>
+                            <h3 className="text-gray-900 mb-2">{ticket.name}</h3>
                             <div className="text-4xl font-bold text-primary mb-6">{ticket.price}</div>
 
                             <ul className="mb-8 space-y-3 flex-grow">
@@ -61,9 +61,9 @@ export default function RegistrationPricing() {
                                 {ticket.note && <p className="text-xs text-center text-gray-500 mb-2">{ticket.note}</p>}
                                 <Link
                                     href="/register"
-                                    className={`block w-full py-3 text-center rounded font-medium transition-colors ${ticket.highlight
-                                            ? 'bg-primary text-white hover:bg-opacity-90'
-                                            : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
+                                    className={`w-full ${ticket.highlight
+                                        ? 'btn-primary'
+                                        : 'btn-secondary'
                                         }`}
                                 >
                                     {ticket.cta}
