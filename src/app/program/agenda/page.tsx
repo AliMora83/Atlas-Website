@@ -5,17 +5,21 @@ import PageHero from "@/components/PageHero";
 import ScheduleFilter from "@/components/ScheduleFilter";
 import ScheduleGrid from "@/components/ScheduleGrid";
 
+import ProgramSubNav from "@/components/program/ProgramSubNav";
+
 export default function AgendaPage() {
     const [activeDay, setActiveDay] = useState("Wednesday, June 3");
 
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col">
             <PageHero
                 title="Agenda 2026"
                 description="Explore the full schedule of keynotes, panels, and workshops at Atlas Conference 2026."
                 breadcrumb="Agenda"
                 bgClass="bg-slate-900 text-white"
             />
+
+            <ProgramSubNav />
 
             <ScheduleFilter activeDay={activeDay} setActiveDay={setActiveDay} />
 

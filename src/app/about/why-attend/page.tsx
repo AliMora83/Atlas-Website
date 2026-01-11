@@ -1,4 +1,6 @@
+import React from "react";
 import PageHero from "@/components/PageHero";
+import AboutSubNav from "@/components/AboutSubNav";
 
 export default function WhyAttendPage() {
     const benefits = [
@@ -36,6 +38,8 @@ export default function WhyAttendPage() {
                 breadcrumb="Why Attend"
                 bgClass="bg-gradient-to-r from-primary to-primary-dark text-white"
             />
+
+            <AboutSubNav />
 
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">

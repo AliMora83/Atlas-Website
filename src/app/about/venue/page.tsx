@@ -1,4 +1,6 @@
+import React from "react";
 import PageHero from "@/components/PageHero";
+import AboutSubNav from "@/components/AboutSubNav";
 import Link from "next/link";
 
 
@@ -12,6 +14,7 @@ export default function VenuePage() {
                 bgClass="bg-slate-900 text-white"
             />
 
+            <AboutSubNav />
 
             {/* Venue Details */}
             <section className="py-20 bg-white">

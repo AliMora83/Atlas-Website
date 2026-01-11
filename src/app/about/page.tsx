@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
+import AboutSubNav from "@/components/AboutSubNav";
 
 export default function AboutPage() {
     return (
@@ -9,6 +10,8 @@ export default function AboutPage() {
                 description="Atlas Conference is the premier gathering for education technology leaders, shaping the future of digital learning across the African continent."
                 breadcrumb="About"
             />
+
+            <AboutSubNav />
 
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col gap-16 relative">

@@ -1,58 +1,50 @@
+import React from "react";
 import PageHero from "@/components/PageHero";
+import ProgramSubNav from "@/components/program/ProgramSubNav";
+import EditionSection from "@/components/program/EditionSection";
+import { previousEditions } from "@/data/program";
+
+// Removed local EditionSection component definition
 
 export default function MinisterialRoundTablePage() {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col">
             <PageHero
                 title="Ministerial Round Table"
-                description="A high-level, invitation-only event bringing together Ministers and top policy makers from across Africa."
-                breadcrumb="Round Table"
-                bgClass="bg-slate-900 text-white"
+                description="A high-level meeting for African ministers to discuss digital transformation and education policy."
+                breadcrumb="Ministerial Round Table"
             />
 
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-4 max-w-4xl">
-                    <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed font-body">
-                        <h2 className="text-3xl font-bold font-heading text-primary mb-8 text-center">Fostering High-Level Policy Dialogue</h2>
+            <ProgramSubNav />
 
-                        <p className="mb-6">
-                            The Ministerial Round Table (MRT) is a cornerstone of the Atlas Conference. It provides a unique, exclusive space for African Ministers of Education, ICT, and Science & Technology to share their visions, challenges, and successes in implementing digital transformation strategies.
+            {/* Main Content */}
+            <section className="py-16 bg-white relative overflow-hidden">
+                {/* Background blobs */}
+                <div className="absolute top-0 right-0 w-96 h-96 bg-purple-50 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/4"></div>
+                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-yellow-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 translate-y-1/4"></div>
+
+                <div className="container mx-auto px-4 max-w-4xl relative z-10">
+
+                    {/* Introduction */}
+                    <div className="mb-16 text-center">
+                        <div className="inline-block bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-bold mb-6">
+                            ⚠ Participation by Invitation Only
+                        </div>
+                        <p className="text-xl text-gray-700 leading-relaxed">
+                            The Ministerial Round Table (MRT) is an annual meeting of African Ministers of ICT and Education,
+                            held in conjunction with the eLearning Africa conference. It provides a unique forum for high-level
+                            policy dialogue and cross-border cooperation on digital education strategies.
                         </p>
-
-                        <div className="grid md:grid-cols-2 gap-12 my-12 not-prose">
-                            <div className="bg-gray-50 p-8 rounded-2xl border shadow-sm">
-                                <h3 className="text-xl font-bold font-heading text-primary mb-4 flex items-center gap-2">
-                                    <span className="text-2xl">🌍</span> Vision
-                                </h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">
-                                    To create a harmonized African digital education landscape by facilitating cross-border collaboration and policy alignment at the highest level of government.
-                                </p>
-                            </div>
-                            <div className="bg-gray-50 p-8 rounded-2xl border shadow-sm">
-                                <h3 className="text-xl font-bold font-heading text-primary mb-4 flex items-center gap-2">
-                                    <span className="text-2xl">🤝</span> Collaboration
-                                </h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">
-                                    Engaging with international development partners and private sector innovators to mobilize resources and technical expertise for national EdTech goals.
-                                </p>
-                            </div>
-                        </div>
-
-                        <h3 className="text-2xl font-bold font-heading text-gray-900 mb-6 border-b pb-2">Key Objectives 2026</h3>
-                        <ul className="list-disc pl-6 space-y-4 mb-12">
-                            <li><strong>Accelerating Infrastructure:</strong> Strategizing for affordable and reliable broadband access in rural and underserved educational hubs.</li>
-                            <li><strong>Digital Teacher Training:</strong> Establishing continental standards for educator digital literacy and professional development.</li>
-                            <li><strong>Ethical AI Adoptions:</strong> Formulating joint guidelines for the responsible and transparent use of AI in African school systems.</li>
-                            <li><strong>Resource Resilience:</strong> Creating sustainable funding models for long-term EdTech project viability.</li>
-                        </ul>
-
-                        <div className="bg-primary/5 p-8 rounded-3xl border border-primary/20 text-center">
-                            <h3 className="text-xl font-bold font-heading text-primary mb-4 italic">"By Invitation Only"</h3>
-                            <p className="text-gray-600 mb-0">
-                                Participation in the Ministerial Round Table is strictly reserved for designated government officials and invited international delegates. For inquiries regarding participation, please contact our secretariat.
-                            </p>
-                        </div>
                     </div>
+
+                    <h2 className="text-3xl font-bold text-gray-900 mb-8 border-b pb-4">
+                        Previous Editions: Communiqués & Resources
+                    </h2>
+
+                    {previousEditions.map((edition) => (
+                        <EditionSection key={edition.year} {...edition} />
+                    ))}
+
                 </div>
             </section>
         </div>

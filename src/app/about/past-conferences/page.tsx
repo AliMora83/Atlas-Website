@@ -1,6 +1,9 @@
+"use client";
+
+import React from "react";
 import PageHero from "@/components/PageHero";
 import Link from "next/link";
-
+import AboutSubNav from "@/components/AboutSubNav";
 
 export default function PastConferencesPage() {
     const history = [
@@ -15,7 +18,7 @@ export default function PastConferencesPage() {
     ];
 
     return (
-        <>
+        <div className="flex flex-col">
             <PageHero
                 title="Past Conferences"
                 description="Explore the rich history of the Atlas Conference across the African continent."
@@ -23,6 +26,8 @@ export default function PastConferencesPage() {
                 bgClass="bg-gray-100 text-gray-900"
                 textClass="text-gray-600"
             />
+
+            <AboutSubNav />
 
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4 max-w-4xl">
@@ -46,6 +51,6 @@ export default function PastConferencesPage() {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     );
 }

@@ -1,4 +1,6 @@
+import React from "react";
 import PageHero from "@/components/PageHero";
+import AboutSubNav from "@/components/AboutSubNav";
 
 export default function WhoAttendsPage() {
     const stats = [
@@ -48,6 +50,8 @@ export default function WhoAttendsPage() {
                 bgClass="bg-primary text-white"
                 textClass="text-blue-100"
             />
+
+            <AboutSubNav />
 
             {/* Stats Banner */}
             <section className="bg-primary-dark py-12 text-white">

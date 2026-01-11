@@ -4,14 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-    { label: "About", href: "/about" },
-    { label: "Venue", href: "/about/venue" },
-    { label: "Who Attends", href: "/about/who-attends" },
-    { label: "Why Attend", href: "/about/why-attend" },
-    { label: "Past Conferences", href: "/about/past-conferences" },
+    { label: "Programme 2026", href: "/program" },
+    { label: "Themes 2026", href: "/program/themes" },
+    { label: "Session Formats", href: "/program/session-formats" },
+    { label: "Ministerial Round Table", href: "/program/ministerial-round-table" },
+    { label: "Keynote Speakers", href: "/program/speakers" },
 ];
 
-export default function AboutSubNav() {
+export default function ProgramSubNav() {
     const pathname = usePathname();
 
     return (
