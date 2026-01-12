@@ -20,8 +20,8 @@ export default function StickyCTA() {
                 onClick={() => {
                     if (navigator.share) {
                         navigator.share({
-                            title: 'Atlas Conference 2026',
-                            text: 'Join us at the Atlas Conference 2026 in Accra, Ghana!',
+                            title: 'Atlas Convention 2026',
+                            text: 'Join us at the Atlas Convention 2026 in Accra, Ghana!',
                             url: window.location.href,
                         });
                     } else {

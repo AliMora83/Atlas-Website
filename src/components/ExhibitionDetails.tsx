@@ -85,7 +85,7 @@ export default function ExhibitionDetails() {
                     <div className="text-center mb-12">
                         <h2 className="text-gray-900 mb-4">Satisfaction</h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            See what our exhibitors and attendees say about their Atlas Conference experience
+                            See what our exhibitors and attendees say about their Atlas Convention experience
                         </p>
                     </div>
 

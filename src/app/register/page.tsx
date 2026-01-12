@@ -42,7 +42,7 @@ export default function RegisterPage() {
         <div className="flex flex-col min-h-screen">
             <PageHero
                 title="Secure Your Spot"
-                description="Join the conversation at the 19th Atlas Conference in Accra. Choose the pass that best suits your needs."
+                description="Join the conversation at the 19th Atlas Convention in Accra. Choose the pass that best suits your needs."
                 breadcrumb="Registration"
             />
 

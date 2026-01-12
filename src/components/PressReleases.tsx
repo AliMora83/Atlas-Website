@@ -3,7 +3,7 @@ import Link from "next/link";
 const releases = [
     {
         date: "January 15, 2026",
-        title: "Atlas Conference 2026 Announces Accra as Host City",
+        title: "Atlas Convention 2026 Announces Accra as Host City",
         snippet: "The premier EdTech event returns to West Africa, focusing on the role of AI in shaping the future of education.",
         link: "#"
     },

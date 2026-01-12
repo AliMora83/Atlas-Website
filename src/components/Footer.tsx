@@ -7,9 +7,9 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Column 1: About */}
                     <div>
-                        <h3 className="text-lg font-bold font-heading mb-4 text-primary">Atlas Conference</h3>
+                        <h3 className="text-lg font-bold font-heading mb-4 text-primary">Atlas Convention</h3>
                         <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-                            The 10th International Conference & Exhibition on ICT for Education, Training & Skills Development.
+                            The 10th International Convention & Exhibition on ICT for Education, Training & Skills Development.
                         </p>
                         <div className="flex space-x-4">
                             {/* Social Icons Placeholder */}
@@ -22,23 +22,23 @@ export default function Footer() {
 
                     {/* Column 2: Quick Links */}
                     <div>
-                        <h3 className="text-lg font-bold font-heading mb-4">Quick Links</h3>
+                        <h3 className="text-lg font-bold font-heading mb-4 text-gray-900">Quick Links</h3>
                         <ul className="space-y-2 text-sm text-gray-600">
-                            <li><Link href="/about" className="hover:text-primary">About Conference</Link></li>
+                            <li><Link href="/about" className="hover:text-primary">About Convention</Link></li>
                             <li><Link href="/program" className="hover:text-primary">Program & Agenda</Link></li>
-                            <li><Link href="/speakers" className="hover:text-primary">Speakers</Link></li>
-                            <li><Link href="/register" className="hover:text-primary">Registration</Link></li>
+                            <li><Link href="/partners" className="hover:text-primary">Partners</Link></li>
+                            <li><Link href="/exhibition" className="hover:text-primary">Exhibition</Link></li>
                             <li><Link href="/contact" className="hover:text-primary">Contact Us</Link></li>
                         </ul>
                     </div>
 
                     {/* Column 3: Contact Info */}
                     <div>
-                        <h3 className="text-lg font-bold font-heading mb-4">Contact Us</h3>
+                        <h3 className="text-lg font-bold font-heading mb-4 text-gray-900">Contact Us</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
                             <li className="flex items-start">
                                 <span className="font-semibold mr-2">Email:</span>
-                                info@atlasconference.com
+                                info@atlasconvention.com
                             </li>
                             <li className="flex items-start">
                                 <span className="font-semibold mr-2">Phone:</span>
@@ -54,7 +54,7 @@ export default function Footer() {
 
                     {/* Column 4: Legal/Resources */}
                     <div>
-                        <h3 className="text-lg font-bold font-heading mb-4">Resources</h3>
+                        <h3 className="text-lg font-bold font-heading mb-4 text-gray-900">Resources</h3>
                         <ul className="space-y-2 text-sm text-gray-600">
                             <li><Link href="/faq" className="hover:text-primary">FAQ</Link></li>
                             <li><Link href="/privacy" className="hover:text-primary">Privacy Policy</Link></li>
@@ -65,7 +65,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} Atlas Conference. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Atlas Convention. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <Link href="/privacy" className="hover:text-primary">Privacy</Link>
                         <Link href="/terms" className="hover:text-primary">Terms</Link>

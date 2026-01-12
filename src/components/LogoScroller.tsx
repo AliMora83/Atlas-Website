@@ -21,7 +21,7 @@ export default function LogoScroller({ logos, speed = 30 }: LogoScrollerProps) {
             <div className="container mx-auto px-4 mb-12">
                 <h2 className="text-center text-gray-900 mb-4">→2025 Exhibitors & Partners</h2>
                 <p className="text-center text-gray-600 max-w-2xl mx-auto">
-                    Join leading EdTech companies and organizations showcasing innovation at Atlas Conference.
+                    Join leading EdTech companies and organizations showcasing innovation at Atlas Convention.
                 </p>
             </div>
 

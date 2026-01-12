@@ -9,7 +9,7 @@ export default function CFPSection() {
 
                     <div className="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-gray-100 mb-10">
                         <p className="text-xl font-bold text-gray-900 mb-6">
-                            The Atlas Conference 2026 Call for Papers is now closed.
+                            The Atlas Convention 2026 Call for Papers is now closed.
                         </p>
 
                         <div className="space-y-6 text-gray-700 leading-relaxed">

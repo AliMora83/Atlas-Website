@@ -22,7 +22,7 @@ export default function ThemesPage() {
                     <div className="text-center max-w-3xl mx-auto mb-10">
                         <h2 className="text-3xl font-bold mb-4">Core Themes for 2026</h2>
                         <p className="text-gray-600 text-lg">
-                            The Atlas Conference programme is built around key pillars that address the most critical opportunities and challenges in African education today.
+                            The Atlas Convention programme is built around key pillars that address the most critical opportunities and challenges in African education today.
                         </p>
                     </div>
 

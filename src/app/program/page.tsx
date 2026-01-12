@@ -9,7 +9,7 @@ export default function ProgramPage() {
         <div className="flex flex-col">
             <PageHero
                 title="Programme"
-                description="Explore the agenda for Atlas Conference 2026. Join us for three days of inspiration, learning, and networking."
+                description="Explore the agenda for Atlas Convention 2026. Join us for three days of inspiration, learning, and networking."
                 breadcrumb="Programme"
             />
 

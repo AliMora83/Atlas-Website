@@ -22,12 +22,12 @@ export default function ExhibitionHero() {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
-                            The Atlas Conference Exhibition
+                            The Atlas Convention Exhibition
                         </h1>
 
                         <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
                             <p>
-                                The exhibition is Atlas Conference's networking hub, hosting leading international and African education, training and technology companies and institutions, together with international organisations engaged in the development of education and training in Africa.
+                                The exhibition is Atlas Convention's networking hub, hosting leading international and African education, training and technology companies and institutions, together with international organisations engaged in the development of education and training in Africa.
                             </p>
 
                             <p>
@@ -39,7 +39,7 @@ export default function ExhibitionHero() {
                             </p>
 
                             <p>
-                                Would you like to position your organisation as a market leader to the Atlas Conference community of learning, training, technology professionals and decision makers? Contact us at{" "}
+                                Would you like to position your organisation as a market leader to the Atlas Convention community of learning, training, technology professionals and decision makers? Contact us at{" "}
                                 <a href="mailto:marketing@atlas-conference.com" className="text-primary hover:underline">
                                     marketing@atlas-conference.com
                                 </a>{" "}

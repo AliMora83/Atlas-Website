@@ -5,7 +5,7 @@ export default function TermsPage() {
         <div className="flex flex-col min-h-screen">
             <PageHero
                 title="Terms & Conditions"
-                description="Please review our participant terms and conditions for Atlas Conference 2026."
+                description="Please review our participant terms and conditions for Atlas Convention 2026."
                 breadcrumb="Terms"
                 bgClass="bg-gray-100 text-gray-900"
                 textClass="text-gray-600"
@@ -16,7 +16,7 @@ export default function TermsPage() {
                     <div className="prose prose-blue prose-lg max-w-none text-gray-700 font-body">
                         <h2 className="text-2xl font-bold font-heading text-primary mb-6">1. Acceptance of Terms</h2>
                         <p className="mb-8">
-                            By registering for or attending the Atlas Conference 2026 (the "Conference"), you agree to comply with and be bound by the following terms and conditions. These terms apply to all participants, including delegates, speakers, exhibitors, and media.
+                            By registering for or attending the Atlas Convention 2026 (the "Conference"), you agree to comply with and be bound by the following terms and conditions. These terms apply to all participants, including delegates, speakers, exhibitors, and media.
                         </p>
 
                         <h2 className="text-2xl font-bold font-heading text-primary mb-6">2. Registration and Fees</h2>

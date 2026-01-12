@@ -23,8 +23,15 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Atlas Conference 2026",
+  title: "Atlas Convention 2026",
   description: "Shaping the Future of Digital Education Across Africa",
+  icons: {
+    icon: [
+      { url: "/images/Favicon.png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/images/Favicon.png",
+  },
 };
 
 import TopBar from "@/components/TopBar";

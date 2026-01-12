@@ -12,7 +12,7 @@ export default function HostCountrySection() {
                         <div className="lg:col-span-3 space-y-6">
                             <p className="text-lg text-gray-700 leading-relaxed">
                                 We are honored to announce that Ghana will be the host country for the 19th edition
-                                of Atlas Conference. The conference will take place in the vibrant city of Accra
+                                of Atlas Convention. The conference will take place in the vibrant city of Accra
                                 from June 3 - 5, 2026.
                             </p>
                             <p className="text-lg text-gray-700 leading-relaxed">

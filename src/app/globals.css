@@ -3,18 +3,21 @@
 @tailwind utilities;
 
 :root {
+  /* Background & Foreground */
   --background: #ffffff;
   --foreground: #171717;
 
-  /* Reference Site Colors */
-  --primary: #6A4C93;
-  /* Amethyst Purple */
-  --secondary: #FFCA3A;
-  /* Golden Yellow */
-  --accent: #21897E;
-  /* Forest Green/Teal */
-  --primary-dark: #4A306D;
+  /* Brand Colors - Atlas Convention */
+  --primary: #0088C6;
+  /* Primary Blue */
+  --primary-dark: #00345F;
+  /* Secondary Blue (darker) */
+  --secondary: #00345F;
+  /* Secondary Blue */
+  --accent: #0088C6;
+  /* Primary Blue (for accents) */
 
+  /* Font Variables */
   --font-inter: var(--font-inter);
   --font-poppins: var(--font-poppins);
   --font-pt-sans: var(--font-pt-sans);
@@ -58,7 +61,7 @@
   }
 
   .btn-secondary {
-    @apply btn bg-secondary text-gray-900 hover:bg-yellow-400 focus:ring-secondary shadow-md hover:shadow-lg active:scale-95;
+    @apply btn bg-secondary text-white hover:opacity-90 focus:ring-secondary shadow-md hover:shadow-lg active:scale-95;
   }
 
   .btn-outline {
@@ -66,7 +69,7 @@
   }
 
   .btn-white {
-    @apply btn bg-white text-gray-900 hover:bg-gray-100 focus:ring-white shadow-md active:scale-95;
+    @apply btn bg-white text-primary hover:bg-gray-50 focus:ring-primary shadow-md active:scale-95;
   }
 }
 

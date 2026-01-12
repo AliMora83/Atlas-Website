@@ -8,7 +8,7 @@ export default function SessionFormatsPage() {
         <div className="flex flex-col">
             <PageHero
                 title="Session Formats"
-                description="Discover the diverse range of interactive learning and networking formats available at Atlas Conference 2026."
+                description="Discover the diverse range of interactive learning and networking formats available at Atlas Convention 2026."
                 breadcrumb="Session Formats"
             />
 

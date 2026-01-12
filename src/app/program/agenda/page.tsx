@@ -14,7 +14,7 @@ export default function AgendaPage() {
         <div className="flex flex-col">
             <PageHero
                 title="Agenda 2026"
-                description="Explore the full schedule of keynotes, panels, and workshops at Atlas Conference 2026."
+                description="Explore the full schedule of keynotes, panels, and workshops at Atlas Convention 2026."
                 breadcrumb="Agenda"
                 bgClass="bg-slate-900 text-white"
             />

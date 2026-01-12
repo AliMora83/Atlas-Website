@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 interface SubItem {
@@ -36,7 +37,7 @@ const navItems: NavItem[] = [
             { name: "Themes 2026", href: "/program/themes" },
             { name: "Session Formats", href: "/program/session-formats" },
             { name: "Ministerial Round Table", href: "/program/ministerial-round-table" },
-            { name: "The Atlas Conference Debate", href: "/program/debate" },
+            { name: "The Atlas Convention Debate", href: "/program/debate" },
         ],
     },
 
@@ -76,9 +77,15 @@ export default function Navigation() {
         <nav className="sticky top-0 z-50 w-full bg-white shadow-sm font-heading">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex h-20 items-center justify-between">
-                    <Link href="/" className="text-2xl font-bold text-primary flex items-center gap-2">
-                        {/* Logo Placeholder if needed */}
-                        Atlas Conference
+                    <Link href="/" className="flex items-center gap-3">
+                        <Image
+                            src="/images/Atlas_Convention.png"
+                            alt="Atlas Convention Logo"
+                            width={200}
+                            height={200}
+                            className="h-16 w-auto"
+                            priority
+                        />
                     </Link>
 
                     {/* Desktop Navigation */}
