@@ -1,5 +1,6 @@
 import React from "react";
-import ProgrammeCard, { SessionType } from "./ProgrammeCard";
+import ProgrammeCard from "./ProgrammeCard";
+import { SessionType } from "@/types/program";
 
 type Session = {
     id: string;
