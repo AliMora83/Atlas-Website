@@ -18,7 +18,7 @@ export default function WhyAttendPage() {
         },
         {
             title: "Shape the Future",
-            desc: "Participate in the Ministerial Round Table and debates that influence policy and implementation strategies across the continent.",
+            desc: "Participate in the Panel Discussion and debates that influence policy and implementation strategies across the continent.",
         },
         {
             title: "Professional Growth",
@@ -35,8 +35,7 @@ export default function WhyAttendPage() {
             <PageHero
                 title="Why Attend"
                 description="The only annual pan-African conference dedicated to ICT for education, training, and skills development."
-                breadcrumb="Why Attend"
-                bgClass="bg-gradient-to-r from-primary to-primary-dark text-white"
+                bgClass="bg-primary text-white"
             />
 
             <AboutSubNav />

@@ -5,12 +5,12 @@ export default function AboutSection() {
         <section className="section-padding bg-white" id="about-elearning">
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-primary mb-8">About Atlas Convention</h2>
+                    <h2 className="text-primary mb-8">About Atlas Global Academic Conference</h2>
 
                     <div className="max-w-3xl">
                         <div className="space-y-6">
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                Atlas Convention is an annual conference and exhibition, established in 2005,
+                                Atlas Global Academic Conference is an annual conference and exhibition, established in 2005,
                                 focused on digital education, training, and skills in Africa. It serves as
                                 the continent&apos;s premier gathering for EdTech professionals, policymakers,
                                 and practitioners.

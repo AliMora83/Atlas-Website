@@ -34,7 +34,7 @@ const articles = [
     },
     {
         category: "Report",
-        title: "Atlas Convention Report 2025 Key Findings",
+        title: "Atlas Global Academic Conference Report 2025 Key Findings",
         date: "Sep 28, 2025",
         excerpt: "A summary of the annual survey of 2,000+ education professionals."
     }

@@ -8,9 +8,8 @@ export default function MediaPage() {
     return (
         <div className="flex flex-col bg-white">
             <PageHero
-                title="Media Center"
-                description="Latest news, press releases, and resources for journalists and content creators covering the Atlas Convention."
-                breadcrumb="Media"
+                title="Media Centre"
+                description="Access press releases, media kits, and accreditation information for Atlas Global Academic Conference 2026."
             />
 
             <MediaSubNav />
@@ -27,7 +26,7 @@ export default function MediaPage() {
                     <section className="relative">
                         <div className="space-y-6 max-w-4xl">
                             <p className="text-lg text-gray-700 leading-relaxed font-body">
-                                Welcome to the Atlas Convention Media Center. Here you'll find everything you need to cover the premier gathering for education technology leaders across Africa.
+                                Welcome to the Atlas Global Academic Conference Media Center. Here you'll find everything you need to cover the premier gathering for education technology leaders across Africa.
                             </p>
                             <ul className="space-y-6 text-lg text-gray-700 leading-relaxed font-body">
                                 <li className="flex gap-4">
@@ -51,7 +50,7 @@ export default function MediaPage() {
                                 <li className="flex gap-4">
                                     <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
                                     <span>
-                                        Apply for <strong>Media Accreditation</strong> to cover Atlas Convention 2026 in Accra, Ghana.
+                                        Apply for <strong>Media Accreditation</strong> to cover Atlas Global Academic Conference 2026 in Accra, Ghana.
                                     </span>
                                 </li>
                             </ul>

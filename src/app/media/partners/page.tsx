@@ -49,8 +49,7 @@ export default function MediaPartnersPage() {
         <div className="flex flex-col bg-white">
             <PageHero
                 title="Media Accreditation"
-                description="Apply for media accreditation to cover Atlas Convention 2026 in Accra, Ghana."
-                breadcrumb="Media / Accreditation"
+                description="Apply for media accreditation to cover Atlas Global Academic Conference 2026 in Accra, Ghana."
             />
 
             <MediaSubNav />
@@ -202,7 +201,7 @@ export default function MediaPartnersPage() {
                                     required
                                     rows={4}
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                                    placeholder="Briefly describe your planned coverage of Atlas Convention 2026..."
+                                    placeholder="Briefly describe your planned coverage of Atlas Global Academic Conference 2026..."
                                 />
                             </div>
 

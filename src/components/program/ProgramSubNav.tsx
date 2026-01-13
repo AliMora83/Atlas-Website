@@ -7,7 +7,7 @@ const navItems = [
     { label: "Programme 2026", href: "/program" },
     { label: "Themes 2026", href: "/program/themes" },
     { label: "Session Formats", href: "/program/session-formats" },
-    { label: "Ministerial Round Table", href: "/program/ministerial-round-table" },
+    { label: "Panel Discussion", href: "/program/panel-discussion" },
     { label: "Keynote Speakers", href: "/program/speakers" },
 ];
 

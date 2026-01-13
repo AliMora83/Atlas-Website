@@ -6,13 +6,12 @@ import { previousEditions } from "@/data/program";
 
 // Removed local EditionSection component definition
 
-export default function MinisterialRoundTablePage() {
+export default function PanelDiscussionPage() {
     return (
         <div className="flex flex-col">
             <PageHero
-                title="Ministerial Round Table"
-                description="A high-level meeting for African ministers to discuss digital transformation and education policy."
-                breadcrumb="Ministerial Round Table"
+                title="Panel Discussion"
+                description="A high-level dialogue bringing together Ministers of Education from across Africa to discuss policy and innovation."
             />
 
             <ProgramSubNav />
@@ -31,8 +30,8 @@ export default function MinisterialRoundTablePage() {
                             ⚠ Participation by Invitation Only
                         </div>
                         <p className="text-xl text-gray-700 leading-relaxed">
-                            The Ministerial Round Table (MRT) is an annual meeting of African Ministers of ICT and Education,
-                            held in conjunction with the eLearning Africa conference. It provides a unique forum for high-level
+                            The Panel Discussion is an annual meeting of African Ministers of ICT and Education,
+                            held in conjunction with the conference. It provides a unique forum for high-level
                             policy dialogue and cross-border cooperation on digital education strategies.
                         </p>
                     </div>

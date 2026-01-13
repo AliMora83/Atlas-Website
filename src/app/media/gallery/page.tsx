@@ -19,7 +19,7 @@ interface GalleryItem {
 // Dummy gallery data
 const galleryItems: GalleryItem[] = [
     { id: "1", type: "photo", title: "Opening Ceremony", day: "day1", thumbnail: "/images/gallery/opening.jpg", description: "Conference opening with keynote address" },
-    { id: "2", type: "photo", title: "Ministerial Round Table", day: "day1", thumbnail: "/images/gallery/ministerial.jpg", description: "Ministers discussing education policy" },
+    { id: "2", type: "photo", title: "Panel Discussion", day: "day1", thumbnail: "/images/gallery/ministerial.jpg", description: "Ministers discussing education policy" },
     { id: "3", type: "photo", title: "Networking Session", day: "day1", thumbnail: "/images/gallery/networking.jpg", description: "Attendees connecting during break" },
     { id: "4", type: "video", title: "Day 1 Highlights", day: "day1", thumbnail: "/images/gallery/video-day1.jpg", description: "Video recap of conference day 1" },
     { id: "5", type: "photo", title: "Panel Discussion", day: "day2", thumbnail: "/images/gallery/panel.jpg", description: "Expert panel on digital learning" },
@@ -46,8 +46,7 @@ export default function MediaGalleryPage() {
         <div className="flex flex-col bg-white">
             <PageHero
                 title="Media Gallery"
-                description="Browse photos and videos from Atlas Convention 2025 in Dar es Salaam, Tanzania."
-                breadcrumb="Media / Gallery"
+                description="Browse photos and videos from Atlas Global Academic Conference 2025 in Dar es Salaam, Tanzania."
             />
 
             <MediaSubNav />
@@ -59,7 +58,7 @@ export default function MediaGalleryPage() {
                         <h1 className="text-5xl font-bold font-heading text-primary mb-4">Gallery 2025</h1>
                         <div className="w-20 h-1.5 bg-secondary rounded-full"></div>
                         <p className="mt-6 text-lg text-gray-700 max-w-3xl">
-                            Explore highlights from Atlas Convention 2025. Download high-resolution images for editorial use.
+                            Explore highlights from Atlas Global Academic Conference 2025. Download high-resolution images for editorial use.
                         </p>
                     </section>
 

@@ -7,8 +7,7 @@ export default function AboutPage() {
         <div className="flex flex-col">
             <PageHero
                 title="About"
-                description="Atlas Convention is the premier gathering for education technology leaders, shaping the future of digital learning across the African continent."
-                breadcrumb="About"
+                description="Atlas Global Academic Conference is the premier gathering for education technology leaders, shaping the future of digital learning across the African continent."
             />
 
             <AboutSubNav />
@@ -22,20 +21,20 @@ export default function AboutPage() {
                         <div className="w-20 h-1.5 bg-secondary rounded-full"></div>
                     </section>
 
-                    {/* Section 2: Main Content - Atlas Convention Overview */}
+                    {/* Section 2: Main Content - Atlas Global Academic Conference Overview */}
                     <section className="relative">
                         <div className="space-y-6 max-w-4xl">
                             <ul className="space-y-6 text-lg text-gray-700 leading-relaxed font-body">
                                 <li className="flex gap-4">
                                     <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
                                     <span>
-                                        Atlas Convention was founded in <strong>2005</strong> and has taken place in <strong>Addis Ababa</strong> in 2006, in <strong>Nairobi</strong> in 2007, in <strong>Accra</strong> in 2008, in <strong>Dakar</strong> in 2009, in <strong>Lusaka</strong> in 2010, in <strong>Dar es Salaam</strong> in 2011, in <strong>Cotonou</strong> in 2012, in <strong>Windhoek</strong> in 2013, in <strong>Kampala</strong> in 2014, in <strong>Addis Ababa</strong> in 2015, in <strong>Cairo</strong> in 2016, in <strong>Port Louis</strong> in 2017, in <strong>Kigali</strong> in 2018, in <strong>Abidjan</strong> in 2019, a host of virtual events in 2020/2021, in <strong>Kigali</strong> in 2022, in <strong>Dakar</strong> in 2023, in <strong>Kigali</strong> in 2024, and in <strong>Dar es Salaam</strong> in 2025.
+                                        Atlas Global Academic Conference was founded in <strong>2005</strong> and has taken place in <strong>Addis Ababa</strong> in 2006, in <strong>Nairobi</strong> in 2007, in <strong>Accra</strong> in 2008, in <strong>Dakar</strong> in 2009, in <strong>Lusaka</strong> in 2010, in <strong>Dar es Salaam</strong> in 2011, in <strong>Cotonou</strong> in 2012, in <strong>Windhoek</strong> in 2013, in <strong>Kampala</strong> in 2014, in <strong>Addis Ababa</strong> in 2015, in <strong>Cairo</strong> in 2016, in <strong>Port Louis</strong> in 2017, in <strong>Kigali</strong> in 2018, in <strong>Abidjan</strong> in 2019, a host of virtual events in 2020/2021, in <strong>Kigali</strong> in 2022, in <strong>Dakar</strong> in 2023, in <strong>Kigali</strong> in 2024, and in <strong>Dar es Salaam</strong> in 2025.
                                     </span>
                                 </li>
                                 <li className="flex gap-4">
                                     <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
                                     <span>
-                                        Over the past <strong>20 years</strong>, Atlas Convention has hosted over <strong>23,000 participants</strong> from <strong>100+ countries</strong> around the world, with over <strong>80% coming from the African continent</strong>. More than <strong>4,700 speakers</strong> have addressed the conference about every aspect of <strong>digital learning, training and skills development</strong>.
+                                        Over the past <strong>20 years</strong>, Atlas Global Academic Conference has hosted over <strong>23,000 participants</strong> from <strong>100+ countries</strong> around the world, with over <strong>80% coming from the African continent</strong>. More than <strong>4,700 speakers</strong> have addressed the conference about every aspect of <strong>digital learning, training and skills development</strong>.
                                     </span>
                                 </li>
                                 <li className="flex gap-4">
@@ -65,7 +64,7 @@ export default function AboutPage() {
                                 <li className="flex gap-4">
                                     <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
                                     <span>
-                                        Atlas Convention is the venue for the annual <strong>MINISTERIAL ROUND TABLE</strong>, an annual meeting of African ICT and Education ministers, who take part in a day-long discussion of key issues affecting education, training, skills and technology before the official opening of the main conference.
+                                        Atlas Global Academic Conference is the venue for the annual <strong>PANEL DISCUSSION</strong>, an annual meeting of African ICT and Education ministers, who take part in a day-long discussion of key issues affecting education, training, skills and technology before the official opening of the main conference.
                                     </span>
                                 </li>
                             </ul>
@@ -77,13 +76,13 @@ export default function AboutPage() {
                     {/* Section 3: Additional Resources / Downloads */}
                     <section className="bg-gray-50 -mx-4 px-4 py-16 border-y border-gray-100 relative">
                         <div className="max-w-4xl">
-                            <h2 className="text-3xl font-bold font-heading text-primary mb-8">More information about Atlas Convention</h2>
+                            <h2 className="text-3xl font-bold font-heading text-primary mb-8">More information about Atlas Global Academic Conference</h2>
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {[
-                                    { name: "Atlas Convention Fact Sheet", href: "#/resources/factsheet.pdf" },
-                                    { name: "Atlas Convention Network & Reach", href: "#/resources/network-reach.pdf" },
-                                    { name: "Atlas Convention Executive Summary", href: "#/resources/executive-summary.pdf" },
-                                    { name: "Atlas Convention Strategic Overview", href: "#/resources/strategic-overview.pdf" }
+                                    { name: "Atlas Global Academic Conference Fact Sheet", href: "#/resources/factsheet.pdf" },
+                                    { name: "Atlas Global Academic Conference Network & Reach", href: "#/resources/network-reach.pdf" },
+                                    { name: "Atlas Global Academic Conference Executive Summary", href: "#/resources/executive-summary.pdf" },
+                                    { name: "Atlas Global Academic Conference Strategic Overview", href: "#/resources/strategic-overview.pdf" }
                                 ].map((resource) => (
                                     <a
                                         key={resource.name}
@@ -133,7 +132,7 @@ export default function AboutPage() {
 
                                 <div className="pt-8 border-t border-secondary/20">
                                     <p className="text-xl text-gray-700 leading-relaxed">
-                                        "It was an informative, engaging, and inspiring experience, filled with opportunities for networking and collaboration. My team left Atlas Convention with pages of notes and fresh ideas on how we can strengthen and improve our innovation."
+                                        "It was an informative, engaging, and inspiring experience, filled with opportunities for networking and collaboration. My team left Atlas Global Academic Conference with pages of notes and fresh ideas on how we can strengthen and improve our innovation."
                                     </p>
                                     <footer className="mt-4">
                                         <cite className="not-italic">

@@ -18,7 +18,7 @@ const releases: PressRelease[] = [
     {
         id: "1",
         date: "January 10, 2026",
-        title: "Atlas Convention 2026 Officially Announced for Accra, Ghana",
+        title: "Atlas Global Academic Conference 2026 Officially Announced for Accra, Ghana",
         excerpt: "The Atlas Secretariat is proud to announce that the 2026 conference will be hosted in the historic city of Accra, Ghana from June 3-5, 2026. This marks a significant milestone as we return to West Africa to explore innovations in digital learning and education technology.",
         category: "Announcement",
         featured: true
@@ -27,7 +27,7 @@ const releases: PressRelease[] = [
         id: "2",
         date: "December 15, 2025",
         title: "Keynote Speaker Announcement: Dr. Amina Okonkwo to Address Conference",
-        excerpt: "We are thrilled to announce that Dr. Amina Okonkwo, renowned education technology pioneer and UNESCO advisor, will deliver the opening keynote at Atlas Convention 2026. Dr. Okonkwo will share insights on AI-driven personalized learning across Africa.",
+        excerpt: "We are thrilled to announce that Dr. Amina Okonkwo, renowned education technology pioneer and UNESCO advisor, will deliver the opening keynote at Atlas Global Academic Conference 2026. Dr. Okonkwo will share insights on AI-driven personalized learning across Africa.",
         category: "Speaker",
         featured: true
     },
@@ -41,7 +41,7 @@ const releases: PressRelease[] = [
     {
         id: "4",
         date: "October 20, 2025",
-        title: "Impact Report 2025: Atlas Convention Driving Continental Change",
+        title: "Impact Report 2025: Atlas Global Academic Conference Driving Continental Change",
         excerpt: "Following a successful event in Dar es Salaam, our latest impact report highlights key policy shifts, 2,500+ attendees from 45 countries, and 150+ innovative solutions showcased. The report demonstrates measurable improvements in digital learning adoption across 12 African nations.",
         category: "Report"
     },
@@ -49,20 +49,20 @@ const releases: PressRelease[] = [
         id: "5",
         date: "September 15, 2025",
         title: "New Strategic Partnerships with African Development Bank",
-        excerpt: "Atlas Convention expands its financial support network through a groundbreaking partnership with the African Development Bank. This collaboration will provide scholarships for 200 educators from underserved regions to attend the 2026 conference.",
+        excerpt: "Atlas Global Academic Conference expands its financial support network through a groundbreaking partnership with the African Development Bank. This collaboration will provide scholarships for 200 educators from underserved regions to attend the 2026 conference.",
         category: "Partnership"
     },
     {
         id: "6",
         date: "August 5, 2025",
-        title: "Registration Opens for Atlas Convention 2026",
-        excerpt: "Early bird registration is now open for Atlas Convention 2026. Secure your spot at Africa's premier education technology gathering with special discounts available until March 1, 2026. Group rates and student packages also available.",
+        title: "Registration Opens for Atlas Global Academic Conference 2026",
+        excerpt: "Early bird registration is now open for Atlas Global Academic Conference 2026. Secure your spot at Africa's premier education technology gathering with special discounts available until March 1, 2026. Group rates and student packages also available.",
         category: "Event"
     },
     {
         id: "7",
         date: "July 12, 2025",
-        title: "Atlas Convention Partners with Ghana Ministry of Education",
+        title: "Atlas Global Academic Conference Partners with Ghana Ministry of Education",
         excerpt: "The Atlas Secretariat announces a strategic partnership with Ghana's Ministry of Education to host pre-conference workshops focused on national digital education strategies. The collaboration will bring together education ministers from across West Africa.",
         category: "Partnership"
     }
@@ -82,7 +82,6 @@ export default function PressReleasesPage() {
             <PageHero
                 title="Press Releases"
                 description="Stay updated with the latest news, official statements, and announcements from the Atlas Secretariat."
-                breadcrumb="Media / Press Releases"
             />
 
             <MediaSubNav />
@@ -94,7 +93,7 @@ export default function PressReleasesPage() {
                         <h1 className="text-5xl font-bold font-heading text-primary mb-4">Press Releases</h1>
                         <div className="w-20 h-1.5 bg-secondary rounded-full"></div>
                         <p className="mt-6 text-lg text-gray-700 max-w-3xl">
-                            Official news and announcements from Atlas Convention. For media inquiries, please contact our press team.
+                            Official news and announcements from Atlas Global Academic Conference. For media inquiries, please contact our press team.
                         </p>
                     </section>
 

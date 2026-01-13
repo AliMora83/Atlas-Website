@@ -96,7 +96,7 @@ const dummySchedule: DaySchedule[] = [
                 id: "t5",
                 time: "14:00 - 15:30",
                 type: "plenary",
-                title: "Ministerial Round Table",
+                title: "Panel Discussion",
                 description: "High-level policy discussions with Ministers of Education.",
                 location: "Main Hall",
             },

@@ -13,7 +13,7 @@ export default function RegistrationSuccess({ ticket }: RegistrationSuccessProps
             </div>
             <h2 className="text-3xl font-bold font-heading text-gray-900 mb-4">Registration Confirmed!</h2>
             <p className="text-lg text-gray-600 mb-8">
-                Thank you for registering for the Atlas Convention. A confirmation email with your <strong>{ticket.name}</strong> ticket details has been sent to your email address.
+                Thank you for registering for the Atlas Global Academic Conference. A confirmation email with your <strong>{ticket.name}</strong> ticket details has been sent to your email address.
             </p>
 
             <div className="bg-gray-50 p-6 rounded mb-8 text-left">

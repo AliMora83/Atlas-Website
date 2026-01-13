@@ -23,11 +23,11 @@ export default function Hero() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-                    <div className="flex items-center text-secondary font-medium">
+                    <div className="flex items-center text-white font-medium">
                         <span className="mr-2">📅</span> June 3-5, 2026
                     </div>
                     <div className="hidden sm:block text-gray-400">|</div>
-                    <div className="flex items-center text-secondary font-medium">
+                    <div className="flex items-center text-white font-medium">
                         <span className="mr-2">📍</span> Accra, Ghana
                     </div>
                 </div>

@@ -9,9 +9,8 @@ export default function VenuePage() {
         <>
             <PageHero
                 title="Venue & Accommodation"
-                description="The 2026 Atlas Convention will be held at the prestigious Accra International Conference Centre in Ghana."
-                breadcrumb="Venue"
-                bgClass="bg-slate-900 text-white"
+                description="The 2026 Atlas Global Academic Conference will be held at the prestigious Accra International Conference Centre in Ghana."
+                bgClass="bg-primary text-white"
             />
 
             <AboutSubNav />

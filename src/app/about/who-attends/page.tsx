@@ -46,7 +46,6 @@ export default function WhoAttendsPage() {
             <PageHero
                 title="Who Attends"
                 description="Join a diverse, high-level community of over 1,600 education and technology professionals from across Africa and the globe."
-                breadcrumb="Who Attends"
                 bgClass="bg-primary text-white"
                 textClass="text-blue-100"
             />
@@ -73,7 +72,7 @@ export default function WhoAttendsPage() {
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="text-3xl font-bold font-heading text-primary mb-4">A Unique Networking Platform</h2>
                         <p className="text-gray-600 leading-relaxed">
-                            The Atlas Convention brings together the full spectrum of the EdTech ecosystem. Whether you are driving policy, building solutions, or educating the next generation, you will find your peers here.
+                            The Atlas Global Academic Conference brings together the full spectrum of the EdTech ecosystem. Whether you are driving policy, building solutions, or educating the next generation, you will find your peers here.
                         </p>
                     </div>
 

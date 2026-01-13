@@ -10,7 +10,6 @@ export default function PartnersPage() {
             <PageHero
                 title="Become a Partner"
                 description="Join the leading organizations shaping the future of education in Africa. showcase your solutions to over 5,000 key decision-makers."
-                breadcrumb="Partners"
                 bgClass="bg-white text-gray-900"
                 textClass="text-gray-600"
             >

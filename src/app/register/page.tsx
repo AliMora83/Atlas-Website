@@ -41,9 +41,8 @@ export default function RegisterPage() {
     return (
         <div className="flex flex-col min-h-screen">
             <PageHero
-                title="Secure Your Spot"
-                description="Join the conversation at the 19th Atlas Convention in Accra. Choose the pass that best suits your needs."
-                breadcrumb="Registration"
+                title="Register for Atlas Global Academic Conference 2026"
+                description="Secure your spot at Africa's premier education technology event. Early bird rates available until March 2026."
             />
 
             <section className="py-20 bg-white">

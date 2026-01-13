@@ -36,8 +36,8 @@ const navItems: NavItem[] = [
             { name: "Agenda 2026", href: "/program/agenda" },
             { name: "Themes 2026", href: "/program/themes" },
             { name: "Session Formats", href: "/program/session-formats" },
-            { name: "Ministerial Round Table", href: "/program/ministerial-round-table" },
-            { name: "The Atlas Convention Debate", href: "/program/debate" },
+            { name: "Panel Discussion", href: "/program/panel-discussion" },
+            { name: "The Atlas Global Academic Conference Debate", href: "/program/debate" },
         ],
     },
 
@@ -80,7 +80,7 @@ export default function Navigation() {
                     <Link href="/" className="flex items-center gap-3">
                         <Image
                             src="/images/Atlas_Convention.png"
-                            alt="Atlas Convention Logo"
+                            alt="Atlas Global Academic Conference Logo"
                             width={200}
                             height={200}
                             className="h-16 w-auto"

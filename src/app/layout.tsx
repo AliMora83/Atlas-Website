@@ -23,7 +23,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Atlas Convention 2026",
+  title: "Atlas Global Academic Conference 2026",
   description: "Shaping the Future of Digital Education Across Africa",
   icons: {
     icon: [

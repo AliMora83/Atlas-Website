@@ -20,8 +20,8 @@ export default function StickyCTA() {
                 onClick={() => {
                     if (navigator.share) {
                         navigator.share({
-                            title: 'Atlas Convention 2026',
-                            text: 'Join us at the Atlas Convention 2026 in Accra, Ghana!',
+                            title: 'Atlas Global Academic Conference 2026',
+                            text: 'Join us at the Atlas Global Academic Conference 2026 in Accra, Ghana!',
                             url: window.location.href,
                         });
                     } else {
@@ -30,7 +30,7 @@ export default function StickyCTA() {
                         alert("Link copied to clipboard!");
                     }
                 }}
-                className="bg-secondary text-gray-900 font-bold py-4 px-6 rounded-l-xl shadow-2xl hover:bg-opacity-90 transition-all transform hover:-translate-x-2 flex items-center gap-3 group"
+                className="bg-secondary text-white font-bold py-4 px-6 rounded-l-xl shadow-2xl hover:bg-opacity-90 transition-all transform hover:-translate-x-2 flex items-center gap-3 group"
             >
                 <span className="uppercase tracking-widest text-sm">Share This Event</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -81,7 +81,7 @@ export const dummySchedule: DaySchedule[] = [
                 id: "t5",
                 time: "14:00 - 15:30",
                 type: "plenary",
-                title: "Ministerial Round Table",
+                title: "Panel Discussion",
                 description: "High-level policy discussions with Ministers of Education.",
                 location: "Main Hall",
             },
@@ -224,7 +224,7 @@ export const previousEditions: EditionProps[] = [
         year: "2024",
         theme: "Digital Education, Skills and Human Capital: from Learning to Earning",
         description: [
-            "The 2024 Ministerial Round Table focused on bridging the gap between education and employment. Ministers explored how digital skills training can be aligned with labor market needs to reduce youth unemployment.",
+            "The 2024 Panel Discussion focused on bridging the gap between education and employment. Ministers explored how digital skills training can be aligned with labor market needs to reduce youth unemployment.",
             "Key outcomes included a commitment to recognizing micro-credentials across borders and increasing investment in TVET institutions."
         ],
         partners: ["The Digital School", "Honor"],

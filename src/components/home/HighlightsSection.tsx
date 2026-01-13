@@ -10,7 +10,7 @@ export default function HighlightsSection() {
         <section className="section-padding bg-gray-900 text-white" id="highlights">
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto text-center mb-16">
-                    <h2 className="text-white mb-6">Atlas Convention 2025 Highlights</h2>
+                    <h2 className="text-white mb-6">Atlas Global Academic Conference 2025 Highlights</h2>
                     <p className="text-gray-400 text-lg">
                         Relive the best moments from our previous edition and see the impact of our global community.
                     </p>
@@ -29,7 +29,7 @@ export default function HighlightsSection() {
                             <p className="text-sm font-bold uppercase tracking-widest text-secondary mb-1">
                                 Video Highlight
                             </p>
-                            <p className="text-xl font-bold">18th Atlas Convention - The Story</p>
+                            <p className="text-xl font-bold">18th Atlas Global Academic Conference - The Story</p>
                         </div>
                         <a
                             href="https://youtube.com/watch?v=XXXX"

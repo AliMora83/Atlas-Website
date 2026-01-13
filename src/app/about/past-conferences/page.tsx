@@ -21,10 +21,8 @@ export default function PastConferencesPage() {
         <div className="flex flex-col">
             <PageHero
                 title="Past Conferences"
-                description="Explore the rich history of the Atlas Convention across the African continent."
-                breadcrumb="Past Conferences"
-                bgClass="bg-gray-100 text-gray-900"
-                textClass="text-gray-600"
+                description="Explore the rich history of the Atlas Global Academic Conference across the African continent."
+                bgClass="bg-primary text-white"
             />
 
             <AboutSubNav />

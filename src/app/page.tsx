@@ -11,7 +11,7 @@ export default function Home() {
       {/* 1. Hero Section */}
       <Hero />
 
-      {/* 2. About Atlas Convention */}
+      {/* 2. About Atlas Global Academic Conference */}
       <AboutSection />
 
       {/* 3. Call for Papers 2026 Update */}

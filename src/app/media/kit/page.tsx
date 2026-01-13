@@ -16,7 +16,7 @@ interface DownloadResource {
 const resources: DownloadResource[] = [
     {
         id: "1",
-        title: "Atlas Convention Logo (PNG)",
+        title: "Atlas Global Academic Conference Logo (PNG)",
         description: "High-resolution logo in PNG format with transparent background",
         fileType: "PNG",
         fileSize: "2.4 MB",
@@ -25,7 +25,7 @@ const resources: DownloadResource[] = [
     },
     {
         id: "2",
-        title: "Atlas Convention Logo (SVG)",
+        title: "Atlas Global Academic Conference Logo (SVG)",
         description: "Scalable vector logo for print and digital use",
         fileType: "SVG",
         fileSize: "156 KB",
@@ -71,7 +71,7 @@ const resources: DownloadResource[] = [
     {
         id: "7",
         title: "Conference Fact Sheet",
-        description: "Key statistics, dates, and information about Atlas Convention 2026",
+        description: "Key statistics, dates, and information about Atlas Global Academic Conference 2026",
         fileType: "PDF",
         fileSize: "1.8 MB",
         category: "Document",
@@ -80,7 +80,7 @@ const resources: DownloadResource[] = [
     {
         id: "8",
         title: "Executive Summary 2025",
-        description: "Comprehensive report on Atlas Convention 2025 outcomes and impact",
+        description: "Comprehensive report on Atlas Global Academic Conference 2025 outcomes and impact",
         fileType: "PDF",
         fileSize: "4.2 MB",
         category: "Document",
@@ -104,8 +104,7 @@ export default function MediaKitPage() {
         <div className="flex flex-col bg-white">
             <PageHero
                 title="Media Kit"
-                description="Download logos, banners, brand guidelines, and other resources for media coverage of Atlas Convention."
-                breadcrumb="Media / Media Kit"
+                description="Download logos, banners, brand guidelines, and other resources for media coverage of Atlas Global Academic Conference."
             />
 
             <MediaSubNav />
@@ -117,7 +116,7 @@ export default function MediaKitPage() {
                         <h1 className="text-5xl font-bold font-heading text-primary mb-4">Media Kit</h1>
                         <div className="w-20 h-1.5 bg-secondary rounded-full"></div>
                         <p className="mt-6 text-lg text-gray-700 max-w-3xl">
-                            Download official Atlas Convention assets for editorial use. All resources are free to use for media coverage and promotional purposes.
+                            Download official Atlas Global Academic Conference assets for editorial use. All resources are free to use for media coverage and promotional purposes.
                         </p>
                     </section>
 
@@ -198,7 +197,7 @@ export default function MediaKitPage() {
                                 <ul className="space-y-3 text-gray-700">
                                     <li className="flex gap-3">
                                         <span className="text-green-500 shrink-0">•</span>
-                                        <span>Editorial coverage and news articles about Atlas Convention</span>
+                                        <span>Editorial coverage and news articles about Atlas Global Academic Conference</span>
                                     </li>
                                     <li className="flex gap-3">
                                         <span className="text-green-500 shrink-0">•</span>
@@ -221,7 +220,7 @@ export default function MediaKitPage() {
                                 <ul className="space-y-3 text-gray-700">
                                     <li className="flex gap-3">
                                         <span className="text-red-500 shrink-0">•</span>
-                                        <span>Modifying or altering the Atlas Convention logo</span>
+                                        <span>Modifying or altering the Atlas Global Academic Conference logo</span>
                                     </li>
                                     <li className="flex gap-3">
                                         <span className="text-red-500 shrink-0">•</span>
@@ -240,7 +239,7 @@ export default function MediaKitPage() {
                         </div>
                         <div className="mt-8 p-6 bg-white rounded-xl border border-gray-200">
                             <p className="text-sm text-gray-600 leading-relaxed">
-                                <strong className="text-gray-900">Attribution:</strong> When using Atlas Convention materials, please credit "Atlas Convention" and include a link to our website when possible. For questions about usage rights or to request special permissions, contact our media team.
+                                <strong className="text-gray-900">Attribution:</strong> When using Atlas Global Academic Conference materials, please credit "Atlas Global Academic Conference" and include a link to our website when possible. For questions about usage rights or to request special permissions, contact our media team.
                             </p>
                         </div>
                     </section>

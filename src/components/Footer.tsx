@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Column 1: About */}
                     <div>
-                        <h3 className="text-lg font-bold font-heading mb-4 text-primary">Atlas Convention</h3>
+                        <h3 className="text-lg font-bold font-heading mb-4 text-primary">Atlas Global Academic Conference</h3>
                         <p className="text-sm text-gray-600 mb-6 leading-relaxed">
                             The 10th International Convention & Exhibition on ICT for Education, Training & Skills Development.
                         </p>
@@ -65,7 +65,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} Atlas Convention. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Atlas Global Academic Conference. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <Link href="/privacy" className="hover:text-primary">Privacy</Link>
                         <Link href="/terms" className="hover:text-primary">Terms</Link>

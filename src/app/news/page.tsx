@@ -8,7 +8,6 @@ export default function NewsPage() {
             <PageHero
                 title="Atlas News Portal"
                 description="In-depth analysis, interviews, and stories from the forefront of African education technology."
-                breadcrumb="News Portal"
                 bgClass="bg-white text-gray-900"
                 textClass="text-gray-600"
             />
