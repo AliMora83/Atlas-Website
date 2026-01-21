@@ -1,4 +1,34 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+interface ImageItem {
+    filename: string;
+    width: number;
+    height: number;
+}
+
 export default function HighlightsSection() {
+    const [scrollerImages, setScrollerImages] = useState<ImageItem[]>([]);
+
+    useEffect(() => {
+        // Load manifests and select 12 random images
+        const day1Manifest: ImageItem[] = require("@/../public/images/events/2025/day1/manifest.json");
+        const day2Manifest: ImageItem[] = require("@/../public/images/events/2025/day2/manifest.json");
+
+        const allImages = [
+            ...day1Manifest.map((img: ImageItem) => ({ ...img, day: "day1" })),
+            ...day2Manifest.map((img: ImageItem) => ({ ...img, day: "day2" }))
+        ];
+
+        // Shuffle and select 12 random images
+        const shuffled = allImages.sort(() => 0.5 - Math.random());
+        const selected = shuffled.slice(0, 12);
+        setScrollerImages(selected);
+    }, []);
+
     const metrics = [
         { icon: "👥", value: "1,543", label: "Participants" },
         { icon: "🎤", value: "244", label: "Speakers" },
@@ -16,39 +46,51 @@ export default function HighlightsSection() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-                    <div className="relative aspect-video bg-gray-800 rounded-xl overflow-hidden group cursor-pointer shadow-2xl">
-                        {/* Dummy Video Preview */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60" />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-20 h-20 bg-primary/90 rounded-full flex items-center justify-center pl-2 group-hover:scale-110 transition-transform duration-300 shadow-xl">
-                                <span className="text-white text-3xl">▶</span>
-                            </div>
+                {/* Metrics in a single row */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                    {metrics.map((metric, idx) => (
+                        <div key={idx} className="bg-gray-800/50 border border-gray-700 p-6 rounded-xl hover:bg-gray-800 transition-colors group">
+                            <div className="text-3xl mb-3 group-hover:scale-110 transition-transform origin-left">{metric.icon}</div>
+                            <div className="text-3xl font-bold text-primary mb-1">{metric.value}</div>
+                            <div className="text-sm text-gray-400 font-medium uppercase tracking-wide">{metric.label}</div>
                         </div>
-                        <div className="absolute bottom-6 left-6 right-6">
-                            <p className="text-sm font-bold uppercase tracking-widest text-secondary mb-1">
-                                Video Highlight
-                            </p>
-                            <p className="text-xl font-bold">18th Atlas Global Academic Conference - The Story</p>
-                        </div>
-                        <a
-                            href="https://youtube.com/watch?v=XXXX"
-                            target="_self"
-                            className="absolute inset-0 z-20"
-                            aria-label="Watch 2025 Highlight Video"
-                        />
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-6">
-                        {metrics.map((metric, idx) => (
-                            <div key={idx} className="bg-gray-800/50 border border-gray-700 p-6 rounded-xl hover:bg-gray-800 transition-colors group">
-                                <div className="text-3xl mb-3 group-hover:scale-110 transition-transform origin-left">{metric.icon}</div>
-                                <div className="text-3xl font-bold text-primary mb-1">{metric.value}</div>
-                                <div className="text-sm text-gray-400 font-medium uppercase tracking-wide">{metric.label}</div>
-                            </div>
-                        ))}
-                    </div>
+                    ))}
                 </div>
+
+                {/* Infinite Image Scroller */}
+                {scrollerImages.length > 0 && (
+                    <div className="mb-12">
+                        <div className="relative overflow-hidden">
+                            <div className="flex gap-4 animate-scroll">
+                                {/* Duplicate images for seamless loop */}
+                                {[...scrollerImages, ...scrollerImages, ...scrollerImages].map((img: any, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="flex-shrink-0 w-64 h-40 relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                                    >
+                                        <Image
+                                            src={`/images/events/2025/${img.day}/${img.filename}`}
+                                            alt={`Gallery image ${idx + 1}`}
+                                            fill
+                                            className="object-cover"
+                                            sizes="256px"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* View More Button */}
+                        <div className="text-center mt-8">
+                            <Link
+                                href="/media/gallery"
+                                className="inline-block px-8 py-3 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg"
+                            >
+                                View More Photos
+                            </Link>
+                        </div>
+                    </div>
+                )}
 
                 <div className="text-center">
                     <p className="text-gray-500 text-sm max-w-2xl mx-auto italic">
@@ -56,6 +98,25 @@ export default function HighlightsSection() {
                     </p>
                 </div>
             </div>
+
+            <style jsx>{`
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-33.333%);
+                    }
+                }
+                
+                .animate-scroll {
+                    animation: scroll 30s linear infinite;
+                }
+                
+                .animate-scroll:hover {
+                    animation-play-state: paused;
+                }
+            `}</style>
         </section>
     );
 }

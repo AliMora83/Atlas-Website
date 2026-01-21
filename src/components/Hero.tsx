@@ -6,11 +6,16 @@ export default function Hero() {
         <section className="relative h-[600px] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
-                {/* Placeholder for actual image - using a dark gradient for now per "dummy" spec instructions */}
+                {/* Cape Town Background Image */}
+                <Image
+                    src="/images/CapeTown.png"
+                    alt="Cape Town"
+                    fill
+                    className="object-cover opacity-40"
+                    priority
+                />
+                {/* Dark gradient overlay for text readability */}
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/40 z-10" />
-                {/* In a real scenario, we'd stick an Image component here.
-             For now, just a dark bg is robust enough to start.
-          */}
             </div>
 
             <div className="relative z-10 container mx-auto px-4 text-center">
@@ -24,11 +29,11 @@ export default function Hero() {
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
                     <div className="flex items-center text-white font-medium">
-                        <span className="mr-2">📅</span> June 3-5, 2026
+                        <span className="mr-2">📅</span> 26-27 Aug 2026
                     </div>
                     <div className="hidden sm:block text-gray-400">|</div>
                     <div className="flex items-center text-white font-medium">
-                        <span className="mr-2">📍</span> Accra, Ghana
+                        <span className="mr-2">📍</span> Cape Town Hotel School in Granger Bay
                     </div>
                 </div>
 

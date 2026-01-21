@@ -1,47 +1,56 @@
+import Image from "next/image";
+
 export default function HostCountrySection() {
     return (
         <section className="section-padding bg-white" id="host-country">
             <div className="container mx-auto px-4">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-primary mb-2 text-center">Host Country 2026: Ghana</h2>
+                    <h2 className="text-primary mb-2 text-center">Host Venue 2026: Cape Town</h2>
                     <h3 className="text-xl text-gray-600 mb-12 text-center font-normal">
-                        Co-Hosted by the Ministry of Education, Ghana
+                        Cape Town Hotel School in Granger Bay
                     </h3>
 
                     <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
                         <div className="lg:col-span-3 space-y-6">
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                We are honored to announce that Ghana will be the host country for the 19th edition
-                                of Atlas Global Academic Conference. The conference will take place in the vibrant city of Accra
-                                from June 3 - 5, 2026.
+                                We are thrilled to announce that the 19th edition of Atlas Global Academic Conference
+                                will take place at the prestigious Cape Town Hotel School in Granger Bay
+                                from 26-27 August 2026.
                             </p>
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                Ghana has emerged as a leader in educational transformation in West Africa.
-                                Through ambitious reforms and digital learning programs like GALOP, the
-                                country is setting a benchmark for technology integration in schools
-                                and vocational training hubs.
+                                Cape Town, known as the Mother City, is a vibrant hub of innovation, culture, and
+                                educational excellence in Africa. The city&apos;s stunning natural beauty, world-class
+                                infrastructure, and dynamic academic community make it the perfect setting for
+                                meaningful dialogue on the future of digital education.
                             </p>
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                Join us in Accra to experience Ghana&apos;s rich cultural heritage and its
-                                forward-thinking approach to the digital future of education.
+                                The Cape Town Hotel School, located in the scenic Granger Bay precinct, is renowned
+                                for its cutting-edge facilities and commitment to excellence in hospitality education.
+                                This state-of-the-art venue provides the ideal environment for collaboration,
+                                learning, and networking.
                             </p>
                         </div>
 
                         <div className="lg:col-span-2 space-y-8">
                             <div className="bg-gray-50 border border-gray-100 p-8 rounded-xl text-center shadow-sm">
                                 <p className="text-sm font-bold uppercase tracking-wider text-gray-500 mb-6">
-                                    Co-Hosted by
+                                    Hosted at
                                 </p>
-                                <div className="aspect-[3/2] bg-white border border-gray-200 rounded-lg flex items-center justify-center p-6 mb-4 group cursor-pointer hover:shadow-md transition-shadow">
-                                    <span className="text-gray-400 font-medium italic group-hover:text-primary transition-colors text-center">
-                                        [Ministry of Education<br />Ghana Logo Placeholder]
-                                    </span>
+                                <div className="relative aspect-[3/2] bg-white border border-gray-200 rounded-lg overflow-hidden mb-4 hover:shadow-md transition-shadow">
+                                    <Image
+                                        src="/images/School.png"
+                                        alt="Cape Town Hotel School"
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
                                 <a
-                                    href="#"
+                                    href="https://www.cths.ac.za"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="text-primary text-sm font-semibold hover:underline"
                                 >
-                                    Visit Ministry Website
+                                    Visit Hotel School Website
                                 </a>
                             </div>
                         </div>
