@@ -66,28 +66,76 @@ export default function WhoAttendsPage() {
                 </div>
             </section>
 
-            {/* Categories Grid */}
+            {/* WHO WILL ATTEND Section */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl font-bold font-heading text-primary mb-4">A Unique Networking Platform</h2>
+                        <h2 className="text-3xl font-bold font-heading text-primary mb-4">Who Will Attend?</h2>
                         <p className="text-gray-600 leading-relaxed">
-                            The Atlas Global Academic Conference brings together the full spectrum of the EdTech ecosystem. Whether you are driving policy, building solutions, or educating the next generation, you will find your peers here.
+                            The Atlas Convention brings together a diverse range of high-level professionals, decision-makers, and influencers from across Africa and around the world.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {categories.map((cat) => (
-                            <div key={cat.title} className="flex gap-6 p-6 border rounded-lg hover:shadow-lg transition-shadow bg-gray-50">
-                                <div className="flex-shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-primary">
-                                    {cat.icon}
+                    <div className="grid lg:grid-cols-3 gap-12 items-start max-w-7xl mx-auto">
+                        {/* Left Column - Attendee List */}
+                        <div className="space-y-3">
+                            {[
+                                "Heads of State & Government",
+                                "Ministers & Public sector Executives",
+                                "Private Sector CEOs & MDs",
+                                "Trade & investment facilitation firms",
+                                "Sustainable development experts",
+                                "Digital services, AI firms & experts",
+                                "Manufacturing, distribution & retailing",
+                                "Parastatals & Regulators",
+                                "Academia, Consultants & Transformation experts",
+                                "Sustainable development experts"
+                            ].map((item, index) => (
+                                <div key={index} className="flex items-center gap-3">
+                                    <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-sm flex items-center justify-center">
+                                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
+                                    <span className="text-base text-gray-700">{item}</span>
                                 </div>
-                                <div>
-                                    <h3 className="text-xl font-bold font-heading text-gray-900 mb-2">{cat.title}</h3>
-                                    <p className="text-gray-600 leading-relaxed">{cat.description}</p>
+                            ))}
+                        </div>
+
+                        {/* Center Column - Globe Placeholder */}
+                        <div className="flex items-center justify-center">
+                            <div className="relative w-64 h-64 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full flex items-center justify-center border-4 border-primary/20">
+                                <div className="text-center">
+                                    <div className="text-8xl mb-2">🌍</div>
+                                    <p className="text-xs text-gray-500">Image Placeholder</p>
                                 </div>
                             </div>
-                        ))}
+                        </div>
+
+                        {/* Right Column - Attendee List */}
+                        <div className="space-y-3">
+                            {[
+                                "Agriculture and processing",
+                                "Built environment and logistics",
+                                "Africa's business influencers",
+                                "Investment banks & Venture capitalists",
+                                "Private equity fund managers",
+                                "Startups and SMEs",
+                                "Institutional Innovators",
+                                "Non-governmental organizations",
+                                "Investment banks & Venture capitalists",
+                                "International & Multilateral organizations"
+                            ].map((item, index) => (
+                                <div key={index} className="flex items-center gap-3">
+                                    <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-sm flex items-center justify-center">
+                                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
+                                    <span className="text-base text-gray-700">{item}</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

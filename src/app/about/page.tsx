@@ -15,59 +15,100 @@ export default function AboutPage() {
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col gap-16 relative">
 
-                    {/* Section 1: Page Heading */}
+                    {/* Section 1: Convention Overview */}
                     <section className="pt-8">
-                        <h1 className="text-5xl font-bold font-heading text-primary mb-4">About</h1>
-                        <div className="w-20 h-1.5 bg-secondary rounded-full"></div>
+                        <div className="grid lg:grid-cols-2 gap-8 items-start">
+                            {/* Left Column - Text Content */}
+                            <div className="space-y-8">
+                                <div>
+                                    <h1 className="text-4xl font-bold font-heading text-primary mb-6">CONVENTION OVERVIEW</h1>
+                                    <p className="text-base text-gray-700 leading-relaxed">
+                                        Investing in Africa&apos;s Prosperity is the exciting theme of the Atlas Convention 2024 Global Edition, a landmark event that will bring together experts from all sectors in +133 countries.
+                                    </p>
+                                </div>
+
+                                {/* Statistics Grid */}
+                                <div className="grid grid-cols-2 gap-6">
+                                    <div>
+                                        <p className="text-sm text-gray-500 mb-2">Host Countries</p>
+                                        <p className="text-4xl font-bold text-gray-900">3</p>
+                                    </div>
+                                    <div>
+                                        <p className="text-sm text-gray-500 mb-2">Delegates</p>
+                                        <p className="text-4xl font-bold text-gray-900">5,000</p>
+                                    </div>
+                                    <div>
+                                        <p className="text-sm text-gray-500 mb-2">Countries Represented</p>
+                                        <p className="text-4xl font-bold text-gray-900">133+</p>
+                                    </div>
+                                    <div>
+                                        <p className="text-sm text-gray-500 mb-2">Sponsors & Exhibitors</p>
+                                        <p className="text-4xl font-bold text-gray-900">300+</p>
+                                    </div>
+                                    <div className="col-span-2">
+                                        <p className="text-sm text-gray-500 mb-2">Chamber Presidents / Ministers / City Mayors</p>
+                                        <p className="text-4xl font-bold text-gray-900">100+</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Right Column - Hero Image */}
+                            <div className="relative h-full min-h-[400px] bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl overflow-hidden shadow-lg">
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <div className="text-white text-center p-8">
+                                        <div className="text-6xl mb-4">🏙️</div>
+                                        <p className="text-sm opacity-75">Hero Image Placeholder</p>
+                                        <p className="text-xs opacity-50 mt-2">Replace with actual image</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
-                    {/* Section 2: Main Content - Atlas Global Academic Conference Overview */}
-                    <section className="relative">
-                        <div className="space-y-6 max-w-4xl">
-                            <ul className="space-y-6 text-lg text-gray-700 leading-relaxed font-body">
-                                <li className="flex gap-4">
-                                    <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
-                                    <span>
-                                        Atlas Global Academic Conference was founded in <strong>2005</strong> and has taken place in <strong>Addis Ababa</strong> in 2006, in <strong>Nairobi</strong> in 2007, in <strong>Accra</strong> in 2008, in <strong>Dakar</strong> in 2009, in <strong>Lusaka</strong> in 2010, in <strong>Dar es Salaam</strong> in 2011, in <strong>Cotonou</strong> in 2012, in <strong>Windhoek</strong> in 2013, in <strong>Kampala</strong> in 2014, in <strong>Addis Ababa</strong> in 2015, in <strong>Cairo</strong> in 2016, in <strong>Port Louis</strong> in 2017, in <strong>Kigali</strong> in 2018, in <strong>Abidjan</strong> in 2019, a host of virtual events in 2020/2021, in <strong>Kigali</strong> in 2022, in <strong>Dakar</strong> in 2023, in <strong>Kigali</strong> in 2024, and in <strong>Dar es Salaam</strong> in 2025.
-                                    </span>
-                                </li>
-                                <li className="flex gap-4">
-                                    <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
-                                    <span>
-                                        Over the past <strong>20 years</strong>, Atlas Global Academic Conference has hosted over <strong>23,000 participants</strong> from <strong>100+ countries</strong> around the world, with over <strong>80% coming from the African continent</strong>. More than <strong>4,700 speakers</strong> have addressed the conference about every aspect of <strong>digital learning, training and skills development</strong>.
-                                    </span>
-                                </li>
-                                <li className="flex gap-4">
-                                    <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
-                                    <span>
-                                        The conference is held in <strong>ENGLISH</strong> and <strong>FRENCH</strong>.
-                                    </span>
-                                </li>
-                                <li className="flex gap-4">
-                                    <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
-                                    <span>
-                                        The <strong>PROGRAMME</strong> includes core dialogues, discovery demos, knowledge exchange sessions, knowledge factories, panel discussions, panel talks, plenary sessions, pre-conference events, one-on-one bilateral meetings and boardroom discussions on specific topics and informal networking opportunities in which practitioners share their experiences, ideas, new information and perspectives.
-                                    </span>
-                                </li>
-                                <li className="flex gap-4">
-                                    <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
-                                    <span>
-                                        In the <strong>EXHIBITION AREA</strong>, leading international eLearning manufacturers, suppliers and service providers present their latest products and services. Most participants see the exhibition as an important meeting point for professional interaction and networking within the conference.
-                                    </span>
-                                </li>
-                                <li className="flex gap-4">
-                                    <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
-                                    <span>
-                                        <strong>WORKSHOPS</strong>, conducted by leading experts and practitioners, precede the event. These small, intensive sessions offer attendees a unique opportunity to acquire new skills and learn about the latest developments.
-                                    </span>
-                                </li>
-                                <li className="flex gap-4">
-                                    <span className="text-secondary font-bold shrink-0 text-2xl">→</span>
-                                    <span>
-                                        Atlas Global Academic Conference is the venue for the annual <strong>PANEL DISCUSSION</strong>, an annual meeting of African ICT and Education ministers, who take part in a day-long discussion of key issues affecting education, training, skills and technology before the official opening of the main conference.
-                                    </span>
-                                </li>
-                            </ul>
+                    {/* Section 2: Feature Cards */}
+                    <section className="relative mt-12">
+                        <div className="grid md:grid-cols-3 gap-6">
+                            {/* Card 1: Countries Represented */}
+                            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                                <div className="flex gap-4 mb-4">
+                                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-2xl flex-shrink-0">
+                                        🌍
+                                    </div>
+                                    <div className="w-full h-16 bg-gray-100 rounded-lg"></div>
+                                </div>
+                                <h3 className="text-lg font-bold text-gray-900 mb-3">Countries Represented</h3>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    The Atlas Convention 2024 Global Edition will bring together experts from all sectors in +133 countries.
+                                </p>
+                            </div>
+
+                            {/* Card 2: Universities Represented */}
+                            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                                <div className="flex gap-4 mb-4">
+                                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-2xl flex-shrink-0">
+                                        🎓
+                                    </div>
+                                    <div className="w-full h-16 bg-gray-100 rounded-lg"></div>
+                                </div>
+                                <h3 className="text-lg font-bold text-gray-900 mb-3">Universities Represented</h3>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    The Atlas Convention 2024 Global Edition will bring together experts from all sectors in +133 countries.
+                                </p>
+                            </div>
+
+                            {/* Card 3: Mayors & Ministers */}
+                            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                                <div className="flex gap-4 mb-4">
+                                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center text-2xl flex-shrink-0">
+                                        🏛️
+                                    </div>
+                                    <div className="w-full h-16 bg-gray-100 rounded-lg"></div>
+                                </div>
+                                <h3 className="text-lg font-bold text-gray-900 mb-3">Mayors & Ministers</h3>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    The Atlas Convention 2024 Global Edition will bring together experts from all sectors in +133 countries.
+                                </p>
+                            </div>
                         </div>
                     </section>
 
