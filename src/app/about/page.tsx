@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import { Globe, GraduationCap, Building2 } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import AboutSubNav from "@/components/AboutSubNav";
 
@@ -53,14 +55,13 @@ export default function AboutPage() {
                             </div>
 
                             {/* Right Column - Hero Image */}
-                            <div className="relative h-full min-h-[400px] bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl overflow-hidden shadow-lg">
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="text-white text-center p-8">
-                                        <div className="text-6xl mb-4">🏙️</div>
-                                        <p className="text-sm opacity-75">Hero Image Placeholder</p>
-                                        <p className="text-xs opacity-50 mt-2">Replace with actual image</p>
-                                    </div>
-                                </div>
+                            <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden shadow-lg">
+                                <Image
+                                    src="/images/CapeTown.png"
+                                    alt="Convention Overview"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                         </div>
                     </section>
@@ -71,8 +72,8 @@ export default function AboutPage() {
                             {/* Card 1: Countries Represented */}
                             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                                 <div className="flex gap-4 mb-4">
-                                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-2xl flex-shrink-0">
-                                        🌍
+                                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center flex-shrink-0 text-white shadow-lg">
+                                        <Globe className="w-8 h-8" />
                                     </div>
                                     <div className="w-full h-16 bg-gray-100 rounded-lg"></div>
                                 </div>
@@ -85,8 +86,8 @@ export default function AboutPage() {
                             {/* Card 2: Universities Represented */}
                             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                                 <div className="flex gap-4 mb-4">
-                                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-2xl flex-shrink-0">
-                                        🎓
+                                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center flex-shrink-0 text-white shadow-lg">
+                                        <GraduationCap className="w-8 h-8" />
                                     </div>
                                     <div className="w-full h-16 bg-gray-100 rounded-lg"></div>
                                 </div>
@@ -99,8 +100,8 @@ export default function AboutPage() {
                             {/* Card 3: Mayors & Ministers */}
                             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                                 <div className="flex gap-4 mb-4">
-                                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center text-2xl flex-shrink-0">
-                                        🏛️
+                                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center flex-shrink-0 text-white shadow-lg">
+                                        <Building2 className="w-8 h-8" />
                                     </div>
                                     <div className="w-full h-16 bg-gray-100 rounded-lg"></div>
                                 </div>
@@ -147,44 +148,6 @@ export default function AboutPage() {
                         </div>
                     </section>
 
-                    {/* Section 4: Testimonial / Social Proof Section */}
-                    <section className="py-16 relative overflow-hidden rounded-3xl bg-secondary/5 border-2 border-secondary/20">
-                        {/* Decorative Elements */}
-                        <div className="absolute top-0 right-0 -m-8 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
-                        <div className="absolute bottom-0 left-0 -m-8 w-64 h-64 bg-accent/10 rounded-full blur-3xl -z-10"></div>
-
-                        <div className="max-w-4xl mx-auto px-8 text-center relative">
-                            <svg className="w-12 h-12 text-secondary mb-8 mx-auto opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H12.017V4H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM2.017 21L2.017 18C2.017 16.8954 2.91243 16 4.017 16H7.017C7.56928 16 8.017 15.5523 8.017 15V9C8.017 8.44772 7.56928 8 7.017 8H4.017C3.46472 8 3.017 8.44772 3.017 9V12C3.017 12.5523 2.56928 13 2.017 13H0.017V4H10.017V15C10.017 18.3137 7.33072 21 4.017 21H2.017Z" />
-                            </svg>
-
-                            <blockquote className="space-y-8">
-                                <div>
-                                    <p className="text-2xl md:text-3xl font-medium text-gray-800 leading-relaxed italic">
-                                        "After being absent for over nine consecutive years, attending the conference felt like a rebirth. I left with renewed energy and a firm resolve never to miss it again. The experience was enlightening and rewarding in every way."
-                                    </p>
-                                    <footer className="mt-6">
-                                        <cite className="not-italic">
-                                            <span className="block font-bold text-lg text-primary">— Lumai Mubanga</span>
-                                            <span className="text-gray-500 font-medium italic">Nchanga Secondary Trust School</span>
-                                        </cite>
-                                    </footer>
-                                </div>
-
-                                <div className="pt-8 border-t border-secondary/20">
-                                    <p className="text-xl text-gray-700 leading-relaxed">
-                                        "It was an informative, engaging, and inspiring experience, filled with opportunities for networking and collaboration. My team left Atlas Global Academic Conference with pages of notes and fresh ideas on how we can strengthen and improve our innovation."
-                                    </p>
-                                    <footer className="mt-4">
-                                        <cite className="not-italic">
-                                            <span className="block font-bold text-gray-900">— Sarah Boateng</span>
-                                            <span className="text-gray-500 font-medium italic">Director of Innovation, African Tech Hub</span>
-                                        </cite>
-                                    </footer>
-                                </div>
-                            </blockquote>
-                        </div>
-                    </section>
 
 
                 </div>

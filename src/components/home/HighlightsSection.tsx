@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Users, Mic, Globe, Lightbulb } from "lucide-react";
 
 interface ImageItem {
     filename: string;
@@ -30,10 +31,10 @@ export default function HighlightsSection() {
     }, []);
 
     const metrics = [
-        { icon: "👥", value: "1,543", label: "Participants" },
-        { icon: "🎤", value: "244", label: "Speakers" },
-        { icon: "🌍", value: "82", label: "Countries Represented" },
-        { icon: "💡", value: "15", label: "Ministers of Education" },
+        { icon: <Users className="w-8 h-8 text-primary" />, value: "1,543", label: "Participants" },
+        { icon: <Mic className="w-8 h-8 text-primary" />, value: "244", label: "Speakers" },
+        { icon: <Globe className="w-8 h-8 text-primary" />, value: "82", label: "Countries Represented" },
+        { icon: <Lightbulb className="w-8 h-8 text-primary" />, value: "15", label: "Ministers of Education" },
     ];
 
     return (

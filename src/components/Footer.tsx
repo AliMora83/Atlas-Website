@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Facebook, Linkedin, Twitter, Youtube } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -12,11 +13,38 @@ export default function Footer() {
                             The 10th International Convention & Exhibition on ICT for Education, Training & Skills Development.
                         </p>
                         <div className="flex space-x-4">
-                            {/* Social Icons Placeholder */}
-                            <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-                            <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-                            <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-                            <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+                            <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-all">
+                                <Facebook className="w-5 h-5" fill="currentColor" strokeWidth={0} />
+                            </a>
+                            <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-all">
+                                <Linkedin className="w-5 h-5" fill="currentColor" strokeWidth={0} />
+                            </a>
+                            <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-all">
+                                <Twitter className="w-5 h-5" fill="currentColor" strokeWidth={0} />
+                            </a>
+                            <a href="#" className="group w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-all">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="0"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    className="w-5 h-5"
+                                >
+                                    <path
+                                        d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                                        fill="currentColor"
+                                    />
+                                    <path
+                                        d="m10 15 5-3-5-3z"
+                                        className="fill-white group-hover:fill-black transition-colors"
+                                    />
+                                </svg>
+                            </a>
                         </div>
                     </div>
 
