@@ -24,13 +24,16 @@ export default function SpeakerCard({
                 onClick={() => setIsModalOpen(true)}
             >
                 <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/20 group-hover:border-white/40 transition-colors">
-                    {/* Using a standard img tag for now to avoid next/image setup complexity with external domains if needed, 
-                 but in production this should be next/image */}
-                    <img
-                        src={displayImage}
-                        alt={name}
-                        className="w-full h-full object-cover"
-                    />
+                    {/* Using next/image for optimization */}
+                    <div className="relative w-full h-full">
+                        <Image
+                            src={displayImage}
+                            alt={name}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                    </div>
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:underline decoration-white/50 underline-offset-4">
@@ -67,8 +70,13 @@ export default function SpeakerCard({
                         <div className="flex flex-col md:flex-row">
                             {/* Modal Side Image */}
                             <div className={`md:w-1/3 p-8 flex flex-col items-center justify-center text-center ${colorClass}`}>
-                                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/20 mb-4 shadow-lg">
-                                    <img src={displayImage} alt={name} className="w-full h-full object-cover" />
+                                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/20 mb-4 shadow-lg relative">
+                                    <Image
+                                        src={displayImage}
+                                        alt={name}
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
                                 <h3 className="text-white font-bold text-xl mb-1">{name}</h3>
                                 <p className="text-white/90 text-sm">{organization}</p>

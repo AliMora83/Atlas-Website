@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
-import MediaSubNav from "@/components/MediaSubNav";
 
 type MediaType = "all" | "photos" | "videos";
 type ConferenceDay = "all" | "day1" | "day2";
@@ -91,8 +90,6 @@ export default function MediaGalleryPage() {
                 title="Media Gallery"
                 description="Browse photos and videos from Atlas Global Academic Conference 2025."
             />
-
-            <MediaSubNav />
 
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col gap-8">

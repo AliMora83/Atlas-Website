@@ -2,7 +2,7 @@ import PageHero from "@/components/PageHero";
 import Link from "next/link";
 import PartnerLevels from "@/components/PartnerLevels";
 import PartnerInquiry from "@/components/PartnerInquiry";
-import Sponsors from "@/components/Sponsors"; // Reuse the sponsors logo grid
+import PartnersGrid from "@/components/home/PartnersGrid"; // Reuse the home page scroller
 
 export default function PartnersPage() {
     return (
@@ -27,10 +27,8 @@ export default function PartnersPage() {
                 </Link>
             </PageHero>
 
-            {/* Current Sponsors Section Reused */}
-            <div className="bg-gray-50 border-b">
-                <Sponsors />
-            </div>
+            {/* Reusing Home Page Scroller */}
+            <PartnersGrid />
 
             <PartnerLevels />
             <PartnerInquiry />

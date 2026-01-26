@@ -43,16 +43,7 @@ const navItems: NavItem[] = [
 
     { name: "Partners", href: "/partners" },
     { name: "Exhibition", href: "/exhibition" },
-    {
-        name: "Media",
-        href: "/media",
-        subItems: [
-            { name: "Media Gallery", href: "/media/gallery" },
-            { name: "Press Releases", href: "/media/press" },
-            { name: "Media Partners", href: "/media/partners" },
-        ],
-    },
-    { name: "News Portal", href: "/news" },
+    { name: "Gallery", href: "/media/gallery" },
 ];
 
 export default function Navigation() {

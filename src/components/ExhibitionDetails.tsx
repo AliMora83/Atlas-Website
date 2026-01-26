@@ -6,19 +6,19 @@ export default function ExhibitionDetails() {
             percentage: "81%",
             title: "Networking Excellence",
             description: "Rated the ease of networking and developing new contacts as very good or good",
-            image: "/images/satisfaction-networking.png"
+            image: "/images/events/2025/day1/event-001.webp"
         },
         {
             percentage: "95%",
             title: "Conference Value",
             description: "Rated the overall evaluation of the conference as very worthwhile or worthwhile",
-            image: "/images/satisfaction-exhibition.png"
+            image: "/images/events/2025/day1/event-002.webp"
         },
         {
             percentage: "92%",
             title: "Innovation Showcase",
             description: "Found the exhibition valuable for discovering new EdTech solutions and partnerships",
-            image: "/images/satisfaction-technology.png"
+            image: "/images/events/2025/day1/event-003.webp"
         }
     ];
 
