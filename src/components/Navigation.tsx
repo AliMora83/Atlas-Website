@@ -80,7 +80,7 @@ export default function Navigation() {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden lg:flex md:items-center md:space-x-6">
+                    <div className="hidden lg:flex md:items-center md:space-x-8">
                         {navItems.map((item) => (
                             <div
                                 key={item.name}
@@ -90,9 +90,9 @@ export default function Navigation() {
                             >
                                 <Link
                                     href={item.href}
-                                    className={`text-sm transition-colors hover:text-primary py-8 ${pathname === item.href || (item.subItems && item.subItems.some(sub => pathname === sub.href))
-                                        ? "text-primary font-bold"
-                                        : "text-gray-600 font-medium"
+                                    className={`text-base font-normal tracking-wide transition-all duration-200 hover:text-primary hover:font-semibold hover:scale-105 py-8 ${pathname === item.href || (item.subItems && item.subItems.some(sub => pathname === sub.href))
+                                        ? "text-primary"
+                                        : "text-gray-900"
                                         } flex items-center gap-1`}
                                 >
                                     {item.name}
@@ -114,7 +114,7 @@ export default function Navigation() {
                                                 <Link
                                                     key={subItem.href}
                                                     href={subItem.href}
-                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors"
+                                                    className="block px-4 py-3 text-sm font-medium text-gray-800 hover:bg-gray-50 hover:text-primary hover:pl-5 transition-all duration-200"
                                                 >
                                                     {subItem.name}
                                                 </Link>
@@ -126,7 +126,7 @@ export default function Navigation() {
                         ))}
                         <Link
                             href="/register"
-                            className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-white shadow transition-colors hover:bg-opacity-90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring ml-4"
+                            className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-base font-semibold text-white shadow transition-colors hover:bg-opacity-90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring ml-4"
                         >
                             Register
                         </Link>
@@ -164,7 +164,7 @@ export default function Navigation() {
                                     <>
                                         <button
                                             onClick={() => toggleMobileDropdown(item.name)}
-                                            className="w-full flex items-center justify-between font-medium text-gray-900 px-2 py-2 hover:bg-gray-50 rounded-lg transition-colors"
+                                            className="w-full flex items-center justify-between font-normal text-base text-gray-900 px-3 py-3 hover:bg-gray-50 hover:font-semibold rounded-lg transition-colors"
                                         >
                                             {item.name}
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`transition-transform ${mobileOpenDropdown === item.name ? "rotate-180" : ""}`}>
@@ -177,7 +177,7 @@ export default function Navigation() {
                                                     <Link
                                                         key={sub.href}
                                                         href={sub.href}
-                                                        className={`block py-2 text-sm ${pathname === sub.href ? "text-primary font-medium" : "text-gray-600"} hover:text-primary transition-colors`}
+                                                        className={`block py-2 text-sm font-medium ${pathname === sub.href ? "text-primary" : "text-gray-700"} hover:text-primary transition-colors`}
                                                         onClick={() => setIsOpen(false)}
                                                     >
                                                         {sub.name}
@@ -189,7 +189,7 @@ export default function Navigation() {
                                 ) : (
                                     <Link
                                         href={item.href}
-                                        className={`block py-2 px-2 text-base font-medium ${pathname === item.href ? "text-primary" : "text-gray-600"} hover:text-primary transition-colors`}
+                                        className={`block py-2 px-3 text-base font-normal hover:font-semibold ${pathname === item.href ? "text-primary" : "text-gray-900"} hover:text-primary transition-colors`}
                                         onClick={() => setIsOpen(false)}
                                     >
                                         {item.name}
@@ -200,7 +200,7 @@ export default function Navigation() {
                         <div className="pt-4 mt-2 border-t">
                             <Link
                                 href="/register"
-                                className="flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-white shadow transition-colors hover:bg-opacity-90 w-full"
+                                className="flex h-10 items-center justify-center rounded-md bg-primary px-6 text-base font-semibold text-white shadow transition-colors hover:bg-opacity-90 w-full"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Register Now
