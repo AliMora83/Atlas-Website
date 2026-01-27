@@ -5,7 +5,8 @@
     "width": 1920,
     "height": 1281,
     "size": 596292,
-    "qualityScore": 37.11120617989737
+    "qualityScore": 37.11120617989737,
+    "tag": "Adventure"
   },
   {
     "filename": "event-002.webp",
@@ -13,7 +14,8 @@
     "width": 1920,
     "height": 1281,
     "size": 494872,
-    "qualityScore": 36.86203520678062
+    "qualityScore": 36.86203520678062,
+    "tag": "Adventure"
   },
   {
     "filename": "event-003.webp",
@@ -21,7 +23,8 @@
     "width": 1920,
     "height": 1281,
     "size": 547954,
-    "qualityScore": 36.28132585862648
+    "qualityScore": 36.28132585862648,
+    "tag": "Adventure"
   },
   {
     "filename": "event-004.webp",
@@ -29,7 +32,8 @@
     "width": 1920,
     "height": 1281,
     "size": 559196,
-    "qualityScore": 36.05832770027319
+    "qualityScore": 36.05832770027319,
+    "tag": "Adventure"
   },
   {
     "filename": "event-005.webp",
@@ -37,7 +41,8 @@
     "width": 1920,
     "height": 1281,
     "size": 437738,
-    "qualityScore": 35.984724327055254
+    "qualityScore": 35.984724327055254,
+    "tag": "Adventure"
   },
   {
     "filename": "event-006.webp",
@@ -45,7 +50,8 @@
     "width": 1920,
     "height": 1281,
     "size": 464768,
-    "qualityScore": 35.9444440073165
+    "qualityScore": 35.9444440073165,
+    "tag": "Adventure"
   },
   {
     "filename": "event-007.webp",
@@ -53,7 +59,8 @@
     "width": 1920,
     "height": 1281,
     "size": 605960,
-    "qualityScore": 35.69249093144342
+    "qualityScore": 35.69249093144342,
+    "tag": "Adventure"
   },
   {
     "filename": "event-008.webp",
@@ -61,7 +68,8 @@
     "width": 1920,
     "height": 1281,
     "size": 476140,
-    "qualityScore": 35.64645979415016
+    "qualityScore": 35.64645979415016,
+    "tag": "Adventure"
   },
   {
     "filename": "event-009.webp",
@@ -69,7 +77,8 @@
     "width": 1920,
     "height": 1281,
     "size": 413538,
-    "qualityScore": 34.97427154512493
+    "qualityScore": 34.97427154512493,
+    "tag": "Adventure"
   },
   {
     "filename": "event-010.webp",
@@ -77,7 +86,8 @@
     "width": 1920,
     "height": 2877,
     "size": 1079056,
-    "qualityScore": 34.84324942187555
+    "qualityScore": 34.84324942187555,
+    "tag": "Adventure"
   },
   {
     "filename": "event-011.webp",
@@ -85,7 +95,8 @@
     "width": 1920,
     "height": 1281,
     "size": 190410,
-    "qualityScore": 34.76093750104247
+    "qualityScore": 34.76093750104247,
+    "tag": "Adventure"
   },
   {
     "filename": "event-012.webp",
@@ -93,7 +104,8 @@
     "width": 1920,
     "height": 1281,
     "size": 543198,
-    "qualityScore": 34.7199150848963
+    "qualityScore": 34.7199150848963,
+    "tag": "Adventure"
   },
   {
     "filename": "event-013.webp",
@@ -101,7 +113,8 @@
     "width": 1920,
     "height": 1281,
     "size": 263564,
-    "qualityScore": 34.71928577565061
+    "qualityScore": 34.71928577565061,
+    "tag": "Adventure"
   },
   {
     "filename": "event-014.webp",
@@ -109,7 +122,8 @@
     "width": 1920,
     "height": 1281,
     "size": 506402,
-    "qualityScore": 34.71624459467027
+    "qualityScore": 34.71624459467027,
+    "tag": "Adventure"
   },
   {
     "filename": "event-015.webp",
@@ -117,7 +131,8 @@
     "width": 1920,
     "height": 1281,
     "size": 477872,
-    "qualityScore": 34.47376160178264
+    "qualityScore": 34.47376160178264,
+    "tag": "Adventure"
   },
   {
     "filename": "event-016.webp",
@@ -125,7 +140,8 @@
     "width": 1920,
     "height": 1281,
     "size": 530130,
-    "qualityScore": 34.46059735896628
+    "qualityScore": 34.46059735896628,
+    "tag": "Adventure"
   },
   {
     "filename": "event-017.webp",
@@ -133,7 +149,8 @@
     "width": 1920,
     "height": 1281,
     "size": 494524,
-    "qualityScore": 34.41757818152591
+    "qualityScore": 34.41757818152591,
+    "tag": "Adventure"
   },
   {
     "filename": "event-018.webp",
@@ -141,7 +158,8 @@
     "width": 1920,
     "height": 1281,
     "size": 447220,
-    "qualityScore": 34.3766204310782
+    "qualityScore": 34.3766204310782,
+    "tag": "Adventure"
   },
   {
     "filename": "event-019.webp",
@@ -149,15 +167,17 @@
     "width": 1920,
     "height": 1281,
     "size": 428086,
-    "qualityScore": 34.35455239397299
+    "qualityScore": 34.35455239397299,
+    "tag": "Adventure"
   },
   {
-    "filename": "event-020.webp",
+    "filename": "conference-020.webp",
     "originalName": "DSC_3534.jpg",
     "width": 1920,
     "height": 1281,
     "size": 174348,
-    "qualityScore": 34.22798015219303
+    "qualityScore": 34.22798015219303,
+    "tag": "Conference"
   },
   {
     "filename": "event-021.webp",
@@ -165,7 +185,8 @@
     "width": 1920,
     "height": 1281,
     "size": 277818,
-    "qualityScore": 34.197137481186985
+    "qualityScore": 34.197137481186985,
+    "tag": "Adventure"
   },
   {
     "filename": "event-022.webp",
@@ -173,7 +194,8 @@
     "width": 1920,
     "height": 1281,
     "size": 214454,
-    "qualityScore": 34.12186197756121
+    "qualityScore": 34.12186197756121,
+    "tag": "Adventure"
   },
   {
     "filename": "event-023.webp",
@@ -181,7 +203,8 @@
     "width": 1920,
     "height": 1281,
     "size": 427598,
-    "qualityScore": 34.00869634457743
+    "qualityScore": 34.00869634457743,
+    "tag": "Adventure"
   },
   {
     "filename": "event-024.webp",
@@ -189,7 +212,8 @@
     "width": 1920,
     "height": 1281,
     "size": 341702,
-    "qualityScore": 33.9708400307797
+    "qualityScore": 33.9708400307797,
+    "tag": "Adventure"
   },
   {
     "filename": "event-025.webp",
@@ -197,7 +221,8 @@
     "width": 1920,
     "height": 1281,
     "size": 211960,
-    "qualityScore": 33.71869070298692
+    "qualityScore": 33.71869070298692,
+    "tag": "Adventure"
   },
   {
     "filename": "event-026.webp",
@@ -205,31 +230,35 @@
     "width": 1920,
     "height": 2877,
     "size": 766000,
-    "qualityScore": 33.593248953227395
+    "qualityScore": 33.593248953227395,
+    "tag": "Adventure"
   },
   {
-    "filename": "event-027.webp",
+    "filename": "conference-027.webp",
     "originalName": "DSC_3384.jpg",
     "width": 1920,
     "height": 1281,
     "size": 257270,
-    "qualityScore": 33.5696509582322
+    "qualityScore": 33.5696509582322,
+    "tag": "Conference"
   },
   {
-    "filename": "event-028.webp",
+    "filename": "conference-028.webp",
     "originalName": "DSC_3293.jpg",
     "width": 1920,
     "height": 1281,
     "size": 198698,
-    "qualityScore": 33.443025885938695
+    "qualityScore": 33.443025885938695,
+    "tag": "Conference"
   },
   {
-    "filename": "event-029.webp",
+    "filename": "conference-029.webp",
     "originalName": "DSC_3387.jpg",
     "width": 1920,
     "height": 1281,
     "size": 190810,
-    "qualityScore": 33.434843430868455
+    "qualityScore": 33.434843430868455,
+    "tag": "Conference"
   },
   {
     "filename": "event-030.webp",
@@ -237,7 +266,8 @@
     "width": 1920,
     "height": 1281,
     "size": 246292,
-    "qualityScore": 33.42168689770506
+    "qualityScore": 33.42168689770506,
+    "tag": "Adventure"
   },
   {
     "filename": "event-031.webp",
@@ -245,15 +275,17 @@
     "width": 1920,
     "height": 1281,
     "size": 291202,
-    "qualityScore": 33.41587608178068
+    "qualityScore": 33.41587608178068,
+    "tag": "Adventure"
   },
   {
-    "filename": "event-032.webp",
+    "filename": "conference-032.webp",
     "originalName": "DSC_3558.jpg",
     "width": 1920,
     "height": 1281,
     "size": 280692,
-    "qualityScore": 33.291263949491125
+    "qualityScore": 33.291263949491125,
+    "tag": "Conference"
   },
   {
     "filename": "event-033.webp",
@@ -261,47 +293,53 @@
     "width": 1920,
     "height": 1281,
     "size": 582722,
-    "qualityScore": 33.270104955915336
+    "qualityScore": 33.270104955915336,
+    "tag": "Adventure"
   },
   {
-    "filename": "event-034.webp",
+    "filename": "conference-034.webp",
     "originalName": "DSC_3432.jpg",
     "width": 1920,
     "height": 1281,
     "size": 134672,
-    "qualityScore": 33.19541863969168
+    "qualityScore": 33.19541863969168,
+    "tag": "Conference"
   },
   {
-    "filename": "event-035.webp",
+    "filename": "conference-035.webp",
     "originalName": "DSC_3549.jpg",
     "width": 1920,
     "height": 1281,
     "size": 384518,
-    "qualityScore": 33.109078977429036
+    "qualityScore": 33.109078977429036,
+    "tag": "Conference"
   },
   {
-    "filename": "event-036.webp",
+    "filename": "conference-036.webp",
     "originalName": "DSC_3260.jpg",
     "width": 1920,
     "height": 1281,
     "size": 205846,
-    "qualityScore": 33.073781893157424
+    "qualityScore": 33.073781893157424,
+    "tag": "Conference"
   },
   {
-    "filename": "event-037.webp",
+    "filename": "conference-037.webp",
     "originalName": "DSC_3762.jpg",
     "width": 1920,
     "height": 1281,
     "size": 421656,
-    "qualityScore": 33.01520275636687
+    "qualityScore": 33.01520275636687,
+    "tag": "Conference"
   },
   {
-    "filename": "event-038.webp",
+    "filename": "conference-038.webp",
     "originalName": "DSC_3568.jpg",
     "width": 1920,
     "height": 1281,
     "size": 256910,
-    "qualityScore": 32.913393394636955
+    "qualityScore": 32.913393394636955,
+    "tag": "Conference"
   },
   {
     "filename": "event-039.webp",
@@ -309,7 +347,8 @@
     "width": 1920,
     "height": 1281,
     "size": 140768,
-    "qualityScore": 32.85441882709369
+    "qualityScore": 32.85441882709369,
+    "tag": "Adventure"
   },
   {
     "filename": "event-040.webp",
@@ -317,7 +356,8 @@
     "width": 1920,
     "height": 1281,
     "size": 201998,
-    "qualityScore": 32.82759400901775
+    "qualityScore": 32.82759400901775,
+    "tag": "Adventure"
   },
   {
     "filename": "event-041.webp",
@@ -325,7 +365,8 @@
     "width": 1920,
     "height": 1281,
     "size": 306432,
-    "qualityScore": 32.7930180979295
+    "qualityScore": 32.7930180979295,
+    "tag": "Adventure"
   },
   {
     "filename": "event-042.webp",
@@ -333,7 +374,8 @@
     "width": 1920,
     "height": 1281,
     "size": 242614,
-    "qualityScore": 32.68642891873388
+    "qualityScore": 32.68642891873388,
+    "tag": "Adventure"
   },
   {
     "filename": "event-043.webp",
@@ -341,7 +383,8 @@
     "width": 1920,
     "height": 1281,
     "size": 496748,
-    "qualityScore": 32.686220647097976
+    "qualityScore": 32.686220647097976,
+    "tag": "Adventure"
   },
   {
     "filename": "event-044.webp",
@@ -349,7 +392,8 @@
     "width": 1920,
     "height": 1281,
     "size": 183214,
-    "qualityScore": 32.6839409276612
+    "qualityScore": 32.6839409276612,
+    "tag": "Adventure"
   },
   {
     "filename": "event-045.webp",
@@ -357,6 +401,7 @@
     "width": 1920,
     "height": 2860,
     "size": 862102,
-    "qualityScore": 32.573767211131845
+    "qualityScore": 32.573767211131845,
+    "tag": "Adventure"
   }
 ]

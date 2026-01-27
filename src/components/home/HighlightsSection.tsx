@@ -9,23 +9,25 @@ interface ImageItem {
     filename: string;
     width: number;
     height: number;
+    tag?: string;
 }
 
 export default function HighlightsSection() {
     const [scrollerImages, setScrollerImages] = useState<ImageItem[]>([]);
 
     useEffect(() => {
-        // Load manifests and select 12 random images
+        // Load manifests and filter Conference images only
         const day1Manifest: ImageItem[] = require("@/../public/images/events/2025/day1/manifest.json");
         const day2Manifest: ImageItem[] = require("@/../public/images/events/2025/day2/manifest.json");
 
-        const allImages = [
-            ...day1Manifest.map((img: ImageItem) => ({ ...img, day: "day1" })),
-            ...day2Manifest.map((img: ImageItem) => ({ ...img, day: "day2" }))
+        // Filter only Conference-tagged images
+        const conferenceImages = [
+            ...day1Manifest.filter((img: ImageItem) => img.tag === 'Conference').map((img: ImageItem) => ({ ...img, day: "day1" })),
+            ...day2Manifest.filter((img: ImageItem) => img.tag === 'Conference').map((img: ImageItem) => ({ ...img, day: "day2" }))
         ];
 
-        // Shuffle and select 12 random images
-        const shuffled = allImages.sort(() => 0.5 - Math.random());
+        // Shuffle and select 12 random Conference images
+        const shuffled = conferenceImages.sort(() => 0.5 - Math.random());
         const selected = shuffled.slice(0, 12);
         setScrollerImages(selected);
     }, []);

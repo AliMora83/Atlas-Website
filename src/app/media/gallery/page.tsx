@@ -6,6 +6,7 @@ import PageHero from "@/components/PageHero";
 
 type MediaType = "all" | "photos" | "videos";
 type ConferenceDay = "all" | "day1" | "day2";
+type Category = "all" | "conference" | "adventure";
 
 interface ManifestItem {
     filename: string;
@@ -14,6 +15,7 @@ interface ManifestItem {
     height: number;
     size: number;
     qualityScore: number;
+    tag?: string;
 }
 
 interface GalleryItem {
@@ -21,6 +23,7 @@ interface GalleryItem {
     type: "photo" | "video";
     title: string;
     day: "day1" | "day2" | "day3";
+    category: "conference" | "adventure";
     thumbnail: string;
     fullImage: string;
     description: string;
@@ -38,6 +41,7 @@ const day1Photos: GalleryItem[] = day1ManifestData.map((item: ManifestItem, inde
     type: "photo",
     title: `Day 1 - Photo ${index + 1}`,
     day: "day1",
+    category: (item.tag?.toLowerCase() || "adventure") as "conference" | "adventure",
     thumbnail: `/images/events/2025/day1/${item.filename}`,
     fullImage: `/images/events/2025/day1/${item.filename}`,
     description: `Day 1 - ${item.originalName}`,
@@ -51,6 +55,7 @@ const day2Photos: GalleryItem[] = day2ManifestData.map((item: ManifestItem, inde
     type: "photo",
     title: `Day 2 - Photo ${index + 1}`,
     day: "day2",
+    category: (item.tag?.toLowerCase() || "adventure") as "conference" | "adventure",
     thumbnail: `/images/events/2025/day2/${item.filename}`,
     fullImage: `/images/events/2025/day2/${item.filename}`,
     description: `Day 2 - ${item.originalName}`,
@@ -58,23 +63,26 @@ const day2Photos: GalleryItem[] = day2ManifestData.map((item: ManifestItem, inde
     height: item.height
 }));
 
-// All gallery items
+// All gallery items - sorted with Conference first, then Adventure
+const allPhotos = [...day1Photos, ...day2Photos];
 const galleryItems: GalleryItem[] = [
-    ...day1Photos,
-    ...day2Photos,
+    ...allPhotos.filter(item => item.category === "conference"),
+    ...allPhotos.filter(item => item.category === "adventure"),
     // Day 3 will be added here
 ];
 
 export default function MediaGalleryPage() {
     const [mediaFilter, setMediaFilter] = useState<MediaType>("all");
     const [dayFilter, setDayFilter] = useState<ConferenceDay>("all");
+    const [categoryFilter, setCategoryFilter] = useState<Category>("all");
     const [lightboxImage, setLightboxImage] = useState<GalleryItem | null>(null);
     const [visibleCount, setVisibleCount] = useState(12);
 
     const filteredItems = galleryItems.filter((item) => {
         const matchesMedia = mediaFilter === "all" || item.type === mediaFilter.slice(0, -1);
         const matchesDay = dayFilter === "all" || item.day === dayFilter;
-        return matchesMedia && matchesDay;
+        const matchesCategory = categoryFilter === "all" || item.category === categoryFilter;
+        return matchesMedia && matchesDay && matchesCategory;
     });
 
     const visibleItems = filteredItems.slice(0, visibleCount);
@@ -138,6 +146,25 @@ export default function MediaGalleryPage() {
                                                 }`}
                                         >
                                             {day === "all" ? "All Days" : `Day ${day.slice(-1)}`}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Category Filter */}
+                            <div className="flex-1">
+                                <label className="block text-sm font-bold text-gray-700 mb-3">Category</label>
+                                <div className="flex gap-2 flex-wrap">
+                                    {(["all", "conference", "adventure"] as Category[]).map((category) => (
+                                        <button
+                                            key={category}
+                                            onClick={() => { setCategoryFilter(category); setVisibleCount(12); }}
+                                            className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${categoryFilter === category
+                                                ? "bg-primary text-white shadow-md"
+                                                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                                                }`}
+                                        >
+                                            {category.charAt(0).toUpperCase() + category.slice(1)}
                                         </button>
                                     ))}
                                 </div>
