@@ -26,7 +26,7 @@ export default function MediaPage() {
                     <section className="relative">
                         <div className="space-y-6 max-w-4xl">
                             <p className="text-lg text-gray-700 leading-relaxed font-body">
-                                Welcome to the Atlas Global Academic Conference Media Center. Here you'll find everything you need to cover the premier gathering for education technology leaders across Africa.
+                                Explore our library of high-resolution images, videos, and press releases. Whether you&apos;re a journalist, blogger, or partner, find everything you need to tell the Atlas story.emier gathering for education technology leaders across Africa.
                             </p>
                             <ul className="space-y-6 text-lg text-gray-700 leading-relaxed font-body">
                                 <li className="flex gap-4">

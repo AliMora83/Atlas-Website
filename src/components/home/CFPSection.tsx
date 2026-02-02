@@ -8,6 +8,7 @@ export default function CFPSection() {
                     <h2 className="text-primary mb-6">Call for Papers 2026</h2>
 
                     <div className="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-gray-100 mb-10">
+
                         <p className="text-xl font-bold text-gray-900 mb-6">
                             The Atlas Global Academic Conference 2026 Call for Papers is now closed.
                         </p>
@@ -19,10 +20,10 @@ export default function CFPSection() {
                                 educators, innovators, and researchers who contributed their work.
                             </p>
                             <p className="italic text-primary font-medium">
-                                "Africa&apos;s Time, Africa&apos;s Terms: Learning for Sovereignty, Strength and Solidarity"
+                                &quot;Africa&apos;s Time, Africa&apos;s Terms: Learning for Sovereignty, Strength and Solidarity&quot;
                             </p>
                             <p>
-                                The 2026 theme focuses on how digital learning can empower the continent
+                                Submissions were welcomed on topics ranging from &quot;AI in African Education&quot; to &quot;Policy Frameworks for Digital Learning.&quot; The 2026 theme focuses on how digital learning can empower the continent
                                 to chart its own course and build sustainable, sovereign educational systems.
                             </p>
                         </div>

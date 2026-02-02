@@ -61,7 +61,7 @@ export default function MediaPartnersPage() {
                         <h1 className="text-5xl font-bold font-heading text-primary mb-4">Media Accreditation</h1>
                         <div className="w-20 h-1.5 bg-secondary rounded-full"></div>
                         <p className="mt-6 text-lg text-gray-700 max-w-3xl">
-                            Join our network of media partners covering Africa's premier education technology conference. Apply for accreditation to access exclusive interviews, press conferences, and behind-the-scenes content.
+                            Join our network of media partners covering Africa&apos;s premier education technology conference. Apply for accreditation to access exclusive interviews, press conferences, and behind-the-scenes content.
                         </p>
                     </section>
 

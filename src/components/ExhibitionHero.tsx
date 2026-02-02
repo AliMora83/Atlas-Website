@@ -27,11 +27,11 @@ export default function ExhibitionHero() {
 
                         <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
                             <p>
-                                The exhibition is Atlas Global Academic Conference's networking hub, hosting leading international and African education, training and technology companies and institutions, together with international organisations engaged in the development of education and training in Africa.
+                                Explore the latest innovations in educational technology. Connect with leading providers and discover solutions transforming Africa&apos;s classrooms.n, training and technology companies and institutions, together with international organisations engaged in the development of education and training in Africa.
                             </p>
 
                             <p>
-                                It showcases the full spectrum of innovation in EdTech from gamified learning apps to online proctoring tools, industry leading LMSs to augmented reality devices, content providers to explainer videos, established publishing services to pioneering educational hardware and much, much more; catering to all academic, corporate and public sector learning/training needs. It's this diverse and comprehensive mix that makes the exhibition a magnet for buyers, analysts and investors in EdTech.
+                                It showcases the full spectrum of innovation in EdTech from gamified learning apps to online proctoring tools, industry leading LMSs to augmented reality devices, content providers to explainer videos, established publishing services to pioneering educational hardware and much, much more; catering to all academic, corporate and public sector learning/training needs. It&apos;s this diverse and comprehensive mix that makes the exhibition a magnet for buyers, analysts and investors in EdTech.
                             </p>
 
                             <p>

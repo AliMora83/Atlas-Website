@@ -32,7 +32,9 @@ interface GalleryItem {
 }
 
 // Import manifest data for both days
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const day1ManifestData: ManifestItem[] = require("../../../../public/images/events/2025/day1/manifest.json");
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const day2ManifestData: ManifestItem[] = require("../../../../public/images/events/2025/day2/manifest.json");
 
 // Convert Day 1 manifest to gallery items

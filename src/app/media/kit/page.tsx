@@ -98,7 +98,7 @@ const resources: DownloadResource[] = [
 ];
 
 export default function MediaKitPage() {
-    const categories = ["All", "Logo", "Banner", "Document", "Photo"];
+
 
     return (
         <div className="flex flex-col bg-white">
@@ -239,7 +239,7 @@ export default function MediaKitPage() {
                         </div>
                         <div className="mt-8 p-6 bg-white rounded-xl border border-gray-200">
                             <p className="text-sm text-gray-600 leading-relaxed">
-                                <strong className="text-gray-900">Attribution:</strong> When using Atlas Global Academic Conference materials, please credit "Atlas Global Academic Conference" and include a link to our website when possible. For questions about usage rights or to request special permissions, contact our media team.
+                                <strong className="text-gray-900">Attribution:</strong> When using Atlas Global Academic Conference materials, please credit &quot;Atlas Global Academic Conference&quot; and include a link to our website when possible. For questions about usage rights or to request special permissions, contact our media team.
                             </p>
                         </div>
                     </section>

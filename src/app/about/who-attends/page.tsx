@@ -10,36 +10,7 @@ export default function WhoAttendsPage() {
         { label: "Speakers", value: "240+" },
     ];
 
-    const categories = [
-        {
-            title: "Government & Policy",
-            description: "Ministers of Education, ICT, Higher Education, Science & Technology; Policy Makers and Government Officials.",
-            icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
-            )
-        },
-        {
-            title: "Education Sector",
-            description: "Vice Chancellors, Heads of Universities, TVET, Schools, and Training Institutes; Educators and Researchers.",
-            icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></svg>
-            )
-        },
-        {
-            title: "Private Sector",
-            description: "CEOs and Executives from EdTech companies, ICT providers, Publishers, and Infrastructure developers.",
-            icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><rect width="20" height="14" x="2" y="7" rx="2" ry="2" /><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /></svg>
-            )
-        },
-        {
-            title: "International Agencies",
-            description: "Representatives from Multilateral and Bilateral Development Agencies, NGOs, and Foundations.",
-            icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><circle cx="12" cy="12" r="10" /><path d="M2 12h20" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
-            )
-        }
-    ];
+
 
     return (
         <>

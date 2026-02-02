@@ -15,7 +15,7 @@ export default function TermsPage() {
                     <div className="prose prose-blue prose-lg max-w-none text-gray-700 font-body">
                         <h2 className="text-2xl font-bold font-heading text-primary mb-6">1. Acceptance of Terms</h2>
                         <p className="mb-8">
-                            By registering for or attending the Atlas Global Academic Conference 2026 (the "Conference"), you agree to comply with and be bound by the following terms and conditions. These terms apply to all participants, including delegates, speakers, exhibitors, and media.
+                            Please read these terms and conditions carefully before registering for the Atlas Global Academic Conference. By registering, you agree to comply with and be bound by the following terms and conditions. These terms apply to all participants, including delegates, speakers, exhibitors, and media.
                         </p>
 
                         <h2 className="text-2xl font-bold font-heading text-primary mb-6">2. Registration and Fees</h2>

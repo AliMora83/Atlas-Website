@@ -1,6 +1,6 @@
 export default function KeyFacts() {
     const facts = [
-        { icon: "📅", label: "June 3-5, 2026", sub: "Accra, Ghana" },
+        { icon: "📅", label: "Sept 7-8, 2026", sub: "Accra, Ghana" },
         { icon: "👥", label: "5,000+", sub: "Attendees" },
         { icon: "🎤", label: "150+", sub: "Speakers" },
         { icon: "💡", label: "200+", sub: "Sessions" },

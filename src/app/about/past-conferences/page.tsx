@@ -37,7 +37,7 @@ export default function PastConferencesPage() {
                                 </div>
                                 <div className="flex-grow">
                                     <h3 className="text-xl font-bold font-heading text-gray-900">{event.location}</h3>
-                                    <p className="text-gray-600 italic">Theme: "{event.theme}"</p>
+                                    <p className="font-semibold text-gray-800">&quot;{event.theme}&quot;</p>
                                 </div>
                                 <div className="flex-shrink-0">
                                     <Link href="#" className="px-4 py-2 text-sm border font-medium text-gray-600 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all">

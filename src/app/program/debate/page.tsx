@@ -13,7 +13,10 @@ export default function DebatePage() {
                 <div className="container mx-auto px-4 max-w-4xl">
                     <div className="text-center mb-16">
                         <div className="inline-block px-4 py-1 rounded-full bg-red-100 text-red-600 font-bold text-sm uppercase tracking-widest mb-4">Plenary Highlight</div>
-                        <h2 className="text-2xl md:text-4xl font-bold font-heading text-gray-900 mb-6 px-2">"This house believes that AI will replace the traditional teacher by 2035"</h2>
+                        <p className="text-lg text-gray-600 font-body mb-4">
+                            This session will follow a strict debate format with opening statements, rebuttals, and closing arguments. The motion is: &quot;This House Believes that Artificial Intelligence Will Do More Harm Than Good to African Education Systems.&quot;
+                        </p>
+                        <h2 className="text-2xl md:text-4xl font-bold font-heading text-gray-900 mb-6 px-2">&quot;This House Believes that Artificial Intelligence Will Do More Harm Than Good to African Education Systems.&quot;</h2>
                         <p className="text-lg text-gray-600 font-body">
                             Experience the most anticipated session of the conference, where logic, rhetoric, and passion collide.
                         </p>

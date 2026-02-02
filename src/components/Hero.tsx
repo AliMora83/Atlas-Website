@@ -29,7 +29,7 @@ export default function Hero() {
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
                     <div className="flex items-center text-white font-medium">
-                        <span className="mr-2">📅</span> 26-27 Aug 2026
+                        <span className="mr-2">📅</span> 7-8 Sep 2026
                     </div>
                     <div className="hidden sm:block text-gray-400">|</div>
                     <div className="flex items-center text-white font-medium">

@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 type FilterProps = {
     activeDay: string;
     setActiveDay: (day: string) => void;

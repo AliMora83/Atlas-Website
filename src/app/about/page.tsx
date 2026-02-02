@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Globe, GraduationCap, Building2 } from "lucide-react";
 import PageHero from "@/components/PageHero";

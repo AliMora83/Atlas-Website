@@ -41,7 +41,7 @@ export default function SessionFormatsPage() {
                             details={
                                 <>
                                     <p>
-                                        These sessions focus on the 'how-to' of education technology.
+                                        These sessions focus on the &apos;how-to&apos; of education technology.
                                         Practitioners share their real-world experiences, successes, and challenges in implementing digital learning strategies.
                                     </p>
                                 </>
@@ -49,7 +49,7 @@ export default function SessionFormatsPage() {
                         />
                         <FormatItem
                             title="Knowledge Factories"
-                            summary="Interactive workshops designed to produce a tangible output or skill."
+                            summary="From &apos;Fire-Starter&apos; keynotes to deep-dive workshops, our formats are designed to spark dialogue.ce a tangible output or skill."
                             details={
                                 <>
                                     <p>
@@ -90,7 +90,7 @@ export default function SessionFormatsPage() {
                                 <>
                                     <p>
                                         Plenary sessions are the anchor events of the conference, featuring world-renowned speakers and visionaries.
-                                        These sessions set the tone for the event and inspire collective action.
+                                        Whether you&apos;re a &apos;Listener&apos;, a &apos;Doer&apos;, or a &apos;Connector&apos;, there&apos;s a session format for you.llective action.
                                     </p>
                                 </>
                             }
@@ -101,7 +101,7 @@ export default function SessionFormatsPage() {
                             details={
                                 <>
                                     <p>
-                                        Dive deep into specific subjects like 'Coding for Kids', 'AI Ethics', or 'E-Learning Standards'.
+                                        Dive deep into specific subjects like &apos;Coding for Kids&apos;, &apos;AI Ethics&apos;, or &apos;E-Learning Standards&apos;.
                                         These events require separate registration and offer intensive professional development opportunities.
                                     </p>
                                 </>

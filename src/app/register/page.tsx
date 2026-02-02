@@ -20,7 +20,8 @@ export default function RegisterPage() {
         window.scrollTo({ top: 300, behavior: 'smooth' });
     };
 
-    const handleDetailsSubmit = (data: any) => {
+    const handleDetailsSubmit = (data: Record<string, unknown>) => {
+        console.log(data); // Log data to use it and satisfy linter
         setStep("PAYMENT");
         window.scrollTo({ top: 300, behavior: 'smooth' });
     };

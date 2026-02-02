@@ -1,12 +1,10 @@
 "use client";
 
-import { useState } from "react";
-
 import { Ticket } from "./TicketSelection";
 
 interface RegistrationFormProps {
     selectedTicket: Ticket | null;
-    onSubmit: (formData: any) => void;
+    onSubmit: (formData: Record<string, unknown>) => void;
     onBack: () => void;
 }
 

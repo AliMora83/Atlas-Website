@@ -15,7 +15,8 @@ export default function FeaturedArticle() {
                         />
                     </div>
                     <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
-                        <div className="text-sm font-bold text-secondary uppercase tracking-wider mb-2">Editor's Pick</div>
+                        <div className="text-sm font-bold text-secondary uppercase tracking-wider mb-2">Editor&apos;s Pick</div>
+                        <h2 className="text-3xl font-bold font-heading mb-4 text-gray-900 group-hover:text-primary transition-colors">&quot;The Future of Learning is Hybrid&quot;</h2>
                         <h2 className="mb-4 text-gray-900">
                             <Link href="#" className="hover:text-primary transition-colors">
                                 Bridging the Digital Divide: A Case Study from Rural Ghana

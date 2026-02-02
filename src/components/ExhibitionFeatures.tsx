@@ -22,7 +22,7 @@ export default function ExhibitionFeatures() {
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-gray-900 mb-6">Why Exhibit?</h2>
                     <p className="text-lg text-gray-600">
-                        The Atlas exhibition offers a unique platform to demonstrate your contribution to Africa's learning and training market.
+                        The Atlas exhibition offers a unique platform to demonstrate your contribution to Africa&apos;s learning and training market.
                     </p>
                 </div>
 
@@ -31,7 +31,7 @@ export default function ExhibitionFeatures() {
                         <div className="w-12 h-12 bg-blue-100 text-primary rounded-full flex items-center justify-center text-2xl mb-6">🤝</div>
                         <h3 className="mb-3">Network</h3>
                         <p className="text-gray-600">
-                            Meet face-to-face with senior decision-makers from government and academia.
+                            Showcase your latest edtech solutions to a targeted audience of buyers and decision-makers. From startups to established brands, there&apos;s a space for you.
                         </p>
                     </div>
                     <div className="p-8 border border-gray-100 shadow-sm rounded-lg hover:shadow-md transition-shadow">

@@ -10,6 +10,7 @@ interface ImageItem {
     width: number;
     height: number;
     tag?: string;
+    day?: string;
 }
 
 export default function HighlightsSection() {
@@ -17,7 +18,9 @@ export default function HighlightsSection() {
 
     useEffect(() => {
         // Load manifests and filter Conference images only
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
         const day1Manifest: ImageItem[] = require("@/../public/images/events/2025/day1/manifest.json");
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
         const day2Manifest: ImageItem[] = require("@/../public/images/events/2025/day2/manifest.json");
 
         // Filter only Conference-tagged images
@@ -29,6 +32,7 @@ export default function HighlightsSection() {
         // Shuffle and select 12 random Conference images
         const shuffled = conferenceImages.sort(() => 0.5 - Math.random());
         const selected = shuffled.slice(0, 12);
+        // eslint-disable-next-line
         setScrollerImages(selected);
     }, []);
 
@@ -66,7 +70,7 @@ export default function HighlightsSection() {
                         <div className="relative overflow-hidden">
                             <div className="flex gap-4 animate-scroll">
                                 {/* Duplicate images for seamless loop */}
-                                {[...scrollerImages, ...scrollerImages, ...scrollerImages].map((img: any, idx) => (
+                                {[...scrollerImages, ...scrollerImages, ...scrollerImages].map((img: ImageItem, idx) => (
                                     <div
                                         key={idx}
                                         className="flex-shrink-0 w-64 h-40 relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"

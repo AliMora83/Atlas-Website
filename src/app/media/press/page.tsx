@@ -19,7 +19,7 @@ const releases: PressRelease[] = [
         id: "1",
         date: "January 10, 2026",
         title: "Atlas Global Academic Conference 2026 Officially Announced for Accra, Ghana",
-        excerpt: "The Atlas Secretariat is proud to announce that the 2026 conference will be hosted in the historic city of Accra, Ghana from June 3-5, 2026. This marks a significant milestone as we return to West Africa to explore innovations in digital learning and education technology.",
+        excerpt: "The Atlas Secretariat is proud to announce that the 2026 conference will be hosted in the historic city of Accra, Ghana from September 7-8, 2026. This marks a significant milestone as we return to West Africa to explore innovations in digital learning and education technology.",
         category: "Announcement",
         featured: true
     },

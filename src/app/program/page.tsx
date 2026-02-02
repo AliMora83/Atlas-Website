@@ -23,7 +23,7 @@ export default function ProgramPage() {
                         </h2>
                         <p className="text-gray-600">
                             The implementation of the programme is currently in progress.
-                            Below is an overview of the key sessions and events planned for June 2026.
+                            Below is an overview of the key sessions and events planned for September 2026.
                             Specific timings and speakers will be updated closer to the event.
                         </p>
                     </div>

@@ -23,7 +23,7 @@ export default function VenuePage() {
                             <h2 className="text-3xl font-bold font-heading text-primary mb-6">Accra International Conference Centre</h2>
                             <div className="space-y-4 text-gray-700 leading-relaxed">
                                 <p>
-                                    Located in the heart of Accra, the AICC is Ghana's premier conference venue. It is situated in the Christiansborg area, close to the Parliament House and the State House, making it a hub for diplomatic and business activities.
+                                    Located in the heart of Accra, the AICC is Ghana&apos;s premier event venue. It is situated in the Christiansborg area, close to the Parliament House and the State House, making it a hub for diplomatic and business activities.
                                 </p>
                                 <p>
                                     The centre features a 1,600-seater plenary hall, various committee rooms, and spacious exhibition areas, providing a world-class environment for networking, learning, and collaboration.

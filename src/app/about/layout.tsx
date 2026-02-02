@@ -1,4 +1,3 @@
-import AboutSubNav from "@/components/AboutSubNav";
 import StickyCTA from "@/components/StickyCTA";
 
 export default function AboutLayout({

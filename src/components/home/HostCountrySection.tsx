@@ -15,7 +15,7 @@ export default function HostCountrySection() {
                             <p className="text-md text-gray-700 leading-relaxed">
                                 We are thrilled to announce that the 19th edition of Atlas Global Academic Conference
                                 will take place at the prestigious Cape Town Hotel School in Granger Bay
-                                from 26-27 August 2026.
+                                from 7-8 September 2026.
                             </p>
                             <p className="text-md text-gray-700 leading-relaxed">
                                 Cape Town, known as the Mother City, is a vibrant hub of innovation, culture, and
