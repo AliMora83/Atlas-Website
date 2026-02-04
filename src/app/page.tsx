@@ -11,20 +11,20 @@ export default function Home() {
       {/* 1. Hero Section */}
       <Hero />
 
-      {/* 2. About Atlas Global Academic Conference */}
+      {/* 2. 2026 Partners */}
+      <PartnersGrid />
+
+      {/* 3. About Atlas Global Academic Conference */}
       <AboutSection />
 
-      {/* 3. Call for Papers 2026 Update */}
+      {/* 4. Call for Papers 2026 Update */}
       <CFPSection />
 
-      {/* 4. 2026 Host Country (Ghana) */}
+      {/* 5. 2026 Host Country (Ghana) */}
       <HostCountrySection />
 
-      {/* 5. 2025 Highlights */}
+      {/* 6. 2025 Highlights */}
       <HighlightsSection />
-
-      {/* 6. 2026 Partners */}
-      <PartnersGrid />
     </div>
   );
 }

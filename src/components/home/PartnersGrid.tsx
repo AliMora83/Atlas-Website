@@ -9,6 +9,11 @@ const partners = [
     { id: 3, src: "/images/partners/partner-3.png", alt: "Partner 3" },
     { id: 4, src: "/images/partners/partner-4.png", alt: "Partner 4" },
     { id: 5, src: "/images/partners/partner-5.png", alt: "Partner 5" },
+    { id: 7, src: "/images/partners/partner7.png", alt: "Partner 7" },
+    { id: 8, src: "/images/partners/partner8.png", alt: "Partner 8" },
+    { id: 9, src: "/images/partners/partner9.png", alt: "Partner 9" },
+    { id: 10, src: "/images/partners/partner10.png", alt: "Partner 10" },
+    { id: 11, src: "/images/partners/partner11.jpg", alt: "Partner 11" },
 ];
 
 export default function PartnersGrid() {
@@ -17,14 +22,6 @@ export default function PartnersGrid() {
 
     return (
         <section className="section-padding bg-white overflow-hidden" id="partners">
-            <div className="container mx-auto px-4 mb-16">
-                <div className="text-center">
-                    <h2 className="text-primary mb-4">Atlas Global Academic Conference 2026 Partners</h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
-                        We are proud to work with global leaders committed to educational innovation and development.
-                    </p>
-                </div>
-            </div>
 
             <div className="relative w-full">
                 {/* Gradient overlays for fade effect */}
@@ -38,12 +35,12 @@ export default function PartnersGrid() {
                                 key={index}
                                 className="logo-item group"
                             >
-                                <div className="relative w-48 h-24 flex items-center justify-center p-4 transition-all duration-300">
+                                <div className="relative w-48 h-16 flex items-center justify-center p-4 transition-all duration-300">
                                     <Image
                                         src={partner.src}
                                         alt={partner.alt}
                                         fill
-                                        className="object-contain grayscale group-hover:grayscale-0 transition-all duration-500 opacity-70 group-hover:opacity-100 group-hover:scale-110"
+                                        className="object-contain transition-all duration-500 opacity-90 group-hover:opacity-100 group-hover:scale-110"
                                     />
                                 </div>
                             </div>

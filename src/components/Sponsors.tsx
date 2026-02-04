@@ -8,6 +8,11 @@ const partners = [
     { id: 3, src: "/images/partners/partner-3.png", alt: "Partner 3" },
     { id: 4, src: "/images/partners/partner-4.png", alt: "Partner 4" },
     { id: 5, src: "/images/partners/partner-5.png", alt: "Partner 5" },
+    { id: 7, src: "/images/partners/partner7.png", alt: "Partner 7" },
+    { id: 8, src: "/images/partners/partner8.png", alt: "Partner 8" },
+    { id: 9, src: "/images/partners/partner9.png", alt: "Partner 9" },
+    { id: 10, src: "/images/partners/partner10.png", alt: "Partner 10" },
+    { id: 11, src: "/images/partners/partner11.jpg", alt: "Partner 11" },
 ];
 
 export default function Sponsors() {
@@ -29,7 +34,7 @@ export default function Sponsors() {
                                     src={partner.src}
                                     alt={partner.alt}
                                     fill
-                                    className="object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100"
+                                    className="object-contain transition-all duration-300 opacity-90 group-hover:opacity-100"
                                 />
                             </div>
                         </div>

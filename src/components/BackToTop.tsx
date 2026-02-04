@@ -30,7 +30,7 @@ export default function BackToTop() {
             {isVisible && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-8 right-8 z-50 rounded-full bg-primary p-3 text-white shadow-lg transition-transform hover:scale-110 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                    className="fixed bottom-24 right-8 z-50 rounded-full bg-primary p-3 text-white shadow-lg transition-transform hover:scale-110 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                     aria-label="Back to Top"
                 >
                     <svg

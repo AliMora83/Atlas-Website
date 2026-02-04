@@ -8,13 +8,6 @@ import AboutSubNav from "@/components/AboutSubNav";
 export default function PastConferencesPage() {
     const history = [
         { year: 2025, location: "Dar es Salaam, Tanzania", theme: "Education fueling growth" },
-        { year: 2024, location: "Kigali, Rwanda", theme: "Education & Technology: A shared vision" },
-        { year: 2023, location: "Dakar, Senegal", theme: "New Model for Learning" },
-        { year: 2022, location: "Kigali, Rwanda", theme: "Uniting Africa" },
-        { year: 2019, location: "Abidjan, Côte d'Ivoire", theme: "Learn, Connect, Grow" },
-        { year: 2018, location: "Kigali, Rwanda", theme: "Uniting Africa" },
-        { year: 2017, location: "Port Louis, Mauritius", theme: "Context, Content, Connectivity" },
-        { year: 2016, location: "Cairo, Egypt", theme: "Making Vision Reality" },
     ];
 
     return (
