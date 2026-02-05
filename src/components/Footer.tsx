@@ -131,7 +131,7 @@ export default function Footer() {
             {/* Bottom Bar - Positioned at absolute bottom */}
             <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 py-4 px-4 md:px-6 flex flex-col md:flex-row justify-between items-center text-sm text-white/60 bg-[#0a1f3d]/90 backdrop-blur-sm">
                 <p className="mb-3 md:mb-0">
-                    ATLAS CONVENTION 2025 | Copyright © Atlas Convention 2025. All rights reserved
+                    ATLAS Global Academic Conference | Copyright © 2026. All rights reserved.
                 </p>
                 <div className="flex items-center space-x-3">
                     <Link href="/terms" className="hover:text-white transition-all">
