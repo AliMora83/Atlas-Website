@@ -1,7 +1,6 @@
 import React from "react";
 import PageHero from "@/components/PageHero";
 import ProgramSubNav from "@/components/program/ProgramSubNav";
-import FormatItem from "@/components/program/FormatItem";
 
 export default function SessionFormatsPage() {
     return (
@@ -13,100 +12,37 @@ export default function SessionFormatsPage() {
 
             <ProgramSubNav />
 
-            {/* Main Content */}
-            <section className="py-12 bg-white">
+            {/* Coming Soon Banner */}
+            <section className="py-20 bg-white">
                 <div className="container mx-auto px-4 max-w-4xl">
-                    <div className="space-y-4">
-                        <FormatItem
-                            title="Discovery Demos"
-                            summary="Short, high-energy demonstrations of cutting-edge edtech tools."
-                            details={
-                                <>
-                                    <p>
-                                        Discovery Demos are fast-paced, 15-minute presentations that allow participants to see new technologies in action.
-                                        These sessions are perfect for getting a quick overview of potential solutions for your institution.
-                                    </p>
-                                    <p className="font-semibold mt-2">Key Features:</p>
-                                    <ul className="list-disc pl-5">
-                                        <li>Live product demonstrations</li>
-                                        <li>Q&A with developers</li>
-                                        <li>Focus on practical application</li>
-                                    </ul>
-                                </>
-                            }
-                        />
-                        <FormatItem
-                            title="Knowledge Exchange Sessions"
-                            summary="Peer-to-peer sharing of best practices and implementation stories."
-                            details={
-                                <>
-                                    <p>
-                                        These sessions focus on the &apos;how-to&apos; of education technology.
-                                        Practitioners share their real-world experiences, successes, and challenges in implementing digital learning strategies.
-                                    </p>
-                                </>
-                            }
-                        />
-                        <FormatItem
-                            title="Knowledge Factories"
-                            summary="From &apos;Fire-Starter&apos; keynotes to deep-dive workshops, our formats are designed to spark dialogue.ce a tangible output or skill."
-                            details={
-                                <>
-                                    <p>
-                                        Knowledge Factories are hands-on working sessions. Participants collaborate to create resources,
-                                        draft policy recommendations, or build curriculum frameworks that they can take back to their organizations.
-                                    </p>
-                                </>
-                            }
-                        />
-                        <FormatItem
-                            title="Learning Café"
-                            summary="Informal, small-group discussions on specific topics of interest."
-                            details={
-                                <>
-                                    <p>
-                                        The Learning Café offers a relaxed atmosphere for networking and knowledge sharing.
-                                        Tables are hosted by experts who facilitate conversations on niche topics, allowing for deep dives and personal connections.
-                                    </p>
-                                </>
-                            }
-                        />
-                        <FormatItem
-                            title="Panel Discussions"
-                            summary="Expert perspectives on critical issues facing African education."
-                            details={
-                                <>
-                                    <p>
-                                        Panels bring together diverse voices—policymakers, educators, and industry leaders—to debate and discuss
-                                        the most pressing trends and challenges in the sector.
-                                    </p>
-                                </>
-                            }
-                        />
-                        <FormatItem
-                            title="Plenary Sessions"
-                            summary="Keynote addresses and major announcements for all conference attendees."
-                            details={
-                                <>
-                                    <p>
-                                        Plenary sessions are the anchor events of the conference, featuring world-renowned speakers and visionaries.
-                                        Whether you&apos;re a &apos;Listener&apos;, a &apos;Doer&apos;, or a &apos;Connector&apos;, there&apos;s a session format for you.llective action.
-                                    </p>
-                                </>
-                            }
-                        />
-                        <FormatItem
-                            title="Pre-Conference Events"
-                            summary="Specialized full-day or half-day workshops held before the main conference."
-                            details={
-                                <>
-                                    <p>
-                                        Dive deep into specific subjects like &apos;Coding for Kids&apos;, &apos;AI Ethics&apos;, or &apos;E-Learning Standards&apos;.
-                                        These events require separate registration and offer intensive professional development opportunities.
-                                    </p>
-                                </>
-                            }
-                        />
+                    <div className="flex flex-col items-center justify-center py-20 text-center">
+                        {/* Icon */}
+                        <div className="mb-6">
+                            <svg
+                                className="w-24 h-24 text-primary/20"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={1.5}
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                />
+                            </svg>
+                        </div>
+
+                        {/* Coming Soon Text */}
+                        <h2 className="text-4xl font-bold font-heading text-gray-900 mb-4">
+                            Coming Soon
+                        </h2>
+
+                        {/* Description */}
+                        <p className="text-lg text-gray-600 max-w-2xl">
+                            Session formats and schedules will be announced closer to the conference date.
+                            Check back soon for updates on our exciting program!
+                        </p>
                     </div>
                 </div>
             </section>

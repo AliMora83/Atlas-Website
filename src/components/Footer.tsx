@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Linkedin, Twitter, Instagram, MapPin, Phone, Mail } from "lucide-react";
+import { Facebook, Linkedin, MapPin, Phone, Mail } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -36,7 +36,7 @@ export default function Footer() {
                             </div>
                             <div>
                                 <h3 className="text-[32px] font-bold font-heading text-white mb-2 leading-tight">
-                                    ATLAS CONVENTION 2025
+                                    ATLAS Global Academic Conference
                                 </h3>
                                 <div className="space-y-1 text-white/80 text-base font-bold">
                                     <p className="flex items-center gap-2">
@@ -82,25 +82,25 @@ export default function Footer() {
                             </ul>
                         </div>
 
-                        {/* Column 2: Sponsorships */}
+                        {/* Column 2: Partnerships */}
                         <div className="rounded-lg p-3">
                             <h3 className="text-base font-semibold font-heading mb-2 text-white">
-                                Sponsorships
+                                Partnerships
                             </h3>
                             <ul className="space-y-1.5 text-base text-white/90 leading-tight">
                                 <li>
-                                    <Link href="/sponsors#opportunities" className="hover:text-white hover:underline transition-all">
-                                        Sponsorship Opportunities
+                                    <Link href="/partners#opportunities" className="hover:text-white hover:underline transition-all">
+                                        Partnership Opportunities
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/sponsors#benefits" className="hover:text-white hover:underline transition-all">
-                                        Sponsorship Benefits
+                                    <Link href="/partners#benefits" className="hover:text-white hover:underline transition-all">
+                                        Partnership Benefits
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/sponsors#packages" className="hover:text-white hover:underline transition-all">
-                                        Sponsorship Packages
+                                    <Link href="/partners#packages" className="hover:text-white hover:underline transition-all">
+                                        Partnership Packages
                                     </Link>
                                 </li>
                             </ul>

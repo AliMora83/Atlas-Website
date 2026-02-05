@@ -116,19 +116,23 @@ export default function AboutPage() {
 
                     {/* Section 3: Additional Resources / Downloads */}
                     <section className="bg-gray-50 -mx-4 px-4 py-16 border-y border-gray-100 relative">
-                        <div className="max-w-4xl">
+                        <div className="container mx-auto">
                             <h2 className="text-3xl font-bold font-heading text-primary mb-8">More information about Atlas Global Academic Conference</h2>
-                            <div className="grid sm:grid-cols-2 gap-6">
+                            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {[
                                     { name: "Atlas Global Academic Conference Fact Sheet", href: "#/resources/factsheet.pdf" },
                                     { name: "Atlas Global Academic Conference Network & Reach", href: "#/resources/network-reach.pdf" },
                                     { name: "Atlas Global Academic Conference Executive Summary", href: "#/resources/executive-summary.pdf" },
-                                    { name: "Atlas Global Academic Conference Strategic Overview", href: "#/resources/strategic-overview.pdf" }
+                                    { name: "Atlas Global Academic Conference Strategic Overview", href: "#/resources/strategic-overview.pdf" },
+                                    { name: "2025 Programme", href: "/2025_Programme.pdf" },
+                                    { name: "Reflective Paper", href: "/Reflective_Paper.pdf" },
+                                    { name: "Book of Abstracts 2025", href: "/BOOK_OF_ABSTRACTS_23_August_2025.pdf" },
+                                    { name: "Atlas Global Academic Conference Call 2026", href: "/Atlas Global Academic Conferene Call 2026-1.pdf" }
                                 ].map((resource) => (
                                     <a
                                         key={resource.name}
                                         href={resource.href}
-                                        className="flex items-center gap-4 bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-all group"
+                                        className="flex items-center gap-4 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all group"
                                     >
                                         <div className="p-3 bg-accent/10 rounded-lg text-accent group-hover:bg-accent group-hover:text-white transition-colors">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -138,7 +142,7 @@ export default function AboutPage() {
                                                 <polyline points="9 15 12 12 15 15"></polyline>
                                             </svg>
                                         </div>
-                                        <span className="font-bold text-gray-700 group-hover:text-accent transition-colors underline underline-offset-4 decoration-accent/20 group-hover:decoration-accent">
+                                        <span className="font-bold text-gray-700 group-hover:text-accent transition-colors">
                                             {resource.name}
                                         </span>
                                     </a>

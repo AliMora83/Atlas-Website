@@ -1,10 +1,6 @@
 import React from "react";
 import PageHero from "@/components/PageHero";
 import ProgramSubNav from "@/components/program/ProgramSubNav";
-import EditionSection from "@/components/program/EditionSection";
-import { previousEditions } from "@/data/program";
-
-// Removed local EditionSection component definition
 
 export default function PanelDiscussionPage() {
     return (
@@ -16,34 +12,38 @@ export default function PanelDiscussionPage() {
 
             <ProgramSubNav />
 
-            {/* Main Content */}
-            <section className="py-16 bg-white relative overflow-hidden">
-                {/* Background blobs */}
-                <div className="absolute top-0 right-0 w-96 h-96 bg-purple-50 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/4"></div>
-                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-yellow-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 translate-y-1/4"></div>
-
-                <div className="container mx-auto px-4 max-w-4xl relative z-10">
-
-                    {/* Introduction */}
-                    <div className="mb-16 text-center">
-                        <div className="inline-block bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-bold mb-6">
-                            ⚠ Participation by Invitation Only
+            {/* Coming Soon Banner */}
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4 max-w-4xl">
+                    <div className="flex flex-col items-center justify-center py-20 text-center">
+                        {/* Icon */}
+                        <div className="mb-6">
+                            <svg
+                                className="w-24 h-24 text-primary/20"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={1.5}
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                />
+                            </svg>
                         </div>
-                        <p className="text-xl text-gray-700 leading-relaxed">
-                            The Panel Discussion is an annual meeting of African Ministers of ICT and Education,
-                            held in conjunction with the conference. It provides a unique forum for high-level
-                            policy dialogue and cross-border cooperation on digital education strategies.
+
+                        {/* Coming Soon Text */}
+                        <h2 className="text-4xl font-bold font-heading text-gray-900 mb-4">
+                            Coming Soon
+                        </h2>
+
+                        {/* Description */}
+                        <p className="text-lg text-gray-600 max-w-2xl">
+                            Panel discussion details and participant information will be announced closer to the conference date.
+                            Check back soon for updates!
                         </p>
                     </div>
-
-                    <h2 className="text-3xl font-bold text-gray-900 mb-8 border-b pb-4">
-                        Previous Editions: Communiqués & Resources
-                    </h2>
-
-                    {previousEditions.map((edition) => (
-                        <EditionSection key={edition.year} {...edition} />
-                    ))}
-
                 </div>
             </section>
         </div>

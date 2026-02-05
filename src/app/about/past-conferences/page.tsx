@@ -7,7 +7,12 @@ import AboutSubNav from "@/components/AboutSubNav";
 
 export default function PastConferencesPage() {
     const history = [
-        { year: 2025, location: "Dar es Salaam, Tanzania", theme: "Education fueling growth" },
+        {
+            year: 2025,
+            dates: "27-28 August",
+            location: "Elephant Hills, Victoria Falls",
+            theme: "Bridging academia, industry, and commerce for inclusive growth"
+        },
     ];
 
     return (
@@ -30,11 +35,12 @@ export default function PastConferencesPage() {
                                 </div>
                                 <div className="flex-grow">
                                     <h3 className="text-xl font-bold font-heading text-gray-900">{event.location}</h3>
+                                    <p className="text-sm text-gray-600 mb-1">{event.dates}</p>
                                     <p className="font-semibold text-gray-800">&quot;{event.theme}&quot;</p>
                                 </div>
                                 <div className="flex-shrink-0">
-                                    <Link href="#" className="px-4 py-2 text-sm border font-medium text-gray-600 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all">
-                                        View Report
+                                    <Link href="/BOOK_OF_ABSTRACTS_23_August_2025.pdf" target="_blank" className="px-4 py-2 text-sm border font-medium text-gray-600 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all">
+                                        View Abstracts
                                     </Link>
                                 </div>
                             </div>

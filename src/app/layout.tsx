@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   description: "Shaping the Future of Digital Education Across Africa",
   icons: {
     icon: [
-      { url: "/images/Favicon.png" },
+      { url: "/images/favicon.png" },
       { url: "/favicon.ico", sizes: "any" },
     ],
-    apple: "/images/Favicon.png",
+    apple: "/images/favicon.png",
   },
 };
 

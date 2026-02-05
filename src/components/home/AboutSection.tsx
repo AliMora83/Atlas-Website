@@ -13,7 +13,7 @@ export default function AboutSection() {
                         <div className="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-xl">
                             <iframe
                                 className="absolute top-0 left-0 w-full h-full"
-                                src="https://www.youtube.com/watch?v=87hX53kGMhU"
+                                src="https://www.youtube.com/embed/87hX53kGMhU"
                                 title="Atlas Convention Video"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
