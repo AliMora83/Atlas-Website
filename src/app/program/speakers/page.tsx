@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import ProgramSubNav from "@/components/program/ProgramSubNav";
 import { featuredSpeakers } from "@/data/speakers";
@@ -26,10 +27,11 @@ export default function SpeakersPage() {
                                 {/* Speaker Card */}
                                 <div className={`${speaker.colorClass} rounded-xl p-8 text-center shadow-lg mb-6`}>
                                     <div className="relative w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-300">
-                                        <img
+                                        <Image
                                             src={speaker.imageSrc}
                                             alt={speaker.name}
-                                            className="w-full h-full object-cover"
+                                            fill
+                                            className="object-cover"
                                         />
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{speaker.name}</h3>

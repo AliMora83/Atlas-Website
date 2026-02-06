@@ -18,6 +18,7 @@ export interface Theme {
     id: string;
     title: string;
     color: string;
+    image?: string;
 }
 
 export interface SpeakerProps {

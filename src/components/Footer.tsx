@@ -27,11 +27,11 @@ export default function Footer() {
                         <div className="flex items-start space-x-3">
                             <div className="w-14 h-14 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0">
                                 <Image
-                                    src="/images/Atlas_Convention.png"
+                                    src="/favicon.ico"
                                     alt="Atlas Logo"
                                     width={44}
                                     height={44}
-                                    className="object-contain"
+                                    className="object-contain" // removed rounded-lg as the container has it
                                 />
                             </div>
                             <div>

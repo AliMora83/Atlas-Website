@@ -141,18 +141,84 @@ export const dummySchedule: DaySchedule[] = [
 ];
 
 export const themes: Theme[] = [
-    { id: "01", title: "AI & Data in Education", color: "bg-purple-600" },
-    { id: "02", title: "Policy & Strategy", color: "bg-blue-600" },
-    { id: "03", title: "Teacher Training & Development", color: "bg-emerald-600" },
-    { id: "04", title: "Digital Infrastructure & Connectivity", color: "bg-cyan-600" },
-    { id: "05", title: "Assessment & Credentials", color: "bg-indigo-600" },
-    { id: "06", title: "Open Educational Resources (OER)", color: "bg-orange-500" },
-    { id: "07", title: "Inclusion & Accessibility", color: "bg-pink-600" },
-    { id: "08", title: "Employability & Skills", color: "bg-yellow-500" },
-    { id: "09", title: "Higher Education Innovation", color: "bg-red-600" },
-    { id: "10", title: "Early Childhood Education", color: "bg-teal-500" },
-    { id: "11", title: "TVET & Vocational Training", color: "bg-lime-600" },
-    { id: "12", title: "Research & Evidence", color: "bg-slate-600" },
+    {
+        id: "01",
+        title: "Regional, Transnational and Global Trade and Investment for industrialisation of Africa",
+        color: "bg-blue-600",
+        image: "/images/atlas_topics/industry.png"
+    },
+    {
+        id: "02",
+        title: "Future of Work: Skills, Education, Employment and Small Business Development in Africa",
+        color: "bg-purple-600",
+        image: "/images/atlas_topics/Social_coporate responsibility.png"
+    },
+    {
+        id: "03",
+        title: "Commodities and Trade (including Global Value Chains)",
+        color: "bg-emerald-600",
+        image: "/images/atlas_topics/commerce.png"
+    },
+    {
+        id: "04",
+        title: "Public-Private Partnerships: Driving Economic Growth through Collaboration",
+        color: "bg-cyan-600",
+        image: "/images/atlas_topics/trade.png"
+    },
+    {
+        id: "05",
+        title: "Growing the Rural Economy and Rural industrialisation",
+        color: "bg-indigo-600",
+        image: "/images/atlas_topics/Smart _Cities.png"
+    },
+    {
+        id: "06",
+        title: "Sustainable Development and Inclusive Digital Transformation",
+        color: "bg-orange-500",
+        image: "/images/atlas_topics/Sustainable development and inclusive digital transnformation.png"
+    },
+    {
+        id: "07",
+        title: "Digital Inclusion through modernisation of government services",
+        color: "bg-pink-600",
+        image: "/images/atlas_topics/Digital_inclusion.png"
+    },
+    {
+        id: "08",
+        title: "Technology-enabled Healthcare (mHealth / eHealth), Public Health and Wellbeing in Africa",
+        color: "bg-yellow-500",
+        image: "/images/atlas_topics/Ehealth.png"
+    },
+    {
+        id: "09",
+        title: "Societal Implications of Technology, Smart Cities and Smart Villages in Africa",
+        color: "bg-red-600",
+        image: "/images/atlas_topics/Smart _Cities.png"
+    },
+    {
+        id: "10",
+        title: "Corporate Governance and Social Responsibility",
+        color: "bg-teal-500",
+        image: "/images/atlas_topics/Social_coporate responsibility.png"
+    },
+    {
+        id: "11",
+        title: "Fintech and Financial Inclusion in Africa",
+        color: "bg-lime-600",
+        image: "/images/atlas_topics/FinTech.png"
+    },
+    {
+        id: "12",
+        title: "Regional and Transnational Innovations in Agriculture and Food Security",
+        color: "bg-slate-600",
+        image: "/images/atlas_topics/Agriculture_Technology_Agritech.png"
+    },
+    {
+        id: "13",
+        title: "Impact of Digital Transformation on African Economies",
+        color: "bg-violet-600",
+        image: "/images/atlas_topics/digital_transformation.png"
+    },
 ];
 
 export const speakers: SpeakerProps[] = [
