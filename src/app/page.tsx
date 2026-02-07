@@ -4,6 +4,7 @@ import CFPSection from "@/components/home/CFPSection";
 import HostCountrySection from "@/components/home/HostCountrySection";
 import HighlightsSection from "@/components/home/HighlightsSection";
 import PartnersGrid from "@/components/home/PartnersGrid";
+import AtlasDifference from "@/components/home/AtlasDifference";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
 
       {/* 6. 2025 Highlights */}
       <HighlightsSection />
+
+      {/* 7. What Makes Atlas Different */}
+      <AtlasDifference />
     </div>
   );
 }

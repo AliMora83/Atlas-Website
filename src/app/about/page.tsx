@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Globe, GraduationCap, Building2 } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import AboutSubNav from "@/components/AboutSubNav";
+import MissionVision from "@/components/MissionVision"; // Import new component
 
 export default function AboutPage() {
     return (
@@ -113,6 +114,10 @@ export default function AboutPage() {
                     </section>
 
 
+
+
+                    {/* Section 2.5: Mission & Vision */}
+                    <MissionVision />
 
                     {/* Section 3: Additional Resources / Downloads */}
                     <section className="bg-gray-50 -mx-4 px-4 py-16 border-y border-gray-100 relative">

@@ -25,12 +25,12 @@ export default function Footer() {
                     {/* Left Section: Brand + Contact Info */}
                     <div className="flex-shrink-0">
                         <div className="flex items-start space-x-3">
-                            <div className="w-14 h-14 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div className="w-18 h-18 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0">
                                 <Image
-                                    src="/favicon.ico"
+                                    src="/images/atlas_grey.png"
                                     alt="Atlas Logo"
-                                    width={44}
-                                    height={44}
+                                    width={80}
+                                    height={80}
                                     className="object-contain" // removed rounded-lg as the container has it
                                 />
                             </div>

@@ -4,7 +4,7 @@ export default function AboutSection() {
     return (
         <section className="section-padding bg-white" id="about-elearning">
             <div className="container mx-auto px-4">
-                <h2 className="text-primary mb-12 text-center">About Atlas Convention</h2>
+                <h2 className="text-primary mb-12 text-center">About the Atlas Global Academic Conference</h2>
 
                 {/* Two-column layout: Video left, Content right */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-6xl mx-auto">
@@ -24,9 +24,10 @@ export default function AboutSection() {
                     {/* Right side: About Content */}
                     <div className="space-y-6">
                         <p className="text-md text-gray-700 leading-relaxed">
-                            Atlas is more than just a conference; it&apos;s a movement dedicated to transforming education in Africa through technology and innovation. The Atlas Convention is the must-attend global landmark event uniting governments, investors, corporate leaders, innovators, and academics from over 136 countries.
-                            This year, we&apos;re focusing on actionable strategies to bridge the digital divide and foster sustainable growth. By highlighting breakthrough research and accelerating high-impact solutions, this annual convention fuels Africa&apos;s structural transformation and inclusive economic growth.
-                            <br /><br />Join us at the world wonder destination of Victoria Falls to forge transnational partnerships, unlock new markets, and drive sustainable transnational value chain initiatives that elevate Africa&apos;s economic landscape.
+                            The ATLAS Global Academic Conference is the knowledge and innovation pillar of the <span className="font-bold">ATLAS Convention</span>—a global academic and industry-facing platform for thought leaders, researchers, policymakers, and practitioners to engage on Africa’s development agenda. —designed to translate research into market-ready solutions, scalable pilots, and investable community transformation.
+                            <br /><br />
+                            <span className="font-bold">From papers to production.</span><br />
+                            ATLAS is built for translation: research → prototypes → commercial solutions → adoption at community scale.
                         </p>
                         <div className="pt-4">
                             <Link
