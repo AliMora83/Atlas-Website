@@ -1,41 +1,15 @@
 "use client";
 
-import { useEffect, useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Users, Mic, Globe, Lightbulb } from "lucide-react";
 
-interface ImageItem {
-    filename: string;
-    width: number;
-    height: number;
-    tag?: string;
-    day?: string;
-}
+
+
+
 
 export default function HighlightsSection() {
-    const [scrollerImages, setScrollerImages] = useState<ImageItem[]>([]);
-
-    useEffect(() => {
-        // Load manifests and filter Conference images only
-        // eslint-disable-next-line @typescript-eslint/no-require-imports
-        const day1Manifest: ImageItem[] = require("@/../public/images/events/2025/day1/manifest.json");
-        // eslint-disable-next-line @typescript-eslint/no-require-imports
-        const day2Manifest: ImageItem[] = require("@/../public/images/events/2025/day2/manifest.json");
-
-        // Filter only Conference-tagged images
-        const conferenceImages = [
-            ...day1Manifest.filter((img: ImageItem) => img.tag === 'Conference').map((img: ImageItem) => ({ ...img, day: "day1" })),
-            ...day2Manifest.filter((img: ImageItem) => img.tag === 'Conference').map((img: ImageItem) => ({ ...img, day: "day2" }))
-        ];
-
-        // Shuffle and select 12 random Conference images
-        const shuffled = conferenceImages.sort(() => 0.5 - Math.random());
-        const selected = shuffled.slice(0, 12);
-        // eslint-disable-next-line
-        setScrollerImages(selected);
-    }, []);
-
     const metrics = [
         { icon: <Users className="w-8 h-8 text-primary" />, value: "1,543", label: "Participants" },
         { icon: <Mic className="w-8 h-8 text-primary" />, value: "244", label: "Speakers" },
@@ -71,39 +45,41 @@ export default function HighlightsSection() {
                 </div>
 
                 {/* Infinite Image Scroller */}
-                {scrollerImages.length > 0 && (
-                    <div className="mb-12">
-                        <div className="relative overflow-hidden">
-                            <div className="flex gap-4 animate-scroll">
-                                {/* Duplicate images for seamless loop */}
-                                {[...scrollerImages, ...scrollerImages, ...scrollerImages].map((img: ImageItem, idx) => (
-                                    <div
-                                        key={idx}
-                                        className="flex-shrink-0 w-[400px] h-[250px] relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
-                                    >
-                                        <Image
-                                            src={`/images/events/2025/${img.day}/${img.filename}`}
-                                            alt={`Gallery image ${idx + 1}`}
-                                            fill
-                                            className="object-cover"
-                                            sizes="400px"
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* View More Button */}
-                        <div className="text-center mt-8">
-                            <Link
-                                href="/media/gallery"
-                                className="inline-block px-8 py-3 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg"
-                            >
-                                View More Photos
-                            </Link>
+                <div className="mb-12">
+                    <div className="relative overflow-hidden group">
+                        <div className="flex gap-4 animate-scroll group-hover:pause">
+                            {/* Duplicate images for seamless loop */}
+                            {[...Array(2)].map((_, groupIdx) => (
+                                <div key={groupIdx} className="flex gap-4">
+                                    {Array.from({ length: 15 }, (_, i) => i + 1).map((num) => (
+                                        <div
+                                            key={`img-${num}`}
+                                            className="flex-shrink-0 w-[400px] h-[250px] relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                                        >
+                                            <Image
+                                                src={`/images/home_images/home_images_${num}.jpg`}
+                                                alt={`Gallery image ${num}`}
+                                                fill
+                                                className="object-cover"
+                                                sizes="400px"
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            ))}
                         </div>
                     </div>
-                )}
+
+                    {/* View More Button */}
+                    <div className="text-center mt-8">
+                        <Link
+                            href="/media/gallery"
+                            className="inline-block px-8 py-3 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg"
+                        >
+                            View More Photos
+                        </Link>
+                    </div>
+                </div>
 
                 <div className="text-center">
                     <p className="text-gray-500 text-sm max-w-2xl mx-auto italic">
@@ -113,23 +89,23 @@ export default function HighlightsSection() {
             </div>
 
             <style jsx>{`
-                @keyframes scroll {
-                    0% {
-                        transform: translateX(0);
+                    @keyframes scroll {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        100% {
+                            transform: translateX(-33.333%);
+                        }
                     }
-                    100% {
-                        transform: translateX(-33.333%);
+                    
+                    .animate-scroll {
+                        animation: scroll 30s linear infinite;
                     }
-                }
-                
-                .animate-scroll {
-                    animation: scroll 30s linear infinite;
-                }
-                
-                .animate-scroll:hover {
-                    animation-play-state: paused;
-                }
-            `}</style>
+                    
+                    .animate-scroll:hover {
+                        animation-play-state: paused;
+                    }
+                `}</style>
         </section>
     );
 }
