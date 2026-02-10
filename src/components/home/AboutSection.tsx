@@ -7,7 +7,7 @@ export default function AboutSection() {
                 <h2 className="text-primary mb-12 text-center">About the Atlas Global Academic Conference</h2>
 
                 {/* Two-column layout: Video left, Content right */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-6xl mx-auto mb-12">
                     {/* Left side: YouTube Video */}
                     <div className="w-full">
                         <div className="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-xl">
@@ -30,11 +30,20 @@ export default function AboutSection() {
                             ATLAS is built for translation: research → prototypes → commercial solutions → adoption at community scale.
                         </p>
                         <div className="pt-4">
+                            <p className="text-sm text-gray-500">Keynote Speaker</p>
+                            <p className="text-md font-bold text-gray-900">Dr. Fred Olayele</p>
+                            <p className="text-md text-gray-700">Strategic Global Advisor & Economist</p>
+                            <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
+                                FORMER CHIEF ECONOMIST, NYC ECONOMIC DEVELOPMENT CORPORATION
+                            </p>
+
                             <Link
-                                href="/about"
+                                href="https://fredolayele.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="btn-primary"
                             >
-                                FIND OUT MORE
+                                Speaker's Website
                             </Link>
                         </div>
                     </div>

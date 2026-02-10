@@ -21,7 +21,7 @@ export default function CFPSection() {
                 <div className="max-w-5xl mx-auto">
                     <h2 className="text-primary mb-6 text-center">Call for Papers 2026</h2>
 
-                    <div className="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-gray-100 mb-10">
+                    {/*  <div className="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-gray-100 mb-10">
 
                         <p className="text-xl font-bold text-gray-900 mb-6">
                             The Atlas Global Academic Conference 2026 Call for Papers is now closed.
@@ -50,7 +50,7 @@ export default function CFPSection() {
                                 READ MORE &rarr;
                             </Link>
                         </div>
-                    </div>
+                    </div>*/}
 
                     {/* PDF Viewer */}
                     <PDFViewer

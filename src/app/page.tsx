@@ -24,10 +24,10 @@ export default function Home() {
       {/* 5. 2026 Host Country (Ghana) */}
       <HostCountrySection />
 
-      {/* 7. What Makes Atlas Different */}
+      {/* 6. What Makes Atlas Different */}
       <AtlasDifference />
 
-      {/* 6. 2025 Highlights */}
+      {/* 7. 2025 Highlights */}
       <HighlightsSection />
     </div>
   );

@@ -39,17 +39,16 @@ export default function Footer() {
                                     ATLAS Global Academic Conference
                                 </h3>
                                 <div className="space-y-1 text-white/80 text-base font-bold">
-                                    <p className="flex items-center gap-2">
-                                        <MapPin className="w-4 h-4" />
-                                        Victoria Falls, Zimbabwe
-                                    </p>
-                                    <p className="flex items-center gap-2">
-                                        <Phone className="w-4 h-4" />
-                                        +263 772 222 222
+                                    <p className="flex items-start gap-2">
+                                        <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                                        <span>
+                                            149 Houghton Village, 6 Boundary Rd,<br />
+                                            Houghton Estate. Johannesburg, 2198
+                                        </span>
                                     </p>
                                     <p className="flex items-center gap-2">
                                         <Mail className="w-4 h-4" />
-                                        info@atlasconvention.com
+                                        info@atlasconference.africa
                                     </p>
                                 </div>
                             </div>
@@ -57,74 +56,7 @@ export default function Footer() {
                     </div>
 
                     {/* Right Section: 3 Columns - Auto width based on content */}
-                    <div className="flex gap-4 flex-wrap">
-                        {/* Column 1: General Enquiries */}
-                        <div className="rounded-lg p-3">
-                            <h3 className="text-base font-semibold font-heading mb-2 text-white">
-                                General Enquiries
-                            </h3>
-                            <ul className="space-y-1.5 text-base text-white/90 leading-tight">
-                                <li>
-                                    <Link href="/about" className="hover:text-white hover:underline transition-all">
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/contact" className="hover:text-white hover:underline transition-all">
-                                        Contact Us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/privacy" className="hover:text-white hover:underline transition-all">
-                                        Privacy Policy
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
 
-                        {/* Column 2: Partnerships */}
-                        <div className="rounded-lg p-3">
-                            <h3 className="text-base font-semibold font-heading mb-2 text-white">
-                                Partnerships
-                            </h3>
-                            <ul className="space-y-1.5 text-base text-white/90 leading-tight">
-                                <li>
-                                    <Link href="/partners#opportunities" className="hover:text-white hover:underline transition-all">
-                                        Partnership Opportunities
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/partners#benefits" className="hover:text-white hover:underline transition-all">
-                                        Partnership Benefits
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/partners#packages" className="hover:text-white hover:underline transition-all">
-                                        Partnership Packages
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* Column 3: Exhibitions */}
-                        <div className="rounded-lg p-3">
-                            <h3 className="text-base font-semibold font-heading mb-2 text-white">
-                                Exhibitions
-                            </h3>
-                            <ul className="space-y-1.5 text-base text-white/90 leading-tight">
-                                <li>
-                                    <Link href="/exhibition#opportunities" className="hover:text-white hover:underline transition-all">
-                                        Exhibition Opportunities
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/exhibition#benefits" className="hover:text-white hover:underline transition-all">
-                                        Exhibition Benefits
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
 

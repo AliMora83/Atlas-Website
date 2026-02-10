@@ -31,7 +31,6 @@ export default function VenuePage() {
                                 <ul className="list-disc pl-5 space-y-2 mt-4">
                                     <li><strong>Location:</strong> Cape Town, South Africa</li>
                                     <li><strong>Dates:</strong> September 7-8, 2026</li>
-                                    <li><strong>Capacity:</strong> 1,000+ delegates</li>
                                     <li><strong>Facilities:</strong> High-speed Wi-Fi, modern AV equipment, collaborative learning spaces</li>
                                 </ul>
                             </div>
@@ -98,11 +97,9 @@ export default function VenuePage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto">
                         <h2 className="text-3xl font-bold font-heading text-primary mb-4">Accommodation</h2>
-                        <p className="text-gray-600 mb-6">
-                            We are partnering with hotels near the conference venue to offer special rates for delegates.
-                        </p>
                         <p className="text-gray-700 font-medium">
-                            Detailed accommodation information and booking links will be available soon. Stay tuned for updates!
+                            Detailed accommodation information and booking links will be available soon.
+                            <br />Stay tuned for updates!
                         </p>
                     </div>
                 </div>

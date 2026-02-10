@@ -206,26 +206,13 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                                        <a href="mailto:info@atlasconvention.com" className="text-primary hover:underline">
-                                            info@atlasconvention.com
+                                        <a href="mailto:info@atlasconference.africa" className="text-primary hover:underline">
+                                            info@atlasconference.africa
                                         </a>
                                     </div>
                                 </div>
 
-                                {/* Phone */}
-                                <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl border border-gray-200">
-                                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                                        <a href="tel:+493031018180" className="text-primary hover:underline">
-                                            +49 30 310 18 18-0
-                                        </a>
-                                    </div>
-                                </div>
+
 
                                 {/* Address */}
                                 <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl border border-gray-200">
@@ -238,8 +225,8 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-1">Office Address</h3>
                                         <p className="text-gray-600">
-                                            Long Street 32<br />
-                                            10625 Accra, Ghana
+                                            149 Houghton Village, 6 Boundary Rd,<br />
+                                            Houghton Estate. Johannesburg, 2198
                                         </p>
                                     </div>
                                 </div>
@@ -286,20 +273,20 @@ export default function ContactPage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-primary mb-3">Find Us</h2>
-                        <p className="text-gray-600">Visit our office in Accra, Ghana</p>
+                        <p className="text-gray-600">Visit our office in Johannesburg, South Africa</p>
                     </div>
                     <div className="max-w-5xl mx-auto">
-                        <div className="bg-gray-200 rounded-xl overflow-hidden shadow-lg" style={{ height: "400px" }}>
-                            <div className="w-full h-full flex items-center justify-center text-gray-500">
-                                <div className="text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="mx-auto mb-4 text-gray-400">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                    <p className="text-lg font-semibold">Map Integration</p>
-                                    <p className="text-sm">Long Street 32, 10625 Accra, Ghana</p>
-                                </div>
-                            </div>
+                        <div className="bg-gray-200 rounded-xl overflow-hidden shadow-lg h-[400px]">
+                            <iframe
+                                title="Map: 149 Houghton Village, 6 Boundary Rd, Houghton Estate. Johannesburg"
+                                src="https://maps.google.com/maps?q=149%20Houghton%20Village%2C%206%20Boundary%20Rd%2C%20Houghton%20Estate.%20Johannesburg%2C%202198&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
                         </div>
                     </div>
                 </div>

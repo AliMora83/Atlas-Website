@@ -37,13 +37,11 @@ const navItems: NavItem[] = [
             { name: "Themes 2026", href: "/program/themes" },
             { name: "Session Formats", href: "/program/session-formats" },
             { name: "Panel Discussion", href: "/program/panel-discussion" },
-            { name: "The Atlas Global Academic Conference Debate", href: "/program/debate" },
+            // { name: "The Atlas Global Academic Conference Debate", href: "/program/debate" },
         ],
     },
 
-    { name: "Partners", href: "/partners" },
-    { name: "Exhibition", href: "/exhibition" },
-    { name: "Gallery", href: "/media/gallery" },
+    { name: "Atlas 2025", href: "/media/gallery" },
 ];
 
 export default function Navigation() {
@@ -124,12 +122,12 @@ export default function Navigation() {
                                 )}
                             </div>
                         ))}
-                        <Link
+                        {/* <Link
                             href="/register"
                             className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-base font-semibold text-white shadow transition-colors hover:bg-opacity-90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring ml-4"
                         >
                             Register
-                        </Link>
+                        </Link> */}
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -198,13 +196,13 @@ export default function Navigation() {
                             </div>
                         ))}
                         <div className="pt-4 mt-2 border-t">
-                            <Link
+                            {/* <Link
                                 href="/register"
                                 className="flex h-10 items-center justify-center rounded-md bg-primary px-6 text-base font-semibold text-white shadow transition-colors hover:bg-opacity-90 w-full"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Register Now
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>
