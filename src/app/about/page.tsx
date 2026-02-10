@@ -25,7 +25,13 @@ export default function AboutPage() {
                                 <div>
                                     <h1 className="text-4xl font-bold font-heading text-primary mb-6">CONVENTION OVERVIEW</h1>
                                     <p className="text-base text-gray-700 leading-relaxed">
-                                        Investing in Africa&apos;s Prosperity is the exciting theme of the Atlas Convention 2024 Global Edition, a landmark event that will bring together experts from all sectors in +133 countries.
+                                        The ATLAS Global Academic Conference is the knowledge and innovation pillar of the ATLAS Convention—a global academic and industry-facing platform for thought leaders, researchers, policymakers, and practitioners to engage on Africa’s development agenda. —designed to translate research into market-ready solutions, scalable pilots, and investable community transformation.
+                                    </p>
+                                    <p className="text-base text-gray-700 leading-relaxed mt-4 font-bold">
+                                        From papers to production.
+                                    </p>
+                                    <p className="text-base text-gray-700 leading-relaxed mt-2">
+                                        ATLAS is built for translation: research → prototypes → commercial solutions → adoption at community scale.
                                     </p>
                                 </div>
 
@@ -57,7 +63,7 @@ export default function AboutPage() {
                             {/* Right Column - Hero Image */}
                             <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden shadow-lg">
                                 <Image
-                                    src="/images/CapeTown.png"
+                                    src="/images/about.jpeg"
                                     alt="Convention Overview"
                                     fill
                                     className="object-cover"

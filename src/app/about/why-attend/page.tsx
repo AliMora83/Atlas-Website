@@ -69,17 +69,17 @@ export default function WhyAttendPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-gray-900 text-white text-center">
+            {/* <section className="py-16 bg-gray-900 text-white text-center">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold font-heading mb-6">Ready to join us?</h2>
                     <p className="text-gray-400 max-w-2xl mx-auto mb-8">
                         Don&apos;t miss the opportunity to be part of Africa&apos;s most important edtech event.
                     </p>
-                    <a href="/register" className="inline-block bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-colors">
+                     <a href="/register" className="inline-block bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-colors">
                         Register Now
-                    </a>
+                    </a> 
                 </div>
-            </section>
+            </section>*/}
         </>
     );
 }

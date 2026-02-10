@@ -34,10 +34,10 @@ export default function Hero() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                     <Link
-                        href="/register"
+                        href="/contact"
                         className="btn-primary min-w-[180px]"
                     >
-                        Register Now
+                        Contact Us
                     </Link>
                     <Link
                         href="/program"

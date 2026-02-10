@@ -26,8 +26,7 @@ export default function MissionVision() {
                         <h3 className="text-2xl font-bold text-gray-900">Vision</h3>
                     </div>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        To become Africa’s leading transdisciplinary global R&D platform that translates knowledge into scalable commercial solutions and inclusive growth across communities.
-                    </p>
+                        To become the leading transdisciplinary global R&D platform that translates knowledge into scalable commercial solutions and inclusive growth across communities.                    </p>
                 </div>
             </div>
         </section>

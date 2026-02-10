@@ -41,7 +41,7 @@ const navItems: NavItem[] = [
         ],
     },
 
-    { name: "Atlas 2025", href: "/media/gallery" },
+    { name: "Gallery", href: "/media/gallery" },
 ];
 
 export default function Navigation() {
@@ -122,12 +122,12 @@ export default function Navigation() {
                                 )}
                             </div>
                         ))}
-                        {/* <Link
-                            href="/register"
+                        <Link
+                            href="/contact"
                             className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-base font-semibold text-white shadow transition-colors hover:bg-opacity-90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring ml-4"
                         >
-                            Register
-                        </Link> */}
+                            Contact Us
+                        </Link>
                     </div>
 
                     {/* Mobile Menu Button */}

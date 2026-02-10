@@ -2,11 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import PageHero from "@/components/PageHero";
 
-type MediaType = "all" | "photos" | "videos";
-type ConferenceDay = "all" | "day1" | "day2";
-type Category = "all" | "conference" | "adventure";
+
+// Types removed as they are no longer used for state filtering
+
 
 interface ManifestItem {
     filename: string;
@@ -74,17 +73,21 @@ const galleryItems: GalleryItem[] = [
 ];
 
 export default function MediaGalleryPage() {
-    const [mediaFilter, setMediaFilter] = useState<MediaType>("all");
-    const [dayFilter, setDayFilter] = useState<ConferenceDay>("all");
-    const [categoryFilter, setCategoryFilter] = useState<Category>("all");
+    const [activeFilter, setActiveFilter] = useState<"all" | "day1" | "day2" | "adventure">("all");
     const [lightboxImage, setLightboxImage] = useState<GalleryItem | null>(null);
     const [visibleCount, setVisibleCount] = useState(12);
 
     const filteredItems = galleryItems.filter((item) => {
-        const matchesMedia = mediaFilter === "all" || item.type === mediaFilter.slice(0, -1);
-        const matchesDay = dayFilter === "all" || item.day === dayFilter;
-        const matchesCategory = categoryFilter === "all" || item.category === categoryFilter;
-        return matchesMedia && matchesDay && matchesCategory;
+        if (activeFilter === "all") return true;
+        if (activeFilter === "adventure") return item.category === "adventure";
+        // For days, show content for that day regardless of category (or exclude adventure if desired? 
+        // Plan said: day1 shows day1 items. Adventure shows adventure items.
+        // If "adventure" is a special filter, day1 should probably just show Everything from Day 1?
+        // Or maybe "Day 1" implies "Conference Day 1". 
+        // Let's match the plan: 
+        // "day1": item.day === 'day1'
+        // "day2": item.day === 'day2'
+        return item.day === activeFilter;
     });
 
     const visibleItems = filteredItems.slice(0, visibleCount);
@@ -96,10 +99,16 @@ export default function MediaGalleryPage() {
 
     return (
         <div className="flex flex-col bg-white">
-            <PageHero
-                title="Media Gallery"
-                description="Browse photos and videos from Atlas Global Academic Conference 2025."
-            />
+            <div className="relative h-[300px] w-full">
+                <Image
+                    src="/images/gallery.jpeg"
+                    alt="Gallery Hero"
+                    fill
+                    className="object-fit"
+                    priority
+                />
+                <div className="absolute inset-0 bg-black/20"></div>
+            </div>
 
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col gap-8">
@@ -108,69 +117,34 @@ export default function MediaGalleryPage() {
                         <h1 className="text-5xl font-bold font-heading text-primary mb-4">Gallery 2025</h1>
                         <div className="w-20 h-1.5 bg-secondary rounded-full"></div>
                         <p className="mt-6 text-lg text-gray-700 max-w-3xl">
-                            Explore highlights from Atlas Global Academic Conference 2025. Download high-resolution images for editorial use.
+                            Explore highlights from Atlas Global Academic Conference 2025.
+                            <br />Download high-resolution images for editorial use.
                         </p>
                     </section>
 
                     {/* Filters */}
                     <section className="bg-white rounded-xl border border-gray-200 p-6">
                         <div className="flex flex-col md:flex-row gap-6">
-                            {/* Media Type Filter */}
+
+                            {/* Photos Filter */}
                             <div className="flex-1">
-                                <label className="block text-sm font-bold text-gray-700 mb-3">Media Type</label>
+                                <label className="block text-sm font-bold text-gray-700 mb-3">Photos</label>
                                 <div className="flex gap-2 flex-wrap">
-                                    {(["all", "photos", "videos"] as MediaType[]).map((type) => (
+                                    {(["all", "day1", "day2", "adventure"] as const).map((filter) => (
                                         <button
-                                            key={type}
-                                            onClick={() => { setMediaFilter(type); setVisibleCount(12); }}
-                                            className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${mediaFilter === type
+                                            key={filter}
+                                            onClick={() => { setActiveFilter(filter); setVisibleCount(12); }}
+                                            className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${activeFilter === filter
                                                 ? "bg-primary text-white shadow-md"
                                                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                                                 }`}
                                         >
-                                            {type.charAt(0).toUpperCase() + type.slice(1)}
+                                            {filter === "all" ? "All Photos" : filter === "adventure" ? "Adventure" : `Day ${filter.slice(-1)}`}
                                         </button>
                                     ))}
                                 </div>
                             </div>
 
-                            {/* Day Filter */}
-                            <div className="flex-1">
-                                <label className="block text-sm font-bold text-gray-700 mb-3">Conference Day</label>
-                                <div className="flex gap-2 flex-wrap">
-                                    {(["all", "day1", "day2"] as ConferenceDay[]).map((day) => (
-                                        <button
-                                            key={day}
-                                            onClick={() => { setDayFilter(day); setVisibleCount(12); }}
-                                            className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${dayFilter === day
-                                                ? "bg-secondary text-white shadow-md"
-                                                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                                                }`}
-                                        >
-                                            {day === "all" ? "All Days" : `Day ${day.slice(-1)}`}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* Category Filter */}
-                            <div className="flex-1">
-                                <label className="block text-sm font-bold text-gray-700 mb-3">Category</label>
-                                <div className="flex gap-2 flex-wrap">
-                                    {(["all", "conference", "adventure"] as Category[]).map((category) => (
-                                        <button
-                                            key={category}
-                                            onClick={() => { setCategoryFilter(category); setVisibleCount(12); }}
-                                            className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${categoryFilter === category
-                                                ? "bg-primary text-white shadow-md"
-                                                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                                                }`}
-                                        >
-                                            {category.charAt(0).toUpperCase() + category.slice(1)}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
                         </div>
 
                         <div className="mt-4 text-sm text-gray-600">

@@ -2,6 +2,7 @@ import React from "react";
 import PageHero from "@/components/PageHero";
 import AboutSubNav from "@/components/AboutSubNav";
 import Image from "next/image";
+import ImageSlider from "@/components/ImageSlider";
 
 
 export default function VenuePage() {
@@ -23,12 +24,12 @@ export default function VenuePage() {
                             <h2 className="text-3xl font-bold font-heading text-primary mb-6">Conference Venue - Cape Town, South Africa</h2>
                             <div className="space-y-4 text-gray-700 leading-relaxed">
                                 <p>
-                                    The 2026 Atlas Global Academic Conference will take place at a premier educational institution in Cape Town, the legislative capital of South Africa. Known for its stunning natural beauty and rich cultural heritage, Cape Town provides the perfect backdrop for meaningful dialogue on African education.
+                                    <strong>Cape Town 2026</strong> will host the <strong>Second Edition of the Atlas Global Academic Conference</strong>, bringing together a transdisciplinary global R&D community at the intersection of academia, industry, commerce, government, and development partners.
                                 </p>
                                 <p>
-                                    Our venue features state-of-the-art facilities including modern lecture halls, breakout rooms, and exhibition spaces designed to foster collaboration and innovation in educational technology.
+                                    Cape Town—Africa&apos;s iconic “Mother City”—is a vibrant hub of innovation, culture, and academic excellence. With world-class infrastructure, global connectivity, and a dynamic research and entrepreneurship ecosystem, it provides the perfect setting for high-level dialogue and collaboration as ATLAS advances its destination-based Regional Series through 2030.
                                 </p>
-                                <ul className="list-disc pl-5 space-y-2 mt-4">
+                                <ul className="list-disc pl-5 space-y-2 mt-4 bg-gray-50 p-2 rounded-xl border border-gray-100">
                                     <li><strong>Location:</strong> Cape Town, South Africa</li>
                                     <li><strong>Dates:</strong> September 7-8, 2026</li>
                                     <li><strong>Facilities:</strong> High-speed Wi-Fi, modern AV equipment, collaborative learning spaces</li>
@@ -36,12 +37,18 @@ export default function VenuePage() {
                             </div>
                         </div>
                         <div className="relative h-96 bg-gray-200 rounded-lg overflow-hidden shadow-xl">
-                            <Image
-                                src="/images/School.png"
-                                alt="Conference Venue in Cape Town"
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 768px) 100vw, 50vw"
+                            <ImageSlider
+                                images={[
+                                    "/images/cape_images/Cape-images-1.png",
+                                    "/images/cape_images/Cape-images-2.png",
+                                    "/images/cape_images/Cape-images-3.png",
+                                    "/images/cape_images/Cape-images-4.png",
+                                    "/images/cape_images/Cape-images-5.png",
+                                    "/images/cape_images/Cape-images-6.png",
+                                    "/images/cape_images/Cape-images-7.png",
+                                    "/images/cape_images/Cape-images-8.png",
+                                    "/images/cape_images/Cape-images-9.png"
+                                ]}
                             />
                         </div>
                     </div>
