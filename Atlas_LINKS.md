@@ -11,6 +11,6 @@ This file contains quick access links for the current project and related resour
 | **Live Site** | [atlasconference.africa](https://atlasconference.africa/) | Deployed production site |
 | **Reference Site** | [atlasconvention.com](https://atlasconvention.com/) | Inspiration & reference |
 | **Netlify Dashboard** | [Project Overview](https://app.netlify.com/projects/atlasglobal26/overview) | Hosting & Deployment |
-| **Documentation** | [Web Document](./Atlas-Web-Document.md) | Comprehensive project specification |
+
 
 
