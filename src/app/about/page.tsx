@@ -3,6 +3,7 @@ import { Globe, GraduationCap, Building2 } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import AboutSubNav from "@/components/AboutSubNav";
 import MissionVision from "@/components/MissionVision"; // Import new component
+import FAQ from "@/components/FAQ";
 
 export default function AboutPage() {
     return (
@@ -161,6 +162,9 @@ export default function AboutPage() {
                             </div>
                         </div>
                     </section>
+
+                    {/* Section 4: FAQ */}
+                    <FAQ />
 
 
 
