@@ -1,6 +1,6 @@
 'use client';
 
-import Link from "next/link";
+
 import dynamic from "next/dynamic";
 import LoadingSpinner from "@/components/ui/LoadingSpinner";
 

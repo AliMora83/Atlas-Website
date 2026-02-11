@@ -1,48 +1,24 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useActionState, useEffect, useRef } from "react";
 import PageHero from "@/components/PageHero";
 import { Facebook, Linkedin } from "lucide-react";
+import { submitContactForm } from "@/app/actions/contact";
 
 export default function ContactPage() {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        organization: "",
-        subject: "",
-        message: ""
+    const [state, formAction, isPending] = useActionState(submitContactForm, {
+        success: false,
+        message: "",
+        errors: {}
     });
 
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+    const formRef = useRef<HTMLFormElement>(null);
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-
-        // Simulate form submission
-        setTimeout(() => {
-            setIsSubmitting(false);
-            setSubmitStatus("success");
-            setFormData({
-                name: "",
-                email: "",
-                organization: "",
-                subject: "",
-                message: ""
-            });
-
-            // Reset success message after 5 seconds
-            setTimeout(() => setSubmitStatus("idle"), 5000);
-        }, 1500);
-    };
+    useEffect(() => {
+        if (state.success && formRef.current) {
+            formRef.current.reset();
+        }
+    }, [state.success]);
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -61,20 +37,28 @@ export default function ContactPage() {
                                 Fill out the form below and we&apos;ll get back to you as soon as possible.
                             </p>
 
-                            {submitStatus === "success" && (
-                                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
+                            {state.message && (
+                                <div className={`mb-6 p-4 rounded-lg border ${state.success ? "bg-green-50 border-green-200 text-green-800" : "bg-red-50 border-red-200 text-red-800"}`}>
                                     <div className="flex items-center gap-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                        </svg>
-                                        <span className="font-semibold">Message sent successfully!</span>
+                                        {state.success ? (
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                            </svg>
+                                        ) : (
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                            </svg>
+                                        )}
+                                        <span className="font-semibold">{state.message}</span>
                                     </div>
-                                    <p className="text-sm mt-1">We&apos;ll get back to you within 24-48 hours.</p>
+                                    {state.success && <p className="text-sm mt-1">We&apos;ll get back to you within 24-48 hours.</p>}
                                 </div>
                             )}
 
-                            <form onSubmit={handleSubmit} className="space-y-6">
+                            <form ref={formRef} action={formAction} className="space-y-6">
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -84,12 +68,11 @@ export default function ContactPage() {
                                             type="text"
                                             id="name"
                                             name="name"
-                                            value={formData.name}
-                                            onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-gray-900"
                                             placeholder="John Doe"
                                         />
+                                        {state.errors?.name && <p className="text-red-500 text-sm mt-1">{state.errors.name[0]}</p>}
                                     </div>
                                     <div>
                                         <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -99,12 +82,11 @@ export default function ContactPage() {
                                             type="email"
                                             id="email"
                                             name="email"
-                                            value={formData.email}
-                                            onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-gray-900"
                                             placeholder="john@example.com"
                                         />
+                                        {state.errors?.email && <p className="text-red-500 text-sm mt-1">{state.errors.email[0]}</p>}
                                     </div>
                                 </div>
 
@@ -116,11 +98,10 @@ export default function ContactPage() {
                                         type="text"
                                         id="organization"
                                         name="organization"
-                                        value={formData.organization}
-                                        onChange={handleChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-gray-900"
                                         placeholder="Your organization name"
                                     />
+                                    {state.errors?.organization && <p className="text-red-500 text-sm mt-1">{state.errors.organization[0]}</p>}
                                 </div>
 
                                 <div>
@@ -130,20 +111,20 @@ export default function ContactPage() {
                                     <select
                                         id="subject"
                                         name="subject"
-                                        value={formData.subject}
-                                        onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-gray-900"
+                                        defaultValue=""
                                     >
-                                        <option value="">Select a subject</option>
-                                        <option value="general">General Inquiry</option>
-                                        <option value="registration">Registration Question</option>
-                                        <option value="speaking">Speaking Opportunity</option>
-                                        <option value="exhibition">Exhibition & Sponsorship</option>
-                                        <option value="media">Media & Press</option>
-                                        <option value="partnership">Partnership Opportunity</option>
-                                        <option value="other">Other</option>
+                                        <option value="" disabled>Select a subject</option>
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Registration Question">Registration Question</option>
+                                        <option value="Speaking Opportunity">Speaking Opportunity</option>
+                                        <option value="Exhibition & Sponsorship">Exhibition & Sponsorship</option>
+                                        <option value="Media & Press">Media & Press</option>
+                                        <option value="Partnership Opportunity">Partnership Opportunity</option>
+                                        <option value="Other">Other</option>
                                     </select>
+                                    {state.errors?.subject && <p className="text-red-500 text-sm mt-1">{state.errors.subject[0]}</p>}
                                 </div>
 
                                 <div>
@@ -153,21 +134,20 @@ export default function ContactPage() {
                                     <textarea
                                         id="message"
                                         name="message"
-                                        value={formData.message}
-                                        onChange={handleChange}
                                         required
                                         rows={6}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none text-gray-900"
                                         placeholder="Tell us how we can help you..."
                                     />
+                                    {state.errors?.message && <p className="text-red-500 text-sm mt-1">{state.errors.message[0]}</p>}
                                 </div>
 
                                 <button
                                     type="submit"
-                                    disabled={isSubmitting}
+                                    disabled={isPending}
                                     className="w-full bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                                 >
-                                    {isSubmitting ? (
+                                    {isPending ? (
                                         <>
                                             <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>

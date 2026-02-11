@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 
 export default function AboutSection() {
     return (
@@ -24,7 +24,7 @@ export default function AboutSection() {
                     {/* Right side: About Content */}
                     <div className="space-y-6">
                         <p className="text-md text-gray-700 leading-relaxed">
-                            The ATLAS Global Academic Conference is the knowledge and innovation pillar of the <span className="font-bold">ATLAS Convention</span>—a global academic and industry-facing platform for thought leaders, researchers, policymakers, and practitioners to engage on Africa’s development agenda. —designed to translate research into market-ready solutions, scalable pilots, and investable community transformation.
+                            &quot;Dr. Fred Olayele is a strategic global advisor and visionary leader driving impact at the intersection of public policy, markets, and social innovation. A seasoned economist, university professor, and development executive, he previously served as Chief Economist and Senior Vice President at the New York City Economic Development Corporation (NYCEDC), where he provided executive leadership to position New York as a global model for innovation. His diverse career spans global finance with Citigroup, advising Canadian provincial governments on FDI and economic development, and serving as a trusted executive advisor and board member to mission-driven organizations worldwide.&quot;
                             <br /><br />
                             <span className="font-bold">From papers to production.</span><br />
                             ATLAS is built for translation: research → prototypes → commercial solutions → adoption at community scale.
@@ -36,15 +36,6 @@ export default function AboutSection() {
                             <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
                                 FORMER CHIEF ECONOMIST, NYC ECONOMIC DEVELOPMENT CORPORATION
                             </p>
-
-                            <Link
-                                href="https://fredolayele.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn-primary"
-                            >
-                                Speaker's Website
-                            </Link>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
+import { ChevronDown, HelpCircle } from 'lucide-react';
 
 interface FAQItem {
     question: string;
@@ -42,7 +42,7 @@ const faqData: FAQCategory[] = [
                 question: "What is the \"Regional Series,\" and which countries will host future events?",
                 answer: (
                     <>
-                        The Atlas Convention has outlined a roadmap for its future locations known as the "Regional Series." The upcoming host destinations are:
+                        The Atlas Convention has outlined a roadmap for its future locations known as the &quot;Regional Series.&quot; The upcoming host destinations are:
                         <ul className="list-disc pl-5 mt-2 space-y-1">
                             <li><strong>2027:</strong> Mauritius</li>
                             <li><strong>2028:</strong> Egypt</li>
@@ -73,7 +73,7 @@ const faqData: FAQCategory[] = [
                             <li><strong>Agriculture:</strong> Rural industrialisation, food security, and sustainable mining/wildlife ecosystems.</li>
                             <li><strong>Frugal Innovation:</strong> Affordable housing technologies for climate resilience in Nigeria.</li>
                             <li><strong>Fintech:</strong> The adoption of cryptocurrency by companies and the impact of bank-fintech collaborations.</li>
-                            <li><strong>Education:</strong> The role of international education in shaping Africa's workforce and the efficacy of TVET programs for the green economy.</li>
+                            <li><strong>Education:</strong> The role of international education in shaping Africa&apos;s workforce and the efficacy of TVET programs for the green economy.</li>
                         </ul>
                     </>
                 )
