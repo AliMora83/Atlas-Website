@@ -1,0 +1,53 @@
+"use client";
+
+import React from "react";
+import PageHero from "@/components/PageHero";
+import Link from "next/link";
+import AboutSubNav from "@/components/AboutSubNav";
+
+export default function PastConferencesPage() {
+    const history = [
+        {
+            year: 2025,
+            dates: "27-28 August",
+            location: "Elephant Hills, Victoria Falls",
+            theme: "Bridging academia, industry, and commerce for inclusive growth"
+        },
+    ];
+
+    return (
+        <div className="flex flex-col">
+            <PageHero
+                title="Past Conferences"
+                description="Explore the rich history of the Atlas Global Academic Conference across the African continent."
+                bgClass="bg-primary text-white"
+            />
+
+            <AboutSubNav />
+
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4 max-w-4xl">
+                    <div className="space-y-8">
+                        {history.map((event) => (
+                            <div key={event.year} className="flex flex-col md:flex-row gap-6 items-start md:items-center p-6 border rounded-lg hover:border-primary transition-colors group">
+                                <div className="flex-shrink-0 w-24">
+                                    <span className="text-3xl font-bold text-primary opacity-80 group-hover:opacity-100">{event.year}</span>
+                                </div>
+                                <div className="flex-grow">
+                                    <h3 className="text-xl font-bold font-heading text-gray-900">{event.location}</h3>
+                                    <p className="text-sm text-gray-600 mb-1">{event.dates}</p>
+                                    <p className="font-semibold text-gray-800">&quot;{event.theme}&quot;</p>
+                                </div>
+                                <div className="flex-shrink-0">
+                                    <Link href="/BOOK_OF_ABSTRACTS_23_August_2025.pdf" target="_blank" className="px-4 py-2 text-sm border font-medium text-gray-600 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all">
+                                        View Abstracts
+                                    </Link>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+}

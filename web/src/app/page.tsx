@@ -1,0 +1,34 @@
+import Hero from "@/components/Hero";
+import AboutSection from "@/components/home/AboutSection";
+import CFPSection from "@/components/home/CFPSection";
+import HostCountrySection from "@/components/home/HostCountrySection";
+import HighlightsSection from "@/components/home/HighlightsSection";
+import PartnersGrid from "@/components/home/PartnersGrid";
+import AtlasDifference from "@/components/home/AtlasDifference";
+
+export default function Home() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      {/* 1. Hero Section */}
+      <Hero />
+
+      {/* 2. 2026 Partners */}
+      <PartnersGrid />
+
+      {/* 3. About Atlas Global Academic Conference */}
+      <AboutSection />
+
+      {/* 4. Call for Papers 2026 Update */}
+      <CFPSection />
+
+      {/* 5. 2026 Host Country (Ghana) */}
+      <HostCountrySection />
+
+      {/* 6. What Makes Atlas Different */}
+      <AtlasDifference />
+
+      {/* 7. 2025 Highlights */}
+      <HighlightsSection />
+    </div>
+  );
+}
