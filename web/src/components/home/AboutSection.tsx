@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { featuredSpeakers } from '@/data/speakers';
 
 export default function AboutSection() {
     return (
@@ -10,7 +11,7 @@ export default function AboutSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-6xl mx-auto mb-12">
                     {/* Left side: YouTube Video */}
                     <div className="w-full">
-                        <div className="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-xl">
+                        <div className="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-xl mb-8">
                             <iframe
                                 className="absolute top-0 left-0 w-full h-full"
                                 src="https://www.youtube.com/embed/87hX53kGMhU"
@@ -19,6 +20,16 @@ export default function AboutSection() {
                                 allowFullScreen
                             ></iframe>
                         </div>
+
+                        {/* Speaker Bio */}
+                        {featuredSpeakers.length > 0 && (
+                            <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+                                <h3 className="text-xl font-bold text-primary mb-4">Speaker Bio</h3>
+                                <p className="text-gray-700 text-sm leading-relaxed">
+                                    {featuredSpeakers[0].bio}
+                                </p>
+                            </div>
+                        )}
                     </div>
 
                     {/* Right side: About Content */}
