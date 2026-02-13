@@ -1,0 +1,9 @@
+[build]
+  base = "web"
+  publish = ".next"
+  command = "npm run build"
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
