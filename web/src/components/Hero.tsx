@@ -43,7 +43,7 @@ export default function Hero() {
                         href="/program"
                         className="btn-white min-w-[180px]"
                     >
-                        View Agenda
+                        Themes 2026
                     </Link>
                 </div>
                 <p className="text-xl md:text-2xl font-light mt-5 mb-8 max-w-3xl mx-auto text-gray-200">

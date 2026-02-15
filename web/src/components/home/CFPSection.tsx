@@ -23,8 +23,8 @@ export default function CFPSection() {
 
                     {/* PDF Viewer */}
                     <PDFViewer
-                        pdfUrl="/Atlas Global Academic Conference Call 2026.pdf"
-                        fileName="Atlas Global Academic Conference Call 2026.pdf"
+                        pdfUrl="/Atlas Global Academic Conference Call 2026 Final.pdf"
+                        fileName="Atlas Global Academic Conference Call 2026 Final.pdf"
                     />
                 </div>
             </div>
