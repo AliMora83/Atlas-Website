@@ -40,7 +40,7 @@ export default function Hero() {
                         Contact Us
                     </Link>
                     <Link
-                        href="/program"
+                        href="/program/themes"
                         className="btn-white min-w-[180px]"
                     >
                         Themes 2026
