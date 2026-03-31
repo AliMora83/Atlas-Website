@@ -1,27 +1,25 @@
 {
   "project": "Atlas-Website",
-  "repo": "AliMora83/atlas-website",
+  "repo": "AliMora83/Atlas",
   "branch": "main",
-  "stack": "TypeScript / Next.js / Tailwind",
+  "stack": "TypeScript / Next.js 15 / Tailwind CSS / Framer Motion / Netlify",
   "status": "Active",
-  "priority": 2,
-  "priority_label": "🟡 Priority 2 — Active Development",
-  "progress_percent": 50,
-  "progress_label": "Development in progress",
-  "current_phase": "Phase 1",
-  "next_step": "See Master.md",
+  "priority": 1,
+  "priority_label": "🟢 Priority 1 — High Impact",
+  "progress_percent": 30,
+  "progress_label": "Landing page V1 live · Services in progress",
+  "current_phase": "Phase 2 — Service Details & Narrative",
+  "next_step": "Implement detailed service pages with narrative-driven animations",
   "blocker": null,
-  "live_url": null,
-  "deploy_target": "Hostinger VPS",
-  "agents": [
-    "AG"
-  ],
+  "live_url": "https://atlas-creative.netlify.app",
+  "deploy_target": "Netlify",
+  "agents": ["Claude", "Antigravity"],
   "version": "0.0.0",
   "last_push": {
-    "timestamp": "2026-03-31T22:13:59.534Z",
+    "timestamp": "2026-03-31T22:14:11Z",
     "actor": "AliMora83",
-    "commit_message": "chore: implement MACP documentation and sync infrastructure",
-    "sha": "f87a144"
+    "commit_message": "chore: bootstrap project-sync metadata",
+    "sha": "48d0f28"
   },
   "last_updated": "2026-03-31"
 }
